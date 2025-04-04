@@ -72,7 +72,7 @@ const PrivacyPolicy = () => {
               If you have any questions about this Privacy Policy, please contact us at:
             </p>
             <ul className="list-none pl-6 my-4">
-              <li>Email: support@docucreatorpro.com</li>
+              <li>Email: support@docucreatorpro.online</li>
               <li>Phone: +91 98765 43210</li>
               <li>Address: 123 Legal Avenue, Tech Park, Bangalore - 560001</li>
             </ul>

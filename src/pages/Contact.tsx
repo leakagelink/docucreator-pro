@@ -64,7 +64,7 @@ const Contact = () => {
                 </div>
                 <h3 className="text-lg font-serif font-bold mb-2">Email Support</h3>
                 <p className="text-legal-gray mb-2">24/7 Email Assistance</p>
-                <p className="font-medium text-legal-navy">support@docucreatorpro.com</p>
+                <p className="font-medium text-legal-navy">support@docucreatorpro.online</p>
               </div>
               
               <div className="bg-legal-light p-6 rounded-lg text-center">
