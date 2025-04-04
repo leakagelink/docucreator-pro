@@ -2,7 +2,7 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://docucreatorpro.com/sitemap.xml
+Sitemap: https://docucreatorpro.online/sitemap.xml
 
 # Allow AdSense crawlers
 User-agent: Mediapartners-Google

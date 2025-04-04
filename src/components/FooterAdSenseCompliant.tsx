@@ -49,7 +49,7 @@ const FooterAdSenseCompliant = () => {
               </li>
               <li className="flex items-start">
                 <Mail className="h-5 w-5 mr-2 text-legal-gold shrink-0" />
-                <span>support@docucreatorpro.com</span>
+                <span>support@docucreatorpro.online</span>
               </li>
               <li className="flex items-start">
                 <MapPin className="h-5 w-5 mr-2 text-legal-gold shrink-0" />
