@@ -7,6 +7,7 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Mail, Phone, MapPin } from 'lucide-react';
 import { useToast } from '@/components/ui/use-toast';
+import SEOMetadata from '@/components/SEOMetadata';
 
 const Contact = () => {
   const [name, setName] = useState('');
@@ -38,6 +39,11 @@ const Contact = () => {
 
   return (
     <div className="flex flex-col min-h-screen">
+      <SEOMetadata 
+        title="Contact Us | DocuCreator Pro" 
+        description="Get in touch with our team for inquiries, support, or feedback on our AI-powered document generation services."
+        canonicalUrl="/contact"
+      />
       <Header />
       
       <main className="flex-grow bg-white">
