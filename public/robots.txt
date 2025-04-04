@@ -1,4 +1,20 @@
+
+User-agent: *
+Allow: /
+
+Sitemap: https://docucreatorpro.com/sitemap.xml
+
+# Allow AdSense crawlers
+User-agent: Mediapartners-Google
+Allow: /
+
 User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Googlebot-Mobile
 Allow: /
 
 User-agent: Bingbot
@@ -10,5 +26,8 @@ Allow: /
 User-agent: facebookexternalhit
 Allow: /
 
+# Disallow common crawlers from unnecessary areas
 User-agent: *
-Allow: /
+Disallow: /admin/
+Disallow: /account/
+Disallow: /api/
