@@ -1,13 +1,13 @@
 
 import React from 'react';
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
+import HeaderAdSenseCompliant from '@/components/HeaderAdSenseCompliant';
+import FooterAdSenseCompliant from '@/components/FooterAdSenseCompliant';
 import { FileText, Sparkles, Shield, Clock } from 'lucide-react';
 
 const AboutUs = () => {
   return (
     <div className="flex flex-col min-h-screen">
-      <Header />
+      <HeaderAdSenseCompliant />
       
       <main className="flex-grow bg-white">
         <div className="container mx-auto py-12 px-6">
@@ -105,7 +105,7 @@ const AboutUs = () => {
         </div>
       </main>
       
-      <Footer />
+      <FooterAdSenseCompliant />
     </div>
   );
 };
