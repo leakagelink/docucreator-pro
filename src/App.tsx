@@ -14,7 +14,6 @@ import AboutUs from "./pages/AboutUs";
 import Contact from "./pages/Contact";
 
 const App: React.FC = () => {
-  // Create a client
   const queryClient = React.useMemo(() => new QueryClient(), []);
 
   return (
@@ -30,7 +29,6 @@ const App: React.FC = () => {
               <Route path="/terms" element={<TermsOfService />} />
               <Route path="/about" element={<AboutUs />} />
               <Route path="/contact" element={<Contact />} />
-              {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
             </Routes>
           </BrowserRouter>
