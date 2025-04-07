@@ -1,82 +1,111 @@
 
 import React from 'react';
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
+import HeaderAdSenseCompliant from '@/components/HeaderAdSenseCompliant';
+import FooterAdSenseCompliant from '@/components/FooterAdSenseCompliant';
+import SEOMetadata from '@/components/SEOMetadata';
 
 const TermsOfService = () => {
   return (
     <div className="flex flex-col min-h-screen">
-      <Header />
+      <SEOMetadata 
+        title="Terms of Service | DocuCreator Pro" 
+        description="Our terms of service outline the rules, guidelines, and legal agreements between DocuCreator Pro and its users."
+        canonicalUrl="/terms"
+      />
+      <HeaderAdSenseCompliant />
       
       <main className="flex-grow bg-white">
-        <div className="container mx-auto py-12 px-6 max-w-4xl">
-          <h1 className="text-3xl font-serif font-bold text-legal-navy mb-6">Terms of Service</h1>
-          
-          <div className="prose prose-lg max-w-none">
-            <p className="mb-4">Last updated: {new Date().toLocaleDateString()}</p>
+        <div className="container mx-auto py-12 px-6">
+          <div className="max-w-3xl mx-auto">
+            <h1 className="text-4xl font-serif font-bold text-legal-navy mb-6">Terms of Service</h1>
+            <p className="text-gray-500 mb-8">Last updated: April 7, 2025</p>
             
-            <h2 className="text-2xl font-serif font-bold text-legal-navy mt-8 mb-4">1. Introduction</h2>
-            <p>
-              Welcome to DocuCreator Pro. These Terms of Service ("Terms") govern your use of our website and services. By accessing or using our services, you agree to be bound by these Terms.
-            </p>
-            
-            <h2 className="text-2xl font-serif font-bold text-legal-navy mt-8 mb-4">2. Using Our Services</h2>
-            <p>
-              You must follow any policies made available to you within the Services. You may use our Services only as permitted by law. We may suspend or stop providing our Services to you if you do not comply with our terms or policies or if we are investigating suspected misconduct.
-            </p>
-            
-            <h2 className="text-2xl font-serif font-bold text-legal-navy mt-8 mb-4">3. Your DocuCreator Pro Account</h2>
-            <p>
-              You may need to create an account to use some of our Services. You are responsible for safeguarding your account, and for any activities or actions under your account. We recommend using a strong password and keeping it confidential.
-            </p>
-            
-            <h2 className="text-2xl font-serif font-bold text-legal-navy mt-8 mb-4">4. Privacy and Copyright Protection</h2>
-            <p>
-              Our privacy policies explain how we treat your personal data and protect your privacy when you use our Services. By using our Services, you agree to our collection and use of data according to our privacy policy.
-            </p>
-            
-            <h2 className="text-2xl font-serif font-bold text-legal-navy mt-8 mb-4">5. Content and Intellectual Property Rights</h2>
-            <p>
-              The content displayed on the website is the property of DocuCreator Pro and/or its licensors. You may not use, reproduce, or distribute any content from our website without our express written permission.
-            </p>
-            <p>
-              You retain ownership of any intellectual property rights that you hold in content you create, upload, or share on or through our Services. When you upload content, you give us a worldwide license to use, host, store, reproduce, modify, and distribute such content.
-            </p>
-            
-            <h2 className="text-2xl font-serif font-bold text-legal-navy mt-8 mb-4">6. Advertising</h2>
-            <p>
-              Our Services may display advertisements. In consideration for your access to and use of the Services, you agree that we and our advertising partners may place advertising on the Services.
-            </p>
-            
-            <h2 className="text-2xl font-serif font-bold text-legal-navy mt-8 mb-4">7. Disclaimer of Warranties</h2>
-            <p>
-              Our Services are provided "as is" without any warranties, either express or implied. DocuCreator Pro does not warrant that our Services will be uninterrupted or error-free.
-            </p>
-            
-            <h2 className="text-2xl font-serif font-bold text-legal-navy mt-8 mb-4">8. Limitation of Liability</h2>
-            <p>
-              To the maximum extent permitted by law, DocuCreator Pro will not be liable for any indirect, incidental, special, consequential, or punitive damages resulting from your use of or inability to use the Services.
-            </p>
-            
-            <h2 className="text-2xl font-serif font-bold text-legal-navy mt-8 mb-4">9. Changes to These Terms</h2>
-            <p>
-              We may revise these Terms from time to time. The changes will not be retroactive, and the most current version of the Terms will govern our relationship with you.
-            </p>
-            
-            <h2 className="text-2xl font-serif font-bold text-legal-navy mt-8 mb-4">10. Contact Us</h2>
-            <p>
-              If you have any questions about these Terms, please contact us at:
-            </p>
-            <ul className="list-none pl-6 my-4">
-              <li>Email: support@docucreatorpro.online</li>
-              <li>Phone: +91 98765 43210</li>
-              <li>Address: 123 Legal Avenue, Tech Park, Bangalore - 560001</li>
-            </ul>
+            <div className="prose prose-lg max-w-none">
+              <p className="mb-4">
+                By accessing or using the DocuCreator Pro website and services, you agree to be bound by these Terms of Service. Please read these terms carefully before using our services.
+              </p>
+              
+              <h2 className="text-2xl font-serif font-bold text-legal-navy mt-8 mb-4">1. Acceptance of Terms</h2>
+              <p className="mb-4">
+                By accessing or using our services, you agree to be bound by these Terms of Service and all applicable laws and regulations. If you do not agree with any part of these terms, you may not use our services.
+              </p>
+              
+              <h2 className="text-2xl font-serif font-bold text-legal-navy mt-8 mb-4">2. Description of Service</h2>
+              <p className="mb-4">
+                DocuCreator Pro provides an AI-powered platform for creating legal documents. We offer various document templates that users can customize according to their needs.
+              </p>
+              
+              <h2 className="text-2xl font-serif font-bold text-legal-navy mt-8 mb-4">3. User Accounts</h2>
+              <p className="mb-4">
+                Some features of our services may require you to create an account. You are responsible for maintaining the confidentiality of your account information and for all activities that occur under your account.
+              </p>
+              
+              <h2 className="text-2xl font-serif font-bold text-legal-navy mt-8 mb-4">4. User Content</h2>
+              <p className="mb-4">
+                You retain ownership of the content you create using our services. However, you grant us a license to use, store, and display your content in connection with providing and improving our services.
+              </p>
+              
+              <h2 className="text-2xl font-serif font-bold text-legal-navy mt-8 mb-4">5. Prohibited Conduct</h2>
+              <p className="mb-4">You agree not to:</p>
+              <ul className="list-disc pl-6 mb-4">
+                <li>Use our services for any illegal purpose</li>
+                <li>Violate any laws or regulations</li>
+                <li>Infringe upon the rights of others</li>
+                <li>Interfere with or disrupt our services</li>
+                <li>Attempt to gain unauthorized access to our services</li>
+              </ul>
+              
+              <h2 className="text-2xl font-serif font-bold text-legal-navy mt-8 mb-4">6. Advertisements and Third-Party Content</h2>
+              <p className="mb-4">
+                Our website may display advertisements provided by Google AdSense and other third-party advertisers. These advertisements are not endorsements or recommendations by DocuCreator Pro. Your interactions with advertisers are solely between you and the advertiser.
+              </p>
+              <p className="mb-4">
+                We do not control the content of third-party websites that may be linked from advertisements on our site. We are not responsible for the content, privacy policies, or practices of any third-party websites.
+              </p>
+              <p className="mb-4">
+                Users are prohibited from engaging in any activity that may artificially inflate ad impressions or clicks, including but not limited to manual methods of generating impressions or clicks on advertisements displayed on our website.
+              </p>
+              
+              <h2 className="text-2xl font-serif font-bold text-legal-navy mt-8 mb-4">7. Intellectual Property</h2>
+              <p className="mb-4">
+                Our services and all related content, features, and functionality are owned by DocuCreator Pro and are protected by copyright, trademark, and other intellectual property laws.
+              </p>
+              
+              <h2 className="text-2xl font-serif font-bold text-legal-navy mt-8 mb-4">8. Disclaimer of Warranties</h2>
+              <p className="mb-4">
+                Our services are provided on an "as is" and "as available" basis. We disclaim all warranties, express or implied, including but not limited to, implied warranties of merchantability, fitness for a particular purpose, and non-infringement.
+              </p>
+              
+              <h2 className="text-2xl font-serif font-bold text-legal-navy mt-8 mb-4">9. Limitation of Liability</h2>
+              <p className="mb-4">
+                In no event shall DocuCreator Pro be liable for any indirect, incidental, special, consequential, or punitive damages arising out of or in connection with your use of our services.
+              </p>
+              
+              <h2 className="text-2xl font-serif font-bold text-legal-navy mt-8 mb-4">10. Changes to Terms</h2>
+              <p className="mb-4">
+                We reserve the right to modify these Terms of Service at any time. If we make material changes, we will notify you by email or through our website.
+              </p>
+              
+              <h2 className="text-2xl font-serif font-bold text-legal-navy mt-8 mb-4">11. Governing Law</h2>
+              <p className="mb-4">
+                These Terms of Service shall be governed by and construed in accordance with the laws of India, without regard to its conflict of law provisions.
+              </p>
+              
+              <h2 className="text-2xl font-serif font-bold text-legal-navy mt-8 mb-4">12. Contact Information</h2>
+              <p className="mb-4">
+                If you have any questions about these Terms of Service, please contact us at:
+              </p>
+              <p className="mb-4">
+                Email: legal@docucreatorpro.online<br />
+                Address: 123 Legal Avenue, Tech Park, Bangalore - 560001<br />
+                Phone: +91 98765 43210
+              </p>
+            </div>
           </div>
         </div>
       </main>
       
-      <Footer />
+      <FooterAdSenseCompliant />
     </div>
   );
 };

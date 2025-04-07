@@ -6,7 +6,6 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { HelmetProvider } from 'react-helmet-async';
-import { useState } from "react";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
@@ -15,7 +14,8 @@ import AboutUs from "./pages/AboutUs";
 import Contact from "./pages/Contact";
 
 const App: React.FC = () => {
-  const [queryClient] = useState(() => new QueryClient());
+  // Create a client
+  const queryClient = React.useMemo(() => new QueryClient(), []);
 
   return (
     <QueryClientProvider client={queryClient}>
