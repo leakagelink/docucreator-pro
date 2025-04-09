@@ -32,18 +32,26 @@
       .lovable-badge, 
       .lovable-popup, 
       [data-lovable-badge],
-      [data-lovable-popup] {
+      [data-lovable-popup],
+      .pick-ui-button,
+      #lovable-root,
+      [class*="lovable-"],
+      [id*="lovable-"] {
         display: none !important;
         visibility: hidden !important;
         opacity: 0 !important;
         pointer-events: none !important;
+        height: 0 !important;
+        width: 0 !important;
+        position: absolute !important;
+        z-index: -9999 !important;
+        overflow: hidden !important;
       }
     </style>
   </head>
 
   <body>
     <div id="root"></div>
-    <!-- Removed the Lovable script -->
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
