@@ -1,7 +1,7 @@
 
 import React from 'react';
 import ToolCard from './ToolCard';
-import { FileCode, FileText, Plugin, Sun, SunMedium, Wrench } from 'lucide-react';
+import { FileCode, FileText, Plug, Sun, SunMedium, Wrench } from 'lucide-react';
 
 const OtherTools = () => {
   const tools = [
@@ -21,7 +21,7 @@ const OtherTools = () => {
       title: "Build WordPress Plugins with AI",
       description: "Create powerful WordPress plugins without writing a single line of code. Our AI-powered platform makes plugin development accessible to everyone.",
       url: "https://pluginpal.xyz/",
-      icon: <Plugin className="h-5 w-5 text-legal-navy" />
+      icon: <Plug className="h-5 w-5 text-legal-navy" />
     },
     {
       title: "AI Content for Small Businesses",
