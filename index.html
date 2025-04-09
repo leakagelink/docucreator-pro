@@ -28,7 +28,7 @@
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1930307237706999" crossorigin="anonymous"></script>
 
     <style>
-      /* Hide Lovable badge/popup */
+      /* Hide Lovable badge/popup and other related elements */
       .lovable-badge, 
       .lovable-popup, 
       [data-lovable-badge],
@@ -36,7 +36,14 @@
       .pick-ui-button,
       #lovable-root,
       [class*="lovable-"],
-      [id*="lovable-"] {
+      [id*="lovable-"],
+      .lovable-editor-badge,
+      .lovable-editor-toolbar,
+      .lovable-floating-button,
+      .lovable-toolbar,
+      .lovable-bottom-bar,
+      .lovable-overlay,
+      .lovable-editor {
         display: none !important;
         visibility: hidden !important;
         opacity: 0 !important;
@@ -46,6 +53,12 @@
         position: absolute !important;
         z-index: -9999 !important;
         overflow: hidden !important;
+        transform: scale(0) !important;
+      }
+
+      /* Additional body style to prevent any overlays */
+      body::after {
+        content: none !important;
       }
     </style>
   </head>
@@ -53,5 +66,27 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+    
+    <!-- Script to remove any dynamically added Lovable elements -->
+    <script>
+      (function() {
+        // Function to remove Lovable elements
+        function removeLovableElements() {
+          const lovableElements = document.querySelectorAll('[class*="lovable-"], [id*="lovable-"], .pick-ui-button, #lovable-root');
+          lovableElements.forEach(el => {
+            el.remove();
+          });
+        }
+        
+        // Run immediately
+        removeLovableElements();
+        
+        // Also run after DOM is loaded
+        document.addEventListener('DOMContentLoaded', removeLovableElements);
+        
+        // And check periodically
+        setInterval(removeLovableElements, 1000);
+      })();
+    </script>
   </body>
 </html>
