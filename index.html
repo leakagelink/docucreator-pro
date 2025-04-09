@@ -26,11 +26,24 @@
     
     <!-- Google AdSense verification code -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1930307237706999" crossorigin="anonymous"></script>
+
+    <style>
+      /* Hide Lovable badge/popup */
+      .lovable-badge, 
+      .lovable-popup, 
+      [data-lovable-badge],
+      [data-lovable-popup] {
+        display: none !important;
+        visibility: hidden !important;
+        opacity: 0 !important;
+        pointer-events: none !important;
+      }
+    </style>
   </head>
 
   <body>
     <div id="root"></div>
-    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
+    <!-- Removed the Lovable script -->
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
