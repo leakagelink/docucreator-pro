@@ -33,7 +33,7 @@
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1930307237706999" crossorigin="anonymous"></script>
 
     <style>
-      /* Hide Lovable badge/popup and other related elements */
+      /* Hide all Lovable-related elements */
       .lovable-badge, 
       .lovable-popup, 
       [data-lovable-badge],
@@ -48,7 +48,9 @@
       .lovable-toolbar,
       .lovable-bottom-bar,
       .lovable-overlay,
-      .lovable-editor {
+      .lovable-editor,
+      .gpt-editor-badge,
+      .gpt-badge {
         display: none !important;
         visibility: hidden !important;
         opacity: 0 !important;
@@ -77,9 +79,17 @@
       (function() {
         // Function to remove Lovable elements
         function removeLovableElements() {
-          const lovableElements = document.querySelectorAll('[class*="lovable-"], [id*="lovable-"], .pick-ui-button, #lovable-root');
+          const lovableElements = document.querySelectorAll('[class*="lovable-"], [id*="lovable-"], .pick-ui-button, #lovable-root, [class*="gpt-"], [id*="gpt-"]');
           lovableElements.forEach(el => {
             el.remove();
+          });
+          
+          // Remove any remaining iframe that might contain Lovable content
+          const iframes = document.querySelectorAll('iframe');
+          iframes.forEach(iframe => {
+            if (iframe.src && (iframe.src.includes('lovable') || iframe.src.includes('gpt'))) {
+              iframe.remove();
+            }
           });
         }
         
@@ -89,8 +99,16 @@
         // Also run after DOM is loaded
         document.addEventListener('DOMContentLoaded', removeLovableElements);
         
-        // And check periodically
-        setInterval(removeLovableElements, 1000);
+        // And check periodically and on any dynamic content changes
+        setInterval(removeLovableElements, 500);
+        
+        // Monitor DOM changes to catch any dynamically added elements
+        const observer = new MutationObserver(function(mutations) {
+          removeLovableElements();
+        });
+        
+        // Start observing the document with the configured parameters
+        observer.observe(document.body, { childList: true, subtree: true });
       })();
     </script>
   </body>
