@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
-import { FileText, HelpCircle, User, Menu, X } from 'lucide-react';
+import { HelpCircle, Menu, X } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useIsMobile } from '@/hooks/use-mobile';
 
@@ -18,7 +18,11 @@ const HeaderAdSenseCompliant = () => {
       <div className="container mx-auto flex items-center justify-between">
         <div className="flex items-center space-x-2">
           <Link to="/" className="flex items-center space-x-2">
-            <FileText className="h-6 w-6 md:h-8 md:w-8 text-legal-gold" />
+            <img 
+              src="/lovable-uploads/d0f698c6-00bc-421f-9a5c-e2e0e0197ad6.png" 
+              alt="DocuCreator Pro Logo" 
+              className="h-6 w-6 md:h-8 md:w-8"
+            />
             <h1 className="text-xl md:text-2xl font-serif font-bold">DocuCreator Pro</h1>
           </Link>
         </div>
@@ -47,10 +51,6 @@ const HeaderAdSenseCompliant = () => {
                 <HelpCircle className="h-5 w-5 mr-1" />
                 <span>Help</span>
               </Button>
-              <Button className="bg-legal-gold hover:bg-opacity-80 text-legal-navy">
-                <User className="h-5 w-5 mr-1" />
-                <span>Sign In</span>
-              </Button>
             </div>
           </>
         )}
@@ -74,14 +74,10 @@ const HeaderAdSenseCompliant = () => {
           <Link to="/contact" className="py-2 hover:text-legal-gold transition-colors" onClick={() => setMobileMenuOpen(false)}>
             Contact
           </Link>
-          <div className="flex items-center justify-between pt-4 border-t border-white/20">
+          <div className="flex items-center justify-start pt-4 border-t border-white/20">
             <Button variant="ghost" className="text-white hover:text-legal-gold hover:bg-transparent" onClick={() => setMobileMenuOpen(false)}>
               <HelpCircle className="h-5 w-5 mr-1" />
               Help
-            </Button>
-            <Button className="bg-legal-gold hover:bg-opacity-80 text-legal-navy" onClick={() => setMobileMenuOpen(false)}>
-              <User className="h-5 w-5 mr-1" />
-              Sign In
             </Button>
           </div>
         </div>
