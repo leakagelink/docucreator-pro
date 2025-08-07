@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Home, FileText, Wrench, User, MoreHorizontal } from 'lucide-react';
+import { Home, FileText, Wrench, MoreHorizontal } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
 import { cn } from '@/lib/utils';
 
@@ -25,12 +25,6 @@ const BottomNavigation = () => {
       label: 'Tools',
       path: '/#tools',
       active: location.pathname.includes('tools')
-    },
-    {
-      icon: User,
-      label: 'Profile',
-      path: '/profile',
-      active: location.pathname === '/profile'
     },
     {
       icon: MoreHorizontal,
