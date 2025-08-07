@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { HelpCircle } from 'lucide-react';
@@ -8,7 +9,7 @@ const Header = () => {
       <div className="container mx-auto flex items-center justify-between">
         <div className="flex items-center">
           <img 
-            src="/lovable-uploads/e0c5a7e7-89c5-4dbf-8a29-f67563c1fd59.png" 
+            src="/lovable-uploads/65e2842b-9ade-4578-8288-c617f5fbfc3f.png" 
             alt="DocuCreator Pro Logo" 
             className="h-8 w-8 object-contain"
           />
