@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { HelpCircle, Menu, X } from 'lucide-react';
@@ -13,7 +14,7 @@ const HeaderAdSenseCompliant = () => {
   };
 
   return (
-    <header className="bg-legal-navy text-white py-4 px-4 md:px-6 shadow-md relative z-50">
+    <header className="bg-white text-legal-navy py-4 px-4 md:px-6 shadow-md relative z-50 border-b border-gray-200">
       <div className="container mx-auto flex items-center justify-between">
         <div className="flex items-center space-x-2">
           <Link to="/" className="flex items-center space-x-2">
@@ -22,7 +23,7 @@ const HeaderAdSenseCompliant = () => {
               alt="DocuCreator Pro Logo" 
               className="h-6 w-6 md:h-8 md:w-8"
             />
-            <h1 className="text-xl md:text-2xl font-serif font-bold">DocuCreator Pro</h1>
+            <h1 className="text-xl md:text-2xl font-serif font-bold text-legal-navy">DocuCreator Pro</h1>
           </Link>
         </div>
         
@@ -30,7 +31,7 @@ const HeaderAdSenseCompliant = () => {
           <Button 
             variant="ghost"
             size="icon"
-            className="text-white hover:bg-legal-navy/50"
+            className="text-legal-navy hover:bg-gray-100"
             onClick={toggleMobileMenu}
           >
             {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
@@ -46,7 +47,7 @@ const HeaderAdSenseCompliant = () => {
             </div>
             
             <div className="hidden md:flex items-center space-x-3">
-              <Button variant="ghost" className="text-white hover:text-legal-gold hover:bg-transparent">
+              <Button variant="ghost" className="text-legal-navy hover:text-legal-gold hover:bg-gray-100">
                 <HelpCircle className="h-5 w-5 mr-1" />
                 <span>Help</span>
               </Button>
@@ -56,24 +57,24 @@ const HeaderAdSenseCompliant = () => {
       </div>
       
       {isMobile && mobileMenuOpen && (
-        <div className="absolute top-full left-0 w-full bg-legal-navy shadow-lg py-4 px-6 flex flex-col space-y-4 animate-fade-in">
-          <Link to="/" className="py-2 hover:text-legal-gold transition-colors" onClick={() => setMobileMenuOpen(false)}>
+        <div className="absolute top-full left-0 w-full bg-white shadow-lg py-4 px-6 flex flex-col space-y-4 animate-fade-in border-t border-gray-200">
+          <Link to="/" className="py-2 hover:text-legal-gold transition-colors text-legal-navy" onClick={() => setMobileMenuOpen(false)}>
             Home
           </Link>
-          <Link to="/templates" className="py-2 hover:text-legal-gold transition-colors" onClick={() => setMobileMenuOpen(false)}>
+          <Link to="/templates" className="py-2 hover:text-legal-gold transition-colors text-legal-navy" onClick={() => setMobileMenuOpen(false)}>
             Templates
           </Link>
-          <Link to="/pricing" className="py-2 hover:text-legal-gold transition-colors" onClick={() => setMobileMenuOpen(false)}>
+          <Link to="/pricing" className="py-2 hover:text-legal-gold transition-colors text-legal-navy" onClick={() => setMobileMenuOpen(false)}>
             Pricing
           </Link>
-          <Link to="/about" className="py-2 hover:text-legal-gold transition-colors" onClick={() => setMobileMenuOpen(false)}>
+          <Link to="/about" className="py-2 hover:text-legal-gold transition-colors text-legal-navy" onClick={() => setMobileMenuOpen(false)}>
             About Us
           </Link>
-          <Link to="/contact" className="py-2 hover:text-legal-gold transition-colors" onClick={() => setMobileMenuOpen(false)}>
+          <Link to="/contact" className="py-2 hover:text-legal-gold transition-colors text-legal-navy" onClick={() => setMobileMenuOpen(false)}>
             Contact
           </Link>
-          <div className="flex items-center justify-start pt-4 border-t border-white/20">
-            <Button variant="ghost" className="text-white hover:text-legal-gold hover:bg-transparent" onClick={() => setMobileMenuOpen(false)}>
+          <div className="flex items-center justify-start pt-4 border-t border-gray-200">
+            <Button variant="ghost" className="text-legal-navy hover:text-legal-gold hover:bg-gray-100" onClick={() => setMobileMenuOpen(false)}>
               <HelpCircle className="h-5 w-5 mr-1" />
               Help
             </Button>
