@@ -19,9 +19,9 @@ const LegalDisclaimer = ({ variant = 'inline', showIcon = true }: LegalDisclaime
               <div>
                 <h3 className="text-sm font-medium text-yellow-800">Important Legal Notice</h3>
                 <p className="text-sm text-yellow-700 mt-1">
-                  This service provides AI-assisted document creation and is not a substitute for professional legal advice. 
-                  Generated documents may require legal review and customization for your specific situation. 
-                  Always consult with a qualified attorney for important legal matters.
+                  This service provides AI-assisted document template creation based on standard formats and commonly used clauses. 
+                  It is not a substitute for professional legal advice. Generated document templates may require legal review 
+                  and customization for your specific situation. Always consult with a qualified attorney for important legal matters.
                 </p>
               </div>
             </div>
@@ -31,7 +31,7 @@ const LegalDisclaimer = ({ variant = 'inline', showIcon = true }: LegalDisclaime
       case 'compact':
         return (
           <p className="text-xs text-gray-600 text-center">
-            <strong>Legal Disclaimer:</strong> AI-assisted document creation - Not legal advice. 
+            <strong>Legal Disclaimer:</strong> AI-assisted document template creation - Not legal advice. 
             Professional review recommended.
           </p>
         );
@@ -42,9 +42,10 @@ const LegalDisclaimer = ({ variant = 'inline', showIcon = true }: LegalDisclaime
           <Alert className="border-yellow-200 bg-yellow-50">
             {showIcon && <AlertTriangle className="h-4 w-4 text-yellow-600" />}
             <AlertDescription className="text-yellow-800">
-              <strong>Legal Disclaimer:</strong> This AI-powered service provides document templates and automation tools, 
-              but does not constitute legal advice. Documents generated may require professional legal review and 
-              customization. Always consult with qualified legal counsel for important legal matters.
+              <strong>Legal Disclaimer:</strong> This AI-powered service provides document templates based on standard formats 
+              and commonly used clauses, but does not constitute legal advice. Document templates generated may require 
+              professional legal review and customization. We do not guarantee the validity or enforceability of generated documents. 
+              Always consult with qualified legal counsel for important legal matters.
             </AlertDescription>
           </Alert>
         );

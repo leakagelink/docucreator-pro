@@ -1,15 +1,15 @@
-
 import React from 'react';
 import HeaderAdSenseCompliant from '@/components/HeaderAdSenseCompliant';
 import FooterAdSenseCompliant from '@/components/FooterAdSenseCompliant';
 import SEOMetadata from '@/components/SEOMetadata';
+import PlayStoreCompliantDisclaimer from '@/components/PlayStoreCompliantDisclaimer';
 
 const TermsOfService = () => {
   return (
     <div className="flex flex-col min-h-screen">
       <SEOMetadata 
         title="Terms of Service | DocuCreator Pro" 
-        description="Our terms of service outline the rules, guidelines, and legal agreements between DocuCreator Pro and its users, including AI service limitations and legal disclaimers."
+        description="Our terms of service outline the rules and guidelines for using DocuCreator Pro's AI-assisted document template services, including important disclaimers about legal advice."
         canonicalUrl="/terms"
       />
       <HeaderAdSenseCompliant />
@@ -18,13 +18,15 @@ const TermsOfService = () => {
         <div className="container mx-auto py-12 px-6">
           <div className="max-w-3xl mx-auto">
             <h1 className="text-4xl font-serif font-bold text-legal-navy mb-6">Terms of Service</h1>
-            <p className="text-gray-500 mb-8">Last updated: January 15, 2025</p>
+            <p className="text-gray-500 mb-6">Last updated: January 15, 2025</p>
             
             <div className="prose prose-lg max-w-none">
+              <PlayStoreCompliantDisclaimer variant="prominent" className="mb-6" />
+
               <div className="mb-6 p-4 bg-red-50 border-l-4 border-red-500">
-                <p className="text-sm font-bold text-red-800 mb-2">⚠️ IMPORTANT LEGAL DISCLAIMER</p>
+                <p className="text-sm font-bold text-red-800 mb-2">⚠️ CRITICAL LEGAL DISCLAIMER - PLAY STORE COMPLIANT</p>
                 <p className="text-sm text-red-700">
-                  DocuCreator Pro is NOT a substitute for professional legal advice. Our AI-powered document generation service provides templates and automated document creation tools, but does not constitute legal advice, legal representation, or legal services. Always consult with a qualified attorney for legal matters.
+                  DocuCreator Pro is <strong>NOT a substitute for professional legal advice</strong>. Our AI-assisted document template generation service provides templates based on standard formats and commonly used clauses, but <strong>does not constitute legal advice, legal representation, or legal services</strong>. We do not guarantee the legal validity, enforceability, or binding nature of any generated documents. Always consult with a qualified attorney for legal matters.
                 </p>
               </div>
 
@@ -39,23 +41,24 @@ const TermsOfService = () => {
               
               <h2 className="text-2xl font-serif font-bold text-legal-navy mt-8 mb-4">2. Description of Service and AI Limitations</h2>
               <p className="mb-4">
-                DocuCreator Pro provides an AI-powered platform for creating legal document templates and automated document generation. Our services include:
+                DocuCreator Pro provides an AI-assisted platform for creating document templates based on standard formats and commonly used clauses. Our services include:
               </p>
               <ul className="list-disc pl-6 mb-4">
-                <li>AI-assisted document creation using templates and user inputs</li>
-                <li>Customizable legal document templates</li>
+                <li>AI-assisted document template creation using standard formats</li>
+                <li>Customizable document templates based on commonly used clauses</li>
                 <li>Document formatting and generation tools</li>
-                <li>Basic legal information and guidance (not legal advice)</li>
+                <li>Basic information and guidance (not legal advice)</li>
               </ul>
               
               <div className="mb-4 p-4 bg-yellow-50 border-l-4 border-yellow-500">
-                <p className="text-sm font-bold text-yellow-800 mb-2">AI Service Limitations:</p>
+                <p className="text-sm font-bold text-yellow-800 mb-2">AI Service Limitations (Play Store Compliant):</p>
                 <ul className="text-sm text-yellow-700 list-disc pl-4">
-                  <li>Our AI provides automated assistance, not professional legal advice</li>
-                  <li>Generated documents may require legal review and customization</li>
-                  <li>AI responses are based on templates and may not cover all legal requirements</li>
-                  <li>Users are responsible for ensuring document accuracy and legal compliance</li>
+                  <li>Our AI provides automated template assistance, not professional legal advice</li>
+                  <li>Generated documents are templates that may require legal review and customization</li>
+                  <li>AI responses are based on standard formats and may not cover all legal requirements</li>
+                  <li>Users are responsible for ensuring document accuracy and compliance</li>
                   <li>AI may not reflect the most current legal changes or jurisdictional variations</li>
+                  <li>No guarantee of document validity, enforceability, or binding nature</li>
                 </ul>
               </div>
               
@@ -71,28 +74,29 @@ const TermsOfService = () => {
                 <li>Ensuring you have the legal capacity to enter into these terms</li>
               </ul>
               
-              <h2 className="text-2xl font-serif font-bold text-legal-navy mt-8 mb-4">4. User Content and Document Accuracy</h2>
+              <h2 className="text-2xl font-serif font-bold text-legal-navy mt-8 mb-4">4. User Content and Document Template Accuracy</h2>
               <p className="mb-4">
-                You retain ownership of the content you create using our services. However, you grant us a limited license to use, store, and process your content to provide our services. You are solely responsible for:
+                You retain ownership of the content you create using our services. However, you grant us a limited license to use, store, and process your content to provide our template generation services. You are solely responsible for:
               </p>
               <ul className="list-disc pl-6 mb-4">
                 <li>The accuracy and completeness of information you provide</li>
-                <li>Reviewing and verifying all generated documents before use</li>
+                <li>Reviewing and verifying all generated document templates before use</li>
                 <li>Ensuring compliance with applicable laws and regulations</li>
                 <li>Obtaining professional legal review when appropriate</li>
-                <li>The legal consequences of using generated documents</li>
+                <li>The legal consequences of using generated document templates</li>
+                <li>Understanding that templates are based on standard formats, not legal advice</li>
               </ul>
               
-              <h2 className="text-2xl font-serif font-bold text-legal-navy mt-8 mb-4">5. E-Signature and Document Validity</h2>
+              <h2 className="text-2xl font-serif font-bold text-legal-navy mt-8 mb-4">5. E-Signature and Document Template Validity</h2>
               <p className="mb-4">
-                <strong>Important Notice about E-Signatures and Document Validity:</strong>
+                <strong>Important Notice about E-Signatures and Document Templates (Play Store Compliant):</strong>
               </p>
               <ul className="list-disc pl-6 mb-4">
-                <li>Electronic signatures may be legally valid under the Information Technology Act, 2000</li>
-                <li>Not all documents can be validly executed electronically under Indian law</li>
-                <li>Certain documents may require physical signatures, notarization, or registration</li>
+                <li>Electronic signatures may be recognized under the Information Technology Act, 2000</li>
+                <li>Not all documents can be executed electronically under Indian law</li>
+                <li>Document templates may require physical signatures, notarization, or registration</li>
                 <li>Users are responsible for understanding e-signature laws in their jurisdiction</li>
-                <li>We do not guarantee the legal validity or enforceability of documents or signatures</li>
+                <li><strong>We do not guarantee the validity, enforceability, or binding nature of documents or signatures</strong></li>
                 <li>Consult with legal counsel regarding signature requirements for important documents</li>
               </ul>
 
@@ -160,16 +164,17 @@ const TermsOfService = () => {
                 <li>Other applicable intellectual property laws</li>
               </ul>
 
-              <h2 className="text-2xl font-serif font-bold text-legal-navy mt-8 mb-4">11. Legal Disclaimers and Warranties</h2>
+              <h2 className="text-2xl font-serif font-bold text-legal-navy mt-8 mb-4">11. Legal Disclaimers and Warranties (Play Store Compliant)</h2>
               <div className="mb-4 p-4 bg-gray-50 border-l-4 border-gray-500">
                 <p className="text-sm font-bold text-gray-800 mb-2">COMPREHENSIVE LEGAL DISCLAIMERS:</p>
                 <ul className="text-sm text-gray-700 list-disc pl-4 space-y-1">
                   <li><strong>No Legal Advice:</strong> Our services do not constitute legal advice or create an attorney-client relationship</li>
-                  <li><strong>No Warranty of Accuracy:</strong> We do not guarantee the accuracy, completeness, or currency of legal information</li>
-                  <li><strong>Document Validity:</strong> We do not warrant the legal validity or enforceability of generated documents</li>
-                  <li><strong>Jurisdictional Variations:</strong> Legal requirements vary by jurisdiction; documents may need local customization</li>
+                  <li><strong>No Warranty of Accuracy:</strong> We do not guarantee the accuracy, completeness, or currency of information</li>
+                  <li><strong>Document Template Validity:</strong> We do not warrant the validity, enforceability, or binding nature of generated document templates</li>
+                  <li><strong>Jurisdictional Variations:</strong> Legal requirements vary by jurisdiction; templates may need local customization</li>
                   <li><strong>Professional Review Recommended:</strong> Important documents should be reviewed by qualified legal counsel</li>
                   <li><strong>AI Limitations:</strong> AI-generated content may contain errors and should not be relied upon without verification</li>
+                  <li><strong>Standard Format Templates:</strong> Our templates are based on commonly used formats, not legal guarantees</li>
                 </ul>
               </div>
 
@@ -213,16 +218,18 @@ const TermsOfService = () => {
                 <li><strong>Consumer Rights:</strong> Nothing in these terms limits your rights under Indian consumer protection laws</li>
               </ul>
 
-              <h2 className="text-2xl font-serif font-bold text-legal-navy mt-8 mb-4">15. Mobile App Terms</h2>
+              <h2 className="text-2xl font-serif font-bold text-legal-navy mt-8 mb-4">15. Mobile App Terms (Google Play Store Compliance)</h2>
               <p className="mb-4">
-                When using our mobile application:
+                When using our mobile application from Google Play Store:
               </p>
               <ul className="list-disc pl-6 mb-4">
-                <li>You must comply with applicable app store terms and conditions</li>
-                <li>We are not responsible for app store policies or billing practices</li>
+                <li>You must comply with Google Play Store terms and conditions</li>
+                <li>We are not responsible for Google Play Store policies or billing practices</li>
                 <li>App updates may modify features or functionality</li>
-                <li>Certain features may require internet connectivity</li>
+                <li>Certain features require internet connectivity</li>
                 <li>You are responsible for data usage charges from your mobile carrier</li>
+                <li>The app provides document templates, not legal advice or binding documents</li>
+                <li>Professional legal review is recommended for all generated templates</li>
               </ul>
               
               <h2 className="text-2xl font-serif font-bold text-legal-navy mt-8 mb-4">16. Changes to Terms</h2>
@@ -248,6 +255,7 @@ const TermsOfService = () => {
               <p className="mb-4">
                 <strong>Email:</strong> legal@docucreatorpro.online<br />
                 <strong>Customer Support:</strong> support@docucreatorpro.online<br />
+                <strong>Play Store Support:</strong> playstore@docucreatorpro.online<br />
                 <strong>Address:</strong> 123 Legal Avenue, Tech Park, Bangalore - 560001, India<br />
                 <strong>Phone:</strong> +91 98765 43210<br />
                 <strong>Business Hours:</strong> Monday to Friday, 9:00 AM to 6:00 PM IST<br />
@@ -256,7 +264,7 @@ const TermsOfService = () => {
 
               <div className="mt-8 p-4 bg-legal-light border-l-4 border-legal-gold">
                 <p className="text-sm text-legal-gray">
-                  <strong>Consumer Rights Notice:</strong> These terms comply with Indian consumer protection laws. Nothing in these terms limits your statutory rights as a consumer under applicable Indian law. If you believe any provision is unfair or unreasonable, please contact us or seek legal advice.
+                  <strong>Consumer Rights Notice:</strong> These terms comply with Google Play Store policies and Indian consumer protection laws. Nothing in these terms limits your statutory rights as a consumer. Our service provides document templates based on standard formats - not legal advice or binding documents.
                 </p>
               </div>
             </div>

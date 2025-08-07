@@ -1,15 +1,15 @@
-
 import React from 'react';
 import HeaderAdSenseCompliant from '@/components/HeaderAdSenseCompliant';
 import FooterAdSenseCompliant from '@/components/FooterAdSenseCompliant';
 import SEOMetadata from '@/components/SEOMetadata';
+import PlayStoreCompliantDisclaimer from '@/components/PlayStoreCompliantDisclaimer';
 
 const PrivacyPolicy = () => {
   return (
     <div className="flex flex-col min-h-screen">
       <SEOMetadata 
         title="Privacy Policy | DocuCreator Pro" 
-        description="Our privacy policy outlines how we collect, use, and protect your information when using DocuCreator Pro's AI-powered legal document services."
+        description="Our privacy policy outlines how we collect, use, and protect your information when using DocuCreator Pro's AI-assisted document template services."
         canonicalUrl="/privacy"
       />
       <HeaderAdSenseCompliant />
@@ -18,13 +18,73 @@ const PrivacyPolicy = () => {
         <div className="container mx-auto py-12 px-6">
           <div className="max-w-3xl mx-auto">
             <h1 className="text-4xl font-serif font-bold text-legal-navy mb-6">Privacy Policy</h1>
-            <p className="text-gray-500 mb-8">Last updated: January 15, 2025</p>
+            <p className="text-gray-500 mb-6">Last updated: January 15, 2025</p>
+            
+            <PlayStoreCompliantDisclaimer variant="prominent" className="mb-8" />
             
             <div className="prose prose-lg max-w-none">
+              <div className="mb-6 p-4 bg-blue-50 border-l-4 border-blue-500">
+                <p className="text-sm font-bold text-blue-800 mb-2">📱 Google Play Store Compliance Notice</p>
+                <p className="text-sm text-blue-700">
+                  This privacy policy complies with Google Play Store requirements. We are committed to transparency about our data practices and protecting your privacy while using our AI-assisted document template service.
+                </p>
+              </div>
+
               <p className="mb-4">
-                At DocuCreator Pro, we take your privacy seriously. This Privacy Policy describes how we collect, use, process, and disclose your information, including personal information, in conjunction with your access to and use of DocuCreator Pro's AI-powered document creation services.
+                At DocuCreator Pro, we take your privacy seriously. This Privacy Policy describes how we collect, use, process, and disclose your information when you use DocuCreator Pro's AI-assisted document template creation services (both web and mobile applications).
               </p>
-              
+
+              <h2 className="text-2xl font-serif font-bold text-legal-navy mt-8 mb-4">Google Play Store Data Collection Disclosure</h2>
+              <p className="mb-4">
+                <strong>For Google Play Store users, we collect the following data:</strong>
+              </p>
+              <ul className="list-disc pl-6 mb-4">
+                <li><strong>Personal Information:</strong> Name, email address, phone number (for account creation)</li>
+                <li><strong>Document Input Data:</strong> Text and information you provide to generate document templates</li>
+                <li><strong>Usage Analytics:</strong> App usage patterns, features used, time spent (anonymized)</li>
+                <li><strong>Device Information:</strong> Device model, operating system, app version</li>
+                <li><strong>Crash Reports:</strong> Technical data to improve app stability</li>
+                <li><strong>Advertising ID:</strong> For personalized ads (with consent)</li>
+              </ul>
+
+              <h2 className="text-2xl font-serif font-bold text-legal-navy mt-8 mb-4">How We Use Your Data (Play Store Specific)</h2>
+              <p className="mb-4">We use your information for:</p>
+              <ul className="list-disc pl-6 mb-4">
+                <li><strong>AI Document Template Generation:</strong> Processing your input to create document templates</li>
+                <li><strong>App Functionality:</strong> Providing core features and saving your templates</li>
+                <li><strong>Analytics:</strong> Understanding app usage to improve features (anonymized data)</li>
+                <li><strong>Crash Prevention:</strong> Identifying and fixing technical issues</li>
+                <li><strong>Customer Support:</strong> Responding to your queries and providing assistance</li>
+                <li><strong>Legal Compliance:</strong> Meeting Indian data protection laws</li>
+              </ul>
+
+              <h2 className="text-2xl font-serif font-bold text-legal-navy mt-8 mb-4">Third-Party Services We Use</h2>
+              <p className="mb-4">
+                <strong>For transparency, we integrate with these third-party services:</strong>
+              </p>
+              <ul className="list-disc pl-6 mb-4">
+                <li><strong>Google AdSense:</strong> For displaying advertisements (collects cookies and advertising data)</li>
+                <li><strong>Google Analytics:</strong> For website and app usage analytics (anonymized)</li>
+                <li><strong>Cloud Storage Providers:</strong> For secure document storage and processing</li>
+                <li><strong>Payment Processors:</strong> For handling subscription payments securely</li>
+                <li><strong>AI Processing Services:</strong> For document template generation (data encrypted)</li>
+                <li><strong>Crash Reporting Tools:</strong> For app stability monitoring</li>
+              </ul>
+
+              <h2 className="text-2xl font-serif font-bold text-legal-navy mt-8 mb-4">Mobile App Permissions</h2>
+              <p className="mb-4">
+                <strong>Our mobile app requests these permissions:</strong>
+              </p>
+              <ul className="list-disc pl-6 mb-4">
+                <li><strong>Internet Access:</strong> To connect to our AI services and sync data</li>
+                <li><strong>Storage Access:</strong> To save generated documents locally</li>
+                <li><strong>Network State:</strong> To check connectivity for optimal user experience</li>
+                <li><strong>Notification Permission:</strong> To send important updates (optional)</li>
+              </ul>
+              <p className="mb-4">
+                <strong>We do NOT access:</strong> Your contacts, camera, microphone, location, or other sensitive device features unless explicitly required for a specific feature you choose to use.
+              </p>
+
               <h2 className="text-2xl font-serif font-bold text-legal-navy mt-8 mb-4">Information We Collect</h2>
               <p className="mb-4">
                 When you use our services, we collect the following types of information:
@@ -37,16 +97,17 @@ const PrivacyPolicy = () => {
                 <li>Cookies and similar technologies</li>
                 <li>Payment information (processed securely through third-party providers)</li>
               </ul>
-
+              
               <h2 className="text-2xl font-serif font-bold text-legal-navy mt-8 mb-4">AI Data Processing and Document Handling</h2>
               <p className="mb-4">
-                Our AI-powered document generation service processes the information you provide to create customized legal documents:
+                Our AI-assisted document template generation service processes the information you provide:
               </p>
               <ul className="list-disc pl-6 mb-4">
-                <li><strong>Document Content:</strong> We temporarily process your input data to generate documents. This data is not used to train our AI models.</li>
-                <li><strong>AI Processing:</strong> Your document inputs are processed by our AI system to create personalized legal documents based on your specifications.</li>
-                <li><strong>Data Security:</strong> All document data is encrypted in transit and at rest using industry-standard encryption protocols.</li>
-                <li><strong>No Human Review:</strong> Your document content is processed automatically by AI and is not reviewed by our staff unless you specifically request support.</li>
+                <li><strong>Template Generation:</strong> We temporarily process your input data to create document templates based on standard formats</li>
+                <li><strong>AI Processing:</strong> Your inputs are processed by our AI system to create personalized templates using commonly used clauses</li>
+                <li><strong>Data Security:</strong> All document data is encrypted in transit and at rest using industry-standard protocols</li>
+                <li><strong>No Training Use:</strong> Your document content is not used to train our AI models</li>
+                <li><strong>No Human Review:</strong> Your document content is processed automatically and not reviewed by staff unless you request support</li>
               </ul>
 
               <h2 className="text-2xl font-serif font-bold text-legal-navy mt-8 mb-4">Data Retention and Deletion</h2>
@@ -119,6 +180,23 @@ const PrivacyPolicy = () => {
                 <li><strong>Push Notifications:</strong> You can control notification preferences in your device settings</li>
               </ul>
               
+              <h2 className="text-2xl font-serif font-bold text-legal-navy mt-8 mb-4">AI Data Processing and Document Handling</h2>
+              <p className="mb-4">
+                Our AI-assisted document template generation service processes the information you provide:
+              </p>
+              <ul className="list-disc pl-6 mb-4">
+                <li><strong>Template Generation:</strong> We temporarily process your input data to create document templates based on standard formats</li>
+                <li><strong>AI Processing:</strong> Your inputs are processed by our AI system to create personalized templates using commonly used clauses</li>
+                <li><strong>Data Security:</strong> All document data is encrypted in transit and at rest using industry-standard protocols</li>
+                <li><strong>No Training Use:</strong> Your document content is not used to train our AI models</li>
+                <li><strong>No Human Review:</strong> Your document content is processed automatically and not reviewed by staff unless you request support</li>
+              </ul>
+
+              <h2 className="text-2xl font-serif font-bold text-legal-navy mt-8 mb-4">Children's Privacy (COPPA Compliance)</h2>
+              <p className="mb-4">
+                Our service is not intended for children under 13 years of age. We do not knowingly collect personal information from children under 13. If you are a parent or guardian and believe your child has provided us with personal information, please contact us immediately.
+              </p>
+
               <h2 className="text-2xl font-serif font-bold text-legal-navy mt-8 mb-4">Your Rights</h2>
               <p className="mb-4">You have the following rights regarding your personal information:</p>
               <ul className="list-disc pl-6 mb-4">
@@ -156,19 +234,20 @@ const PrivacyPolicy = () => {
               
               <h2 className="text-2xl font-serif font-bold text-legal-navy mt-8 mb-4">Contact Us</h2>
               <p className="mb-4">
-                For any questions about this Privacy Policy or to exercise your rights, please contact us:
+                For any questions about this Privacy Policy, data deletion requests, or to exercise your rights:
               </p>
               <p className="mb-4">
                 <strong>Email:</strong> privacy@docucreatorpro.online<br />
                 <strong>Data Protection Officer:</strong> dpo@docucreatorpro.online<br />
+                <strong>Play Store Data Deletion:</strong> dataprotection@docucreatorpro.online<br />
                 <strong>Address:</strong> 123 Legal Avenue, Tech Park, Bangalore - 560001, India<br />
                 <strong>Phone:</strong> +91 98765 43210<br />
-                <strong>Response Time:</strong> We will respond to your privacy requests within 30 days
+                <strong>Response Time:</strong> We will respond to privacy requests within 30 days
               </p>
               
               <div className="mt-8 p-4 bg-legal-light border-l-4 border-legal-gold">
                 <p className="text-sm text-legal-gray">
-                  <strong>Note:</strong> This privacy policy complies with the Information Technology Act, 2000, and other applicable Indian data protection laws. For international users, additional protections may apply under your local data protection regulations.
+                  <strong>Play Store Users:</strong> This privacy policy complies with Google Play Store requirements and Indian data protection laws. Your rights as a consumer are protected under applicable Indian consumer protection laws.
                 </p>
               </div>
             </div>
