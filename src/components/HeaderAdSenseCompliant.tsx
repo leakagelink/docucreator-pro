@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { HelpCircle, Menu, X } from 'lucide-react';
@@ -19,7 +18,7 @@ const HeaderAdSenseCompliant = () => {
         <div className="flex items-center space-x-2">
           <Link to="/" className="flex items-center space-x-2">
             <img 
-              src="/lovable-uploads/d0f698c6-00bc-421f-9a5c-e2e0e0197ad6.png" 
+              src="/lovable-uploads/140a1ef9-b2d2-47c1-80cd-9a5a5387768a.png" 
               alt="DocuCreator Pro Logo" 
               className="h-6 w-6 md:h-8 md:w-8"
             />
@@ -56,7 +55,6 @@ const HeaderAdSenseCompliant = () => {
         )}
       </div>
       
-      {/* Mobile menu overlay */}
       {isMobile && mobileMenuOpen && (
         <div className="absolute top-full left-0 w-full bg-legal-navy shadow-lg py-4 px-6 flex flex-col space-y-4 animate-fade-in">
           <Link to="/" className="py-2 hover:text-legal-gold transition-colors" onClick={() => setMobileMenuOpen(false)}>
