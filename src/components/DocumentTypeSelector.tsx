@@ -62,36 +62,52 @@ interface DocumentTypeSelectorProps {
 
 const DocumentTypeSelector: React.FC<DocumentTypeSelectorProps> = ({ onSelectDocument }) => {
   return (
-    <div className="w-full max-w-5xl mx-auto my-8 px-4">
-      <h2 className="text-3xl font-serif font-bold text-legal-navy text-center mb-8">Select Document Type</h2>
+    <div className="mobile-container my-4 md:my-8">
+      <div className="text-center mb-4 md:mb-8">
+        <h2 className="text-responsive-subheading font-serif font-bold text-legal-navy mb-2 md:mb-4">
+          Select Document Type
+        </h2>
+        <p className="text-responsive-body text-legal-gray max-w-2xl mx-auto">
+          Choose from our professionally crafted legal document templates
+        </p>
+      </div>
       
       <Tabs defaultValue="agreements" className="w-full">
-        <TabsList className="grid grid-cols-2 md:grid-cols-4 mb-6">
-          {documentTypes.map(type => (
-            <TabsTrigger 
-              key={type.id} 
-              value={type.id}
-              className="flex flex-col items-center py-3 px-4 data-[state=active]:bg-legal-navy data-[state=active]:text-white"
-            >
-              <type.icon className="h-6 w-6 mb-2" />
-              <span>{type.name}</span>
-            </TabsTrigger>
-          ))}
-        </TabsList>
+        <div className="overflow-x-auto scrollbar-hide mb-4 md:mb-6">
+          <TabsList className="grid grid-cols-4 min-w-max md:min-w-0 w-full md:w-auto mx-auto bg-muted/50 p-1 h-auto">
+            {documentTypes.map(type => (
+              <TabsTrigger 
+                key={type.id} 
+                value={type.id}
+                className="flex flex-col items-center py-3 px-2 md:px-4 min-w-[120px] md:min-w-0 data-[state=active]:bg-legal-navy data-[state=active]:text-white transition-all duration-200 touch-target"
+              >
+                <type.icon className="h-5 w-5 md:h-6 md:w-6 mb-1 md:mb-2 flex-shrink-0" />
+                <span className="text-xs md:text-sm font-medium text-center leading-tight">{type.name}</span>
+              </TabsTrigger>
+            ))}
+          </TabsList>
+        </div>
         
         {documentTypes.map(category => (
-          <TabsContent key={category.id} value={category.id} className="mt-0">
-            <p className="text-legal-gray text-center mb-6">{category.description}</p>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+          <TabsContent key={category.id} value={category.id} className="mt-0 animate-fade-in">
+            <div className="text-center mb-4 md:mb-6">
+              <p className="text-responsive-body text-legal-gray">{category.description}</p>
+            </div>
+            
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 md:gap-4">
               {category.items.map(item => (
                 <Card 
                   key={item.id} 
-                  className="border border-gray-200 hover:border-legal-gold cursor-pointer transition-all hover:shadow-md"
+                  className="group border border-border hover:border-legal-gold cursor-pointer transition-all duration-300 hover:shadow-lg hover:scale-[1.02] active:scale-[0.98] touch-target bg-card"
                   onClick={() => onSelectDocument(category.id, item.id)}
                 >
-                  <CardContent className="flex flex-col items-center justify-center p-6">
-                    <FilePlus className="h-10 w-10 text-legal-navy mb-4" />
-                    <h3 className="font-serif text-lg font-medium text-center">{item.name}</h3>
+                  <CardContent className="flex flex-col items-center justify-center p-4 md:p-6 text-center min-h-[120px] md:min-h-[140px]">
+                    <div className="bg-legal-navy/5 group-hover:bg-legal-navy/10 rounded-full p-3 md:p-4 mb-3 md:mb-4 transition-colors duration-300">
+                      <FilePlus className="h-6 w-6 md:h-8 md:w-8 text-legal-navy group-hover:text-legal-gold transition-colors duration-300" />
+                    </div>
+                    <h3 className="font-serif text-sm md:text-lg font-semibold text-foreground group-hover:text-legal-navy leading-tight transition-colors duration-300">
+                      {item.name}
+                    </h3>
                   </CardContent>
                 </Card>
               ))}
