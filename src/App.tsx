@@ -1,5 +1,5 @@
 
-import React from "react";
+import { useMemo } from "react";
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -18,7 +18,7 @@ import HowAIWorks from "./pages/HowAIWorks";
 import BottomNavigation from "./components/BottomNavigation";
 
 const App: React.FC = () => {
-  const queryClient = React.useMemo(() => new QueryClient(), []);
+  const queryClient = useMemo(() => new QueryClient(), []);
 
   return (
     <QueryClientProvider client={queryClient}>
