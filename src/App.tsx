@@ -16,6 +16,7 @@ import Templates from "./pages/Templates";
 import Pricing from "./pages/Pricing";
 import HowAIWorks from "./pages/HowAIWorks";
 import BottomNavigation from "./components/BottomNavigation";
+import ScrollToTop from "./components/ScrollToTop";
 
 const App: React.FC = () => {
   const queryClient = useMemo(() => new QueryClient(), []);
@@ -27,6 +28,7 @@ const App: React.FC = () => {
           <Toaster />
           <Sonner />
           <BrowserRouter>
+            <ScrollToTop />
             <div className="min-h-screen pb-20">
               <Routes>
                 <Route path="/" element={<Index />} />

@@ -7,6 +7,10 @@ import { cn } from '@/lib/utils';
 const BottomNavigation = () => {
   const location = useLocation();
 
+  const handleNavClick = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   const navItems = [
     {
       icon: Home,
@@ -43,6 +47,7 @@ const BottomNavigation = () => {
             <Link
               key={item.path}
               to={item.path}
+              onClick={handleNavClick}
               className={cn(
                 "flex flex-col items-center justify-center p-2 rounded-lg transition-colors min-w-0 flex-1",
                 item.active
