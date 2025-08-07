@@ -7,6 +7,11 @@ const FooterLinks = () => {
   return (
     <div className="mt-12 text-center">
       <div className="flex flex-wrap justify-center gap-4">
+        <Link to="/how-ai-works">
+          <Button variant="outline" className="border-legal-navy text-legal-navy">
+            How AI Works
+          </Button>
+        </Link>
         <Link to="/about">
           <Button variant="outline" className="border-legal-navy text-legal-navy">
             About Us

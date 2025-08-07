@@ -9,7 +9,7 @@ const TermsOfService = () => {
     <div className="flex flex-col min-h-screen">
       <SEOMetadata 
         title="Terms of Service | DocuCreator Pro" 
-        description="Our terms of service outline the rules, guidelines, and legal agreements between DocuCreator Pro and its users."
+        description="Our terms of service outline the rules, guidelines, and legal agreements between DocuCreator Pro and its users, including AI service limitations and legal disclaimers."
         canonicalUrl="/terms"
       />
       <HeaderAdSenseCompliant />
@@ -18,11 +18,18 @@ const TermsOfService = () => {
         <div className="container mx-auto py-12 px-6">
           <div className="max-w-3xl mx-auto">
             <h1 className="text-4xl font-serif font-bold text-legal-navy mb-6">Terms of Service</h1>
-            <p className="text-gray-500 mb-8">Last updated: April 7, 2025</p>
+            <p className="text-gray-500 mb-8">Last updated: January 15, 2025</p>
             
             <div className="prose prose-lg max-w-none">
+              <div className="mb-6 p-4 bg-red-50 border-l-4 border-red-500">
+                <p className="text-sm font-bold text-red-800 mb-2">⚠️ IMPORTANT LEGAL DISCLAIMER</p>
+                <p className="text-sm text-red-700">
+                  DocuCreator Pro is NOT a substitute for professional legal advice. Our AI-powered document generation service provides templates and automated document creation tools, but does not constitute legal advice, legal representation, or legal services. Always consult with a qualified attorney for legal matters.
+                </p>
+              </div>
+
               <p className="mb-4">
-                By accessing or using the DocuCreator Pro website and services, you agree to be bound by these Terms of Service. Please read these terms carefully before using our services.
+                By accessing or using the DocuCreator Pro website, mobile application, and AI-powered document generation services, you agree to be bound by these Terms of Service. Please read these terms carefully before using our services.
               </p>
               
               <h2 className="text-2xl font-serif font-bold text-legal-navy mt-8 mb-4">1. Acceptance of Terms</h2>
@@ -30,76 +37,228 @@ const TermsOfService = () => {
                 By accessing or using our services, you agree to be bound by these Terms of Service and all applicable laws and regulations. If you do not agree with any part of these terms, you may not use our services.
               </p>
               
-              <h2 className="text-2xl font-serif font-bold text-legal-navy mt-8 mb-4">2. Description of Service</h2>
+              <h2 className="text-2xl font-serif font-bold text-legal-navy mt-8 mb-4">2. Description of Service and AI Limitations</h2>
               <p className="mb-4">
-                DocuCreator Pro provides an AI-powered platform for creating legal documents. We offer various document templates that users can customize according to their needs.
+                DocuCreator Pro provides an AI-powered platform for creating legal document templates and automated document generation. Our services include:
               </p>
-              
-              <h2 className="text-2xl font-serif font-bold text-legal-navy mt-8 mb-4">3. User Accounts</h2>
-              <p className="mb-4">
-                Some features of our services may require you to create an account. You are responsible for maintaining the confidentiality of your account information and for all activities that occur under your account.
-              </p>
-              
-              <h2 className="text-2xl font-serif font-bold text-legal-navy mt-8 mb-4">4. User Content</h2>
-              <p className="mb-4">
-                You retain ownership of the content you create using our services. However, you grant us a license to use, store, and display your content in connection with providing and improving our services.
-              </p>
-              
-              <h2 className="text-2xl font-serif font-bold text-legal-navy mt-8 mb-4">5. Prohibited Conduct</h2>
-              <p className="mb-4">You agree not to:</p>
               <ul className="list-disc pl-6 mb-4">
-                <li>Use our services for any illegal purpose</li>
-                <li>Violate any laws or regulations</li>
-                <li>Infringe upon the rights of others</li>
-                <li>Interfere with or disrupt our services</li>
-                <li>Attempt to gain unauthorized access to our services</li>
+                <li>AI-assisted document creation using templates and user inputs</li>
+                <li>Customizable legal document templates</li>
+                <li>Document formatting and generation tools</li>
+                <li>Basic legal information and guidance (not legal advice)</li>
               </ul>
               
-              <h2 className="text-2xl font-serif font-bold text-legal-navy mt-8 mb-4">6. Advertisements and Third-Party Content</h2>
+              <div className="mb-4 p-4 bg-yellow-50 border-l-4 border-yellow-500">
+                <p className="text-sm font-bold text-yellow-800 mb-2">AI Service Limitations:</p>
+                <ul className="text-sm text-yellow-700 list-disc pl-4">
+                  <li>Our AI provides automated assistance, not professional legal advice</li>
+                  <li>Generated documents may require legal review and customization</li>
+                  <li>AI responses are based on templates and may not cover all legal requirements</li>
+                  <li>Users are responsible for ensuring document accuracy and legal compliance</li>
+                  <li>AI may not reflect the most current legal changes or jurisdictional variations</li>
+                </ul>
+              </div>
+              
+              <h2 className="text-2xl font-serif font-bold text-legal-navy mt-8 mb-4">3. User Accounts and Responsibilities</h2>
               <p className="mb-4">
-                Our website may display advertisements provided by Google AdSense and other third-party advertisers. These advertisements are not endorsements or recommendations by DocuCreator Pro. Your interactions with advertisers are solely between you and the advertiser.
+                Some features of our services require you to create an account. You are responsible for:
               </p>
+              <ul className="list-disc pl-6 mb-4">
+                <li>Maintaining the confidentiality of your account information</li>
+                <li>All activities that occur under your account</li>
+                <li>Providing accurate and complete information</li>
+                <li>Promptly updating account information when changes occur</li>
+                <li>Ensuring you have the legal capacity to enter into these terms</li>
+              </ul>
+              
+              <h2 className="text-2xl font-serif font-bold text-legal-navy mt-8 mb-4">4. User Content and Document Accuracy</h2>
               <p className="mb-4">
-                We do not control the content of third-party websites that may be linked from advertisements on our site. We are not responsible for the content, privacy policies, or practices of any third-party websites.
+                You retain ownership of the content you create using our services. However, you grant us a limited license to use, store, and process your content to provide our services. You are solely responsible for:
               </p>
+              <ul className="list-disc pl-6 mb-4">
+                <li>The accuracy and completeness of information you provide</li>
+                <li>Reviewing and verifying all generated documents before use</li>
+                <li>Ensuring compliance with applicable laws and regulations</li>
+                <li>Obtaining professional legal review when appropriate</li>
+                <li>The legal consequences of using generated documents</li>
+              </ul>
+              
+              <h2 className="text-2xl font-serif font-bold text-legal-navy mt-8 mb-4">5. E-Signature and Document Validity</h2>
               <p className="mb-4">
-                Users are prohibited from engaging in any activity that may artificially inflate ad impressions or clicks, including but not limited to manual methods of generating impressions or clicks on advertisements displayed on our website.
+                <strong>Important Notice about E-Signatures and Document Validity:</strong>
+              </p>
+              <ul className="list-disc pl-6 mb-4">
+                <li>Electronic signatures may be legally valid under the Information Technology Act, 2000</li>
+                <li>Not all documents can be validly executed electronically under Indian law</li>
+                <li>Certain documents may require physical signatures, notarization, or registration</li>
+                <li>Users are responsible for understanding e-signature laws in their jurisdiction</li>
+                <li>We do not guarantee the legal validity or enforceability of documents or signatures</li>
+                <li>Consult with legal counsel regarding signature requirements for important documents</li>
+              </ul>
+
+              <h2 className="text-2xl font-serif font-bold text-legal-navy mt-8 mb-4">6. Template Intellectual Property and Licensing</h2>
+              <p className="mb-4">
+                Our document templates are either:
+              </p>
+              <ul className="list-disc pl-6 mb-4">
+                <li><strong>Original Content:</strong> Created by our legal team and protected by copyright</li>
+                <li><strong>Licensed Content:</strong> Used under appropriate licensing agreements</li>
+                <li><strong>Public Domain:</strong> Based on publicly available legal forms and templates</li>
+              </ul>
+              <p className="mb-4">
+                <strong>Template Usage Rights:</strong> You may use our templates for creating documents for your personal or business use. Commercial redistribution of templates is prohibited without explicit permission.
               </p>
               
-              <h2 className="text-2xl font-serif font-bold text-legal-navy mt-8 mb-4">7. Intellectual Property</h2>
+              <h2 className="text-2xl font-serif font-bold text-legal-navy mt-8 mb-4">7. Prohibited Conduct and Content Policy</h2>
+              <p className="mb-4">You agree not to:</p>
+              <ul className="list-disc pl-6 mb-4">
+                <li>Use our services for any illegal purpose or fraudulent activity</li>
+                <li>Create documents for illegal transactions or activities</li>
+                <li>Violate any laws, regulations, or third-party rights</li>
+                <li>Infringe upon intellectual property rights of others</li>
+                <li>Generate defamatory, harassing, or abusive content</li>
+                <li>Attempt to reverse engineer or copy our AI systems</li>
+                <li>Interfere with or disrupt our services or servers</li>
+                <li>Attempt to gain unauthorized access to our systems</li>
+                <li>Use our services to compete with us or create similar services</li>
+              </ul>
+
+              <h2 className="text-2xl font-serif font-bold text-legal-navy mt-8 mb-4">8. Subscription and Billing</h2>
               <p className="mb-4">
-                Our services and all related content, features, and functionality are owned by DocuCreator Pro and are protected by copyright, trademark, and other intellectual property laws.
+                <strong>Subscription Services:</strong>
+              </p>
+              <ul className="list-disc pl-6 mb-4">
+                <li>Subscription fees are billed in advance on a recurring basis</li>
+                <li>All fees are non-refundable except as required by applicable law</li>
+                <li>We may change subscription prices with 30 days advance notice</li>
+                <li>You can cancel your subscription at any time through your account settings</li>
+                <li>Cancellation takes effect at the end of the current billing period</li>
+                <li>We comply with automatic renewal laws and provide clear billing disclosures</li>
+              </ul>
+
+              <h2 className="text-2xl font-serif font-bold text-legal-navy mt-8 mb-4">9. Advertisements and Third-Party Content</h2>
+              <p className="mb-4">
+                Our website and mobile app may display advertisements provided by Google AdSense and other third-party advertisers:
+              </p>
+              <ul className="list-disc pl-6 mb-4">
+                <li>Advertisements are not endorsements or recommendations by DocuCreator Pro</li>
+                <li>We are not responsible for advertiser content or claims</li>
+                <li>Your interactions with advertisers are solely between you and the advertiser</li>
+                <li>We do not control third-party websites linked from advertisements</li>
+                <li>Users are prohibited from artificially inflating ad impressions or clicks</li>
+                <li>We reserve the right to refuse or remove advertisements at our discretion</li>
+              </ul>
+              
+              <h2 className="text-2xl font-serif font-bold text-legal-navy mt-8 mb-4">10. Intellectual Property Rights</h2>
+              <p className="mb-4">
+                Our services and all related content, features, and functionality are owned by DocuCreator Pro and are protected by:
+              </p>
+              <ul className="list-disc pl-6 mb-4">
+                <li>Indian and international copyright laws</li>
+                <li>Trademark and service mark protections</li>
+                <li>Trade secret and confidential information protections</li>
+                <li>Other applicable intellectual property laws</li>
+              </ul>
+
+              <h2 className="text-2xl font-serif font-bold text-legal-navy mt-8 mb-4">11. Legal Disclaimers and Warranties</h2>
+              <div className="mb-4 p-4 bg-gray-50 border-l-4 border-gray-500">
+                <p className="text-sm font-bold text-gray-800 mb-2">COMPREHENSIVE LEGAL DISCLAIMERS:</p>
+                <ul className="text-sm text-gray-700 list-disc pl-4 space-y-1">
+                  <li><strong>No Legal Advice:</strong> Our services do not constitute legal advice or create an attorney-client relationship</li>
+                  <li><strong>No Warranty of Accuracy:</strong> We do not guarantee the accuracy, completeness, or currency of legal information</li>
+                  <li><strong>Document Validity:</strong> We do not warrant the legal validity or enforceability of generated documents</li>
+                  <li><strong>Jurisdictional Variations:</strong> Legal requirements vary by jurisdiction; documents may need local customization</li>
+                  <li><strong>Professional Review Recommended:</strong> Important documents should be reviewed by qualified legal counsel</li>
+                  <li><strong>AI Limitations:</strong> AI-generated content may contain errors and should not be relied upon without verification</li>
+                </ul>
+              </div>
+
+              <p className="mb-4">
+                <strong>AS-IS SERVICE:</strong> Our services are provided on an "as is" and "as available" basis. We disclaim all warranties, express or implied, including warranties of merchantability, fitness for a particular purpose, and non-infringement.
               </p>
               
-              <h2 className="text-2xl font-serif font-bold text-legal-navy mt-8 mb-4">8. Disclaimer of Warranties</h2>
+              <h2 className="text-2xl font-serif font-bold text-legal-navy mt-8 mb-4">12. Limitation of Liability</h2>
               <p className="mb-4">
-                Our services are provided on an "as is" and "as available" basis. We disclaim all warranties, express or implied, including but not limited to, implied warranties of merchantability, fitness for a particular purpose, and non-infringement.
+                <strong>LIMITATION OF LIABILITY:</strong> To the maximum extent permitted by applicable law, DocuCreator Pro shall not be liable for any indirect, incidental, special, consequential, or punitive damages, including but not limited to:
               </p>
+              <ul className="list-disc pl-6 mb-4">
+                <li>Loss of profits, revenue, or business opportunities</li>
+                <li>Legal costs or fees arising from document use</li>
+                <li>Damages from document errors or omissions</li>
+                <li>Consequential damages from AI-generated content</li>
+                <li>Data loss or corruption</li>
+                <li>Business interruption or system downtime</li>
+              </ul>
               
-              <h2 className="text-2xl font-serif font-bold text-legal-navy mt-8 mb-4">9. Limitation of Liability</h2>
+              <h2 className="text-2xl font-serif font-bold text-legal-navy mt-8 mb-4">13. Indemnification</h2>
               <p className="mb-4">
-                In no event shall DocuCreator Pro be liable for any indirect, incidental, special, consequential, or punitive damages arising out of or in connection with your use of our services.
+                You agree to indemnify and hold harmless DocuCreator Pro from any claims, damages, losses, and expenses arising from:
               </p>
+              <ul className="list-disc pl-6 mb-4">
+                <li>Your use of generated documents</li>
+                <li>Your violation of these terms or applicable laws</li>
+                <li>Inaccurate information you provide to our services</li>
+                <li>Your failure to obtain appropriate legal review</li>
+                <li>Third-party claims related to your use of our services</li>
+              </ul>
+
+              <h2 className="text-2xl font-serif font-bold text-legal-navy mt-8 mb-4">14. Governing Law and Dispute Resolution</h2>
+              <p className="mb-4">
+                These Terms of Service shall be governed by and construed in accordance with the laws of India. Any disputes shall be resolved through:
+              </p>
+              <ul className="list-disc pl-6 mb-4">
+                <li><strong>Jurisdiction:</strong> Courts of Bangalore, Karnataka, India</li>
+                <li><strong>Applicable Law:</strong> Indian Contract Act, 1872, Information Technology Act, 2000, and other applicable Indian laws</li>
+                <li><strong>Arbitration:</strong> Disputes may be resolved through binding arbitration under Indian Arbitration laws</li>
+                <li><strong>Consumer Rights:</strong> Nothing in these terms limits your rights under Indian consumer protection laws</li>
+              </ul>
+
+              <h2 className="text-2xl font-serif font-bold text-legal-navy mt-8 mb-4">15. Mobile App Terms</h2>
+              <p className="mb-4">
+                When using our mobile application:
+              </p>
+              <ul className="list-disc pl-6 mb-4">
+                <li>You must comply with applicable app store terms and conditions</li>
+                <li>We are not responsible for app store policies or billing practices</li>
+                <li>App updates may modify features or functionality</li>
+                <li>Certain features may require internet connectivity</li>
+                <li>You are responsible for data usage charges from your mobile carrier</li>
+              </ul>
               
-              <h2 className="text-2xl font-serif font-bold text-legal-navy mt-8 mb-4">10. Changes to Terms</h2>
+              <h2 className="text-2xl font-serif font-bold text-legal-navy mt-8 mb-4">16. Changes to Terms</h2>
               <p className="mb-4">
-                We reserve the right to modify these Terms of Service at any time. If we make material changes, we will notify you by email or through our website.
+                We reserve the right to modify these Terms of Service at any time. Material changes will be communicated through:
               </p>
+              <ul className="list-disc pl-6 mb-4">
+                <li>Email notification to registered users</li>
+                <li>In-app notifications</li>
+                <li>Prominent website notices</li>
+                <li>Updated terms with revision dates</li>
+              </ul>
               
-              <h2 className="text-2xl font-serif font-bold text-legal-navy mt-8 mb-4">11. Governing Law</h2>
+              <h2 className="text-2xl font-serif font-bold text-legal-navy mt-8 mb-4">17. Termination</h2>
               <p className="mb-4">
-                These Terms of Service shall be governed by and construed in accordance with the laws of India, without regard to its conflict of law provisions.
+                We may terminate or suspend your access to our services immediately, without prior notice, for conduct that we believe violates these Terms of Service or is harmful to other users, us, or third parties, or for any other reason in our sole discretion.
               </p>
-              
-              <h2 className="text-2xl font-serif font-bold text-legal-navy mt-8 mb-4">12. Contact Information</h2>
+
+              <h2 className="text-2xl font-serif font-bold text-legal-navy mt-8 mb-4">18. Contact Information and Support</h2>
               <p className="mb-4">
-                If you have any questions about these Terms of Service, please contact us at:
+                If you have any questions about these Terms of Service, please contact us:
               </p>
               <p className="mb-4">
-                Email: legal@docucreatorpro.online<br />
-                Address: 123 Legal Avenue, Tech Park, Bangalore - 560001<br />
-                Phone: +91 98765 43210
+                <strong>Email:</strong> legal@docucreatorpro.online<br />
+                <strong>Customer Support:</strong> support@docucreatorpro.online<br />
+                <strong>Address:</strong> 123 Legal Avenue, Tech Park, Bangalore - 560001, India<br />
+                <strong>Phone:</strong> +91 98765 43210<br />
+                <strong>Business Hours:</strong> Monday to Friday, 9:00 AM to 6:00 PM IST<br />
+                <strong>Response Time:</strong> We aim to respond to all inquiries within 2 business days
               </p>
+
+              <div className="mt-8 p-4 bg-legal-light border-l-4 border-legal-gold">
+                <p className="text-sm text-legal-gray">
+                  <strong>Consumer Rights Notice:</strong> These terms comply with Indian consumer protection laws. Nothing in these terms limits your statutory rights as a consumer under applicable Indian law. If you believe any provision is unfair or unreasonable, please contact us or seek legal advice.
+                </p>
+              </div>
             </div>
           </div>
         </div>
