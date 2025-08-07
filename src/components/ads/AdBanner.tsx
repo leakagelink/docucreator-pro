@@ -15,7 +15,7 @@ declare global {
 }
 
 const AdBanner = ({ adSlot, adFormat = 'auto', className = '', style = {} }: AdBannerProps) => {
-  const adRef = useRef<HTMLDivElement>(null);
+  const adRef = useRef<HTMLModElement>(null);
 
   useEffect(() => {
     try {
