@@ -9,17 +9,15 @@ const Header = () => {
       <div className="container mx-auto flex items-center justify-between">
         <div className="flex items-center space-x-2">
           <img 
-            src="/lovable-uploads/d0f698c6-00bc-421f-9a5c-e2e0e0197ad6.png" 
+            src="/lovable-uploads/9eb66cb1-4f3f-4245-82d9-b3d0e4cf0d0f.png" 
             alt="DocuCreator Pro Logo" 
             className="h-8 w-8"
           />
-          <h1 className="text-2xl font-serif font-bold">DocuCreator Pro</h1>
         </div>
         
         <div className="hidden md:flex items-center space-x-8">
           <a href="#" className="hover:text-legal-gold transition-colors">Templates</a>
           <a href="#" className="hover:text-legal-gold transition-colors">Features</a>
-          <a href="#" className="hover:text-legal-gold transition-colors">Pricing</a>
           <a href="#" className="hover:text-legal-gold transition-colors">Support</a>
         </div>
         

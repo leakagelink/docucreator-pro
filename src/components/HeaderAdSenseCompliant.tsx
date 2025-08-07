@@ -21,7 +21,7 @@ const HeaderAdSenseCompliant = () => {
           <div className="flex items-center space-x-2">
             <Link to="/" className="flex items-center space-x-2">
               <img 
-                src="/lovable-uploads/140a1ef9-b2d2-47c1-80cd-9a5a5387768a.png" 
+                src="/lovable-uploads/9eb66cb1-4f3f-4245-82d9-b3d0e4cf0d0f.png" 
                 alt="DocuCreator Pro Logo" 
                 className="h-10 w-10 md:h-12 md:w-12"
               />
