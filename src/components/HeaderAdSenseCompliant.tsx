@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { HelpCircle, Menu, X } from 'lucide-react';
@@ -20,11 +19,10 @@ const HeaderAdSenseCompliant = () => {
         <div className="container mx-auto flex items-center justify-between">
           <div className="flex items-center space-x-2">
             <Link to="/" className="flex items-center space-x-2">
-              <img 
-                src="/lovable-uploads/9eb66cb1-4f3f-4245-82d9-b3d0e4cf0d0f.png" 
-                alt="DocuCreator Pro Logo" 
-                className="h-10 w-10 md:h-12 md:w-12"
-              />
+              <div className="h-10 w-10 md:h-12 md:w-12 bg-legal-navy rounded-lg flex items-center justify-center">
+                <span className="text-legal-gold font-bold text-lg md:text-xl">DC</span>
+              </div>
+              <span className="text-xl md:text-2xl font-bold text-legal-navy">DocuCreator Pro</span>
             </Link>
           </div>
           

@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { HelpCircle } from 'lucide-react';
@@ -8,11 +7,10 @@ const Header = () => {
     <header className="bg-legal-navy text-white py-4 px-6 shadow-md">
       <div className="container mx-auto flex items-center justify-between">
         <div className="flex items-center space-x-2">
-          <img 
-            src="/lovable-uploads/9eb66cb1-4f3f-4245-82d9-b3d0e4cf0d0f.png" 
-            alt="DocuCreator Pro Logo" 
-            className="h-8 w-8"
-          />
+          <div className="h-8 w-8 bg-legal-gold rounded-lg flex items-center justify-center">
+            <span className="text-legal-navy font-bold text-sm">DC</span>
+          </div>
+          <span className="text-xl font-bold">DocuCreator Pro</span>
         </div>
         
         <div className="hidden md:flex items-center space-x-8">
