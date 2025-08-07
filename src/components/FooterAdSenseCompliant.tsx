@@ -35,7 +35,6 @@ const FooterAdSenseCompliant = () => {
                 <li><Link to="/" className="hover:text-legal-gold transition-colors">Home</Link></li>
                 <li><Link to="/about" className="hover:text-legal-gold transition-colors">About Us</Link></li>
                 <li><Link to="/contact" className="hover:text-legal-gold transition-colors">Contact</Link></li>
-                <li><a href="#" className="hover:text-legal-gold transition-colors">Pricing</a></li>
                 <li><a href="#" className="hover:text-legal-gold transition-colors">FAQ</a></li>
               </ul>
             </div>
