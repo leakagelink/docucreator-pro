@@ -3,33 +3,55 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover" />
     <title>DocuCreator Pro | AI-Powered Legal Document Generator</title>
     <meta name="description" content="Create professional legal documents, contracts and agreements with AI assistance" />
     <meta name="author" content="DocuCreator Pro" />
     <meta name="keywords" content="legal documents, document generator, AI legal documents, contract generator, legal forms, rent agreement, NDA, power of attorney" />
     <meta name="robots" content="index, follow" />
 
-    <!-- Favicon -->
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" href="/favicon.ico">
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="/manifest.json">
+    
+    <!-- Theme colors for different platforms -->
+    <meta name="theme-color" content="#0F3460" />
+    <meta name="msapplication-navbutton-color" content="#0F3460" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    
+    <!-- Apple PWA support -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="DocuCreator Pro" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <link rel="apple-touch-icon" href="/icons/icon-192x192.png" />
+    <link rel="apple-touch-startup-image" href="/icons/icon-512x512.png" />
 
+    <!-- Android PWA support -->
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="application-name" content="DocuCreator Pro" />
+    
+    <!-- Favicon and icons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/icon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/icon-16x16.png">
+    <link rel="shortcut icon" href="/favicon.ico">
+
+    <!-- Open Graph tags -->
     <meta property="og:title" content="DocuCreator Pro | AI-Powered Legal Document Generator" />
     <meta property="og:description" content="Create professional legal documents, contracts and agreements with AI assistance" />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://docucreatorpro.online/opengraph-image.png" />
+    <meta property="og:image" content="https://docucreatorpro.online/icons/icon-512x512.png" />
     <meta property="og:url" content="https://docucreatorpro.online" />
 
+    <!-- Twitter tags -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@docucreatorpro" />
-    <meta name="twitter:image" content="https://docucreatorpro.online/opengraph-image.png" />
+    <meta name="twitter:image" content="https://docucreatorpro.online/icons/icon-512x512.png" />
     
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     
-    <!-- Google AdSense verification code -->
+    <!-- Google AdSense -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1930307237706999" crossorigin="anonymous"></script>
 
     <style>
@@ -67,12 +89,37 @@
       body::after {
         content: none !important;
       }
+
+      /* Bottom navigation safe area */
+      .safe-area-inset-bottom {
+        padding-bottom: env(safe-area-inset-bottom);
+      }
+      
+      /* Ensure content doesn't go behind bottom navigation */
+      body {
+        padding-bottom: 80px;
+      }
     </style>
   </head>
 
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+    
+    <!-- PWA Service Worker Registration -->
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js')
+            .then((registration) => {
+              console.log('SW registered: ', registration);
+            })
+            .catch((registrationError) => {
+              console.log('SW registration failed: ', registrationError);
+            });
+        });
+      }
+    </script>
     
     <!-- Script to remove any dynamically added Lovable elements -->
     <script>

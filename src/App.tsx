@@ -14,6 +14,7 @@ import AboutUs from "./pages/AboutUs";
 import Contact from "./pages/Contact";
 import Templates from "./pages/Templates";
 import Pricing from "./pages/Pricing";
+import BottomNavigation from "./components/BottomNavigation";
 
 const App: React.FC = () => {
   const queryClient = React.useMemo(() => new QueryClient(), []);
@@ -25,16 +26,19 @@ const App: React.FC = () => {
           <Toaster />
           <Sonner />
           <BrowserRouter>
-            <Routes>
-              <Route path="/" element={<Index />} />
-              <Route path="/privacy" element={<PrivacyPolicy />} />
-              <Route path="/terms" element={<TermsOfService />} />
-              <Route path="/about" element={<AboutUs />} />
-              <Route path="/contact" element={<Contact />} />
-              <Route path="/templates" element={<Templates />} />
-              <Route path="/pricing" element={<Pricing />} />
-              <Route path="*" element={<NotFound />} />
-            </Routes>
+            <div className="min-h-screen pb-20">
+              <Routes>
+                <Route path="/" element={<Index />} />
+                <Route path="/privacy" element={<PrivacyPolicy />} />
+                <Route path="/terms" element={<TermsOfService />} />
+                <Route path="/about" element={<AboutUs />} />
+                <Route path="/contact" element={<Contact />} />
+                <Route path="/templates" element={<Templates />} />
+                <Route path="/pricing" element={<Pricing />} />
+                <Route path="*" element={<NotFound />} />
+              </Routes>
+              <BottomNavigation />
+            </div>
           </BrowserRouter>
         </TooltipProvider>
       </HelmetProvider>
