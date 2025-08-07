@@ -2,8 +2,18 @@
 import React from 'react';
 import ToolCard from './ToolCard';
 import { FileCode, FileText, Plug, Sun, SunMedium, Wrench } from 'lucide-react';
+import { useIsMobile } from '@/hooks/use-mobile';
+import { useIsPWA } from '@/hooks/use-pwa';
 
 const OtherTools = () => {
+  const isMobile = useIsMobile();
+  const isPWA = useIsPWA();
+
+  // Hide on mobile devices or when running as PWA/app
+  if (isMobile || isPWA) {
+    return null;
+  }
+
   const tools = [
     {
       title: "Format Your Code",
@@ -44,7 +54,7 @@ const OtherTools = () => {
   ];
 
   return (
-    <div className="bg-white py-16 px-4">
+    <div className="bg-white py-16 px-4 hidden md:block">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-serif font-bold text-legal-navy mb-4">

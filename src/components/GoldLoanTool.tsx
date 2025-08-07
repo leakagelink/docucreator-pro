@@ -3,10 +3,20 @@ import React from 'react';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Calculator, ExternalLink, Coins } from 'lucide-react';
+import { useIsMobile } from '@/hooks/use-mobile';
+import { useIsPWA } from '@/hooks/use-pwa';
 
 const GoldLoanTool = () => {
+  const isMobile = useIsMobile();
+  const isPWA = useIsPWA();
+
+  // Hide on mobile devices or when running as PWA/app
+  if (isMobile || isPWA) {
+    return null;
+  }
+
   return (
-    <div className="bg-white py-10 md:py-16 px-4">
+    <div className="bg-white py-10 md:py-16 px-4 hidden md:block">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-8 md:mb-12">
           <div className="inline-flex items-center justify-center p-2 bg-amber-100 rounded-full mb-4 md:mb-6">
