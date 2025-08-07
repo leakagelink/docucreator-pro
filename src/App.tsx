@@ -13,7 +13,6 @@ import TermsOfService from "./pages/TermsOfService";
 import AboutUs from "./pages/AboutUs";
 import Contact from "./pages/Contact";
 import Templates from "./pages/Templates";
-import Pricing from "./pages/Pricing";
 import HowAIWorks from "./pages/HowAIWorks";
 import BottomNavigation from "./components/BottomNavigation";
 import ScrollToTop from "./components/ScrollToTop";
@@ -37,7 +36,6 @@ const App: React.FC = () => {
                 <Route path="/about" element={<AboutUs />} />
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/templates" element={<Templates />} />
-                <Route path="/pricing" element={<Pricing />} />
                 <Route path="/how-ai-works" element={<HowAIWorks />} />
                 <Route path="*" element={<NotFound />} />
               </Routes>
