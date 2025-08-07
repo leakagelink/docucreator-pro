@@ -18,11 +18,12 @@ const HeaderAdSenseCompliant = () => {
       <header className="sticky top-0 bg-white text-legal-navy py-4 px-4 md:px-6 shadow-md relative z-50 border-b border-gray-200">
         <div className="container mx-auto flex items-center justify-between">
           <div className="flex items-center space-x-2">
-            <Link to="/" className="flex items-center space-x-2">
-              <div className="h-10 w-10 md:h-12 md:w-12 bg-legal-navy rounded-lg flex items-center justify-center">
-                <span className="text-legal-gold font-bold text-lg md:text-xl">DC</span>
-              </div>
-              <span className="text-xl md:text-2xl font-bold text-legal-navy">DocuCreator Pro</span>
+            <Link to="/" className="flex items-center">
+              <img 
+                src="/lovable-uploads/e0c5a7e7-89c5-4dbf-8a29-f67563c1fd59.png" 
+                alt="DocuCreator Pro Logo" 
+                className="h-10 w-10 md:h-12 md:w-12 object-contain"
+              />
             </Link>
           </div>
           
