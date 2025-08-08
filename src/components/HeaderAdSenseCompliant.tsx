@@ -4,11 +4,13 @@ import { Button } from '@/components/ui/button';
 import { HelpCircle, Menu, X } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useIsMobile } from '@/hooks/use-mobile';
+import { useIsPWA } from '@/hooks/use-pwa';
 import AdBanner from '@/components/ads/AdBanner';
 
 const HeaderAdSenseCompliant = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const isMobile = useIsMobile();
+  const isPWA = useIsPWA();
 
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!mobileMenuOpen);
@@ -16,7 +18,7 @@ const HeaderAdSenseCompliant = () => {
 
   return (
     <>
-      <header className="sticky top-0 bg-white text-legal-navy py-4 px-4 md:px-6 shadow-md relative z-50 border-b border-gray-200">
+      <header className={`sticky top-0 bg-white text-legal-navy py-4 px-4 md:px-6 shadow-md relative z-50 border-b border-gray-200 ${isPWA ? 'safe-area-top' : ''}`}>
         <div className="container mx-auto flex items-center justify-between">
           <div className="flex items-center">
             <Link to="/" className="flex items-center">

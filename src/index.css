@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -164,6 +165,11 @@
     padding-bottom: env(safe-area-inset-bottom);
   }
 
+  /* PWA Safe area top for header */
+  .safe-area-top {
+    padding-top: env(safe-area-inset-top);
+  }
+
   /* Mobile touch improvements */
   .touch-target {
     @apply min-h-[44px] min-w-[44px] flex items-center justify-center;
@@ -229,6 +235,11 @@
   body {
     -webkit-user-select: none;
     -webkit-touch-callout: none;
+  }
+  
+  /* Ensure proper spacing for PWA mode */
+  .safe-area-top {
+    padding-top: max(env(safe-area-inset-top), 20px);
   }
 }
 
