@@ -1,5 +1,5 @@
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { FileText, FilePlus, FileCheck, FileSignature, Scale } from 'lucide-react';
@@ -58,9 +58,23 @@ const documentTypes = [
 
 interface DocumentTypeSelectorProps {
   onSelectDocument: (category: string, documentType: string) => void;
+  preSelectedCategory?: string;
+  preSelectedDocType?: string;
 }
 
-const DocumentTypeSelector: React.FC<DocumentTypeSelectorProps> = ({ onSelectDocument }) => {
+const DocumentTypeSelector: React.FC<DocumentTypeSelectorProps> = ({ 
+  onSelectDocument, 
+  preSelectedCategory, 
+  preSelectedDocType 
+}) => {
+  const [activeTab, setActiveTab] = React.useState(preSelectedCategory || 'agreements');
+
+  useEffect(() => {
+    if (preSelectedCategory) {
+      setActiveTab(preSelectedCategory);
+    }
+  }, [preSelectedCategory]);
+
   return (
     <div className="mobile-container my-4 md:my-8">
       <div className="text-center mb-4 md:mb-8">
@@ -72,7 +86,7 @@ const DocumentTypeSelector: React.FC<DocumentTypeSelectorProps> = ({ onSelectDoc
         </p>
       </div>
       
-      <Tabs defaultValue="agreements" className="w-full">
+      <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full">
         <div className="overflow-x-auto scrollbar-hide mb-4 md:mb-6">
           <TabsList className="grid grid-cols-4 min-w-max md:min-w-0 w-full md:w-auto mx-auto bg-muted/50 p-1 h-auto">
             {documentTypes.map(type => (
@@ -98,14 +112,30 @@ const DocumentTypeSelector: React.FC<DocumentTypeSelectorProps> = ({ onSelectDoc
               {category.items.map(item => (
                 <Card 
                   key={item.id} 
-                  className="group border border-border hover:border-legal-gold cursor-pointer transition-all duration-300 hover:shadow-lg hover:scale-[1.02] active:scale-[0.98] touch-target bg-card"
+                  className={`group border cursor-pointer transition-all duration-300 hover:shadow-lg hover:scale-[1.02] active:scale-[0.98] touch-target bg-card ${
+                    preSelectedCategory === category.id && preSelectedDocType === item.id
+                      ? 'border-legal-gold bg-legal-gold/5'
+                      : 'border-border hover:border-legal-gold'
+                  }`}
                   onClick={() => onSelectDocument(category.id, item.id)}
                 >
                   <CardContent className="flex flex-col items-center justify-center p-4 md:p-6 text-center min-h-[120px] md:min-h-[140px]">
-                    <div className="bg-legal-navy/5 group-hover:bg-legal-navy/10 rounded-full p-3 md:p-4 mb-3 md:mb-4 transition-colors duration-300">
-                      <FilePlus className="h-6 w-6 md:h-8 md:w-8 text-legal-navy group-hover:text-legal-gold transition-colors duration-300" />
+                    <div className={`rounded-full p-3 md:p-4 mb-3 md:mb-4 transition-colors duration-300 ${
+                      preSelectedCategory === category.id && preSelectedDocType === item.id
+                        ? 'bg-legal-gold/20'
+                        : 'bg-legal-navy/5 group-hover:bg-legal-navy/10'
+                    }`}>
+                      <FilePlus className={`h-6 w-6 md:h-8 md:w-8 transition-colors duration-300 ${
+                        preSelectedCategory === category.id && preSelectedDocType === item.id
+                          ? 'text-legal-gold'
+                          : 'text-legal-navy group-hover:text-legal-gold'
+                      }`} />
                     </div>
-                    <h3 className="font-serif text-sm md:text-lg font-semibold text-foreground group-hover:text-legal-navy leading-tight transition-colors duration-300">
+                    <h3 className={`font-serif text-sm md:text-lg font-semibold leading-tight transition-colors duration-300 ${
+                      preSelectedCategory === category.id && preSelectedDocType === item.id
+                        ? 'text-legal-navy'
+                        : 'text-foreground group-hover:text-legal-navy'
+                    }`}>
                       {item.name}
                     </h3>
                   </CardContent>

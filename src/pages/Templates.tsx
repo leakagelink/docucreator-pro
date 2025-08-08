@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import HeaderAdSenseCompliant from '@/components/HeaderAdSenseCompliant';
 import FooterAdSenseCompliant from '@/components/FooterAdSenseCompliant';
 import SEOMetadata from '@/components/SEOMetadata';
@@ -8,6 +9,59 @@ import { Button } from '@/components/ui/button';
 import { FileText } from 'lucide-react';
 
 const Templates = () => {
+  const navigate = useNavigate();
+
+  // Template mapping to match DocumentTypeSelector data
+  const templates = [
+    { 
+      id: 'rental-agreement', 
+      title: 'Rental Agreement Template',
+      description: 'Standard rental agreement template for residential properties with customizable terms based on common practices.',
+      category: 'agreements',
+      documentType: 'rental'
+    },
+    { 
+      id: 'nda', 
+      title: 'Non-Disclosure Agreement Template',
+      description: 'Protect your confidential information with this comprehensive NDA template based on standard clauses.',
+      category: 'confidential',
+      documentType: 'nda'
+    },
+    { 
+      id: 'employment-contract', 
+      title: 'Employment Contract Template',
+      description: 'Employment contract template with standard clauses and essential terms commonly used in India.',
+      category: 'agreements',
+      documentType: 'employment'
+    },
+    { 
+      id: 'power-of-attorney', 
+      title: 'Power of Attorney Template',
+      description: 'Comprehensive power of attorney document template with customizable powers and limitations based on standard formats.',
+      category: 'legaldocs',
+      documentType: 'poa'
+    },
+    { 
+      id: 'will-testament', 
+      title: 'Will and Testament Template',
+      description: 'Create a comprehensive will template with this standard format document. Professional legal review strongly recommended.',
+      category: 'legaldocs',
+      documentType: 'will'
+    },
+    { 
+      id: 'service-agreement', 
+      title: 'Service Agreement Template',
+      description: 'Clear and comprehensive service agreement template for freelancers and contractors using standard terms.',
+      category: 'contracts',
+      documentType: 'service'
+    }
+  ];
+
+  const handleUseTemplate = (template: typeof templates[0]) => {
+    // Navigate to home page with template selection
+    navigate(`/?template=${template.category}-${template.documentType}`);
+  };
+
   return (
     <div className="flex flex-col min-h-screen">
       <SEOMetadata 
@@ -29,60 +83,21 @@ const Templates = () => {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
-            {/* Template Cards */}
-            <div className="bg-white border border-gray-200 rounded-lg shadow-sm p-6 flex flex-col">
-              <div className="h-12 w-12 bg-legal-light rounded-full flex items-center justify-center mb-4">
-                <FileText className="h-6 w-6 text-legal-navy" />
+            {templates.map(template => (
+              <div key={template.id} className="bg-white border border-gray-200 rounded-lg shadow-sm p-6 flex flex-col">
+                <div className="h-12 w-12 bg-legal-light rounded-full flex items-center justify-center mb-4">
+                  <FileText className="h-6 w-6 text-legal-navy" />
+                </div>
+                <h3 className="text-xl font-serif font-bold text-legal-navy mb-2">{template.title}</h3>
+                <p className="text-legal-gray mb-4 flex-grow">{template.description}</p>
+                <Button 
+                  className="w-full bg-legal-navy hover:bg-opacity-90"
+                  onClick={() => handleUseTemplate(template)}
+                >
+                  Use Template
+                </Button>
               </div>
-              <h3 className="text-xl font-serif font-bold text-legal-navy mb-2">Rental Agreement Template</h3>
-              <p className="text-legal-gray mb-4 flex-grow">Standard rental agreement template for residential properties with customizable terms based on common practices.</p>
-              <Button className="w-full bg-legal-navy hover:bg-opacity-90">Use Template</Button>
-            </div>
-            
-            <div className="bg-white border border-gray-200 rounded-lg shadow-sm p-6 flex flex-col">
-              <div className="h-12 w-12 bg-legal-light rounded-full flex items-center justify-center mb-4">
-                <FileText className="h-6 w-6 text-legal-navy" />
-              </div>
-              <h3 className="text-xl font-serif font-bold text-legal-navy mb-2">Non-Disclosure Agreement Template</h3>
-              <p className="text-legal-gray mb-4 flex-grow">Protect your confidential information with this comprehensive NDA template based on standard clauses.</p>
-              <Button className="w-full bg-legal-navy hover:bg-opacity-90">Use Template</Button>
-            </div>
-            
-            <div className="bg-white border border-gray-200 rounded-lg shadow-sm p-6 flex flex-col">
-              <div className="h-12 w-12 bg-legal-light rounded-full flex items-center justify-center mb-4">
-                <FileText className="h-6 w-6 text-legal-navy" />
-              </div>
-              <h3 className="text-xl font-serif font-bold text-legal-navy mb-2">Employment Contract Template</h3>
-              <p className="text-legal-gray mb-4 flex-grow">Employment contract template with standard clauses and essential terms commonly used in India.</p>
-              <Button className="w-full bg-legal-navy hover:bg-opacity-90">Use Template</Button>
-            </div>
-            
-            <div className="bg-white border border-gray-200 rounded-lg shadow-sm p-6 flex flex-col">
-              <div className="h-12 w-12 bg-legal-light rounded-full flex items-center justify-center mb-4">
-                <FileText className="h-6 w-6 text-legal-navy" />
-              </div>
-              <h3 className="text-xl font-serif font-bold text-legal-navy mb-2">Power of Attorney Template</h3>
-              <p className="text-legal-gray mb-4 flex-grow">Comprehensive power of attorney document template with customizable powers and limitations based on standard formats.</p>
-              <Button className="w-full bg-legal-navy hover:bg-opacity-90">Use Template</Button>
-            </div>
-            
-            <div className="bg-white border border-gray-200 rounded-lg shadow-sm p-6 flex flex-col">
-              <div className="h-12 w-12 bg-legal-light rounded-full flex items-center justify-center mb-4">
-                <FileText className="h-6 w-6 text-legal-navy" />
-              </div>
-              <h3 className="text-xl font-serif font-bold text-legal-navy mb-2">Will and Testament Template</h3>
-              <p className="text-legal-gray mb-4 flex-grow">Create a comprehensive will template with this standard format document. Professional legal review strongly recommended.</p>
-              <Button className="w-full bg-legal-navy hover:bg-opacity-90">Use Template</Button>
-            </div>
-            
-            <div className="bg-white border border-gray-200 rounded-lg shadow-sm p-6 flex flex-col">
-              <div className="h-12 w-12 bg-legal-light rounded-full flex items-center justify-center mb-4">
-                <FileText className="h-6 w-6 text-legal-navy" />
-              </div>
-              <h3 className="text-xl font-serif font-bold text-legal-navy mb-2">Service Agreement Template</h3>
-              <p className="text-legal-gray mb-4 flex-grow">Clear and comprehensive service agreement template for freelancers and contractors using standard terms.</p>
-              <Button className="w-full bg-legal-navy hover:bg-opacity-90">Use Template</Button>
-            </div>
+            ))}
           </div>
           
           <PlayStoreCompliantDisclaimer variant="inline" className="mb-8" />

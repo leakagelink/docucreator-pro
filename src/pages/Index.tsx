@@ -1,5 +1,6 @@
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { useSearchParams } from 'react-router-dom';
 import HeaderAdSenseCompliant from '@/components/HeaderAdSenseCompliant';
 import FooterAdSenseCompliant from '@/components/FooterAdSenseCompliant';
 import DocumentTypeSelector from '@/components/DocumentTypeSelector';
@@ -9,11 +10,30 @@ import LandingPage from '@/components/landing/LandingPage';
 import { useToast } from '@/components/ui/use-toast';
 
 const Index = () => {
+  const [searchParams] = useSearchParams();
   const [step, setStep] = useState<'landing' | 'select' | 'form' | 'preview'>('landing');
   const [selectedCategory, setSelectedCategory] = useState<string>('');
   const [selectedDocType, setSelectedDocType] = useState<string>('');
   const [documentData, setDocumentData] = useState<any>({});
   const { toast } = useToast();
+
+  // Check for template parameter on component mount
+  useEffect(() => {
+    const templateParam = searchParams.get('template');
+    if (templateParam) {
+      const [category, docType] = templateParam.split('-');
+      if (category && docType) {
+        setSelectedCategory(category);
+        setSelectedDocType(docType);
+        setStep('form');
+        
+        toast({
+          title: "Template selected",
+          description: "Please fill in the details for your selected template.",
+        });
+      }
+    }
+  }, [searchParams, toast]);
 
   const handleSelectDocument = (category: string, documentType: string) => {
     setSelectedCategory(category);
