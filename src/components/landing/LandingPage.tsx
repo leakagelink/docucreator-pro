@@ -6,10 +6,12 @@ import BenefitsSection from './BenefitsSection';
 import FooterLinks from './FooterLinks';
 import OtherTools from '@/components/OtherTools';
 import GoldLoanTool from '@/components/GoldLoanTool';
-import AdBanner from '@/components/ads/AdBanner';
 import AdInContent from '@/components/ads/AdInContent';
 import AdSidebar from '@/components/ads/AdSidebar';
-import AdInterstitial from '@/components/ads/AdInterstitial';
+import UnifiedAdBanner from '@/components/ads/UnifiedAdBanner';
+import UnifiedAdInterstitial from '@/components/ads/UnifiedAdInterstitial';
+import { usePlatform } from '@/hooks/use-platform';
+import { AdMobService } from '@/services/admob';
 
 interface LandingPageProps {
   onGetStarted: () => void;
@@ -17,6 +19,14 @@ interface LandingPageProps {
 
 const LandingPage = ({ onGetStarted }: LandingPageProps) => {
   const [showInterstitial, setShowInterstitial] = useState(false);
+  const { isNative, isWeb } = usePlatform();
+
+  // Initialize AdMob for native platforms
+  useEffect(() => {
+    if (isNative) {
+      AdMobService.initialize();
+    }
+  }, [isNative]);
 
   // Show interstitial ad after 30 seconds
   useEffect(() => {
@@ -36,13 +46,13 @@ const LandingPage = ({ onGetStarted }: LandingPageProps) => {
 
   return (
     <div className="min-h-[80vh] flex">
-      {/* Sidebar Ad for Desktop */}
-      <AdSidebar adSlot="2312152116" className="w-72 p-4" />
+      {/* Sidebar Ad for Desktop - only show on web */}
+      {isWeb && <AdSidebar adSlot="2312152116" className="w-72 p-4" />}
       
       <div className="flex-1 flex flex-col items-center justify-center px-4 py-8 md:py-12 bg-gradient-to-b from-white to-legal-light">
-        {/* Header Banner Ad */}
+        {/* Header Banner Ad - unified for web and mobile */}
         <div className="w-full mb-8">
-          <AdBanner
+          <UnifiedAdBanner
             adSlot="2312152116"
             className="flex justify-center"
             style={{ maxWidth: '728px', height: '90px', margin: '0 auto' }}
@@ -51,25 +61,25 @@ const LandingPage = ({ onGetStarted }: LandingPageProps) => {
 
         <LandingHero onGetStarted={handleGetStartedWithAd} />
         
-        {/* In-Content Ad after Hero */}
-        <AdInContent adSlot="2312152116" className="max-w-4xl mx-auto" />
+        {/* In-Content Ad after Hero - only on web */}
+        {isWeb && <AdInContent adSlot="2312152116" className="max-w-4xl mx-auto" />}
         
         <FeatureCards />
         
-        {/* In-Content Ad after Features */}
-        <AdInContent adSlot="2312152116" className="max-w-4xl mx-auto" />
+        {/* In-Content Ad after Features - only on web */}
+        {isWeb && <AdInContent adSlot="2312152116" className="max-w-4xl mx-auto" />}
         
         <BenefitsSection onGetStarted={handleGetStartedWithAd} />
         
-        {/* In-Content Ad after Benefits */}
-        <AdInContent adSlot="2312152116" className="max-w-4xl mx-auto" />
+        {/* In-Content Ad after Benefits - only on web */}
+        {isWeb && <AdInContent adSlot="2312152116" className="max-w-4xl mx-auto" />}
         
         <OtherTools />
         <GoldLoanTool />
         
-        {/* Footer Banner Ad */}
+        {/* Footer Banner Ad - unified for web and mobile */}
         <div className="w-full mt-8">
-          <AdBanner
+          <UnifiedAdBanner
             adSlot="2312152116"
             className="flex justify-center"
             style={{ maxWidth: '728px', height: '90px', margin: '0 auto' }}
@@ -79,11 +89,11 @@ const LandingPage = ({ onGetStarted }: LandingPageProps) => {
         <FooterLinks />
       </div>
 
-      {/* Right Sidebar Ad for Desktop */}
-      <AdSidebar adSlot="2312152116" className="w-72 p-4" />
+      {/* Right Sidebar Ad for Desktop - only show on web */}
+      {isWeb && <AdSidebar adSlot="2312152116" className="w-72 p-4" />}
 
-      {/* Interstitial Ad */}
-      <AdInterstitial
+      {/* Interstitial Ad - unified for web and mobile */}
+      <UnifiedAdInterstitial
         isOpen={showInterstitial}
         onClose={() => setShowInterstitial(false)}
         adSlot="8678249919"

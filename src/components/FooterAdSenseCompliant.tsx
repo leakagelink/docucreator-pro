@@ -2,19 +2,24 @@
 import React from 'react';
 import { FileText, Mail, Phone, MapPin } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import AdBanner from '@/components/ads/AdBanner';
+import { usePlatform } from '@/hooks/use-platform';
+import UnifiedAdBanner from '@/components/ads/UnifiedAdBanner';
 
 const FooterAdSenseCompliant = () => {
+  const { isWeb } = usePlatform();
+
   return (
     <>
-      {/* Footer Banner Ad */}
-      <div className="bg-gray-50 py-4">
-        <AdBanner
-          adSlot="2312152116"
-          className="flex justify-center"
-          style={{ maxWidth: '728px', height: '90px', margin: '0 auto' }}
-        />
-      </div>
+      {/* Footer Banner Ad - only show on web */}
+      {isWeb && (
+        <div className="bg-gray-50 py-4">
+          <UnifiedAdBanner
+            adSlot="2312152116"
+            className="flex justify-center"
+            style={{ maxWidth: '728px', height: '90px', margin: '0 auto' }}
+          />
+        </div>
+      )}
 
       <footer className="bg-legal-navy text-white">
         <div className="container mx-auto py-12 px-6">

@@ -5,12 +5,14 @@ import { HelpCircle, Menu, X } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useIsMobile } from '@/hooks/use-mobile';
 import { useIsPWA } from '@/hooks/use-pwa';
-import AdBanner from '@/components/ads/AdBanner';
+import { usePlatform } from '@/hooks/use-platform';
+import UnifiedAdBanner from '@/components/ads/UnifiedAdBanner';
 
 const HeaderAdSenseCompliant = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const isMobile = useIsMobile();
   const isPWA = useIsPWA();
+  const { isWeb } = usePlatform();
 
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!mobileMenuOpen);
@@ -82,10 +84,10 @@ const HeaderAdSenseCompliant = () => {
         )}
       </header>
       
-      {/* Header Banner Ad - only on desktop */}
-      {!isMobile && (
+      {/* Header Banner Ad - only on desktop web */}
+      {!isMobile && isWeb && (
         <div className="bg-gray-50 py-2">
-          <AdBanner
+          <UnifiedAdBanner
             adSlot="2312152116"
             className="flex justify-center"
             style={{ maxWidth: '728px', height: '90px', margin: '0 auto' }}
