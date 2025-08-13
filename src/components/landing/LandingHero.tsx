@@ -11,17 +11,17 @@ interface LandingHeroProps {
 const LandingHero = ({ onGetStarted }: LandingHeroProps) => {
   return (
     <div className="max-w-4xl mx-auto text-center px-4 md:px-6">
-      <div className="inline-flex items-center justify-center p-2 bg-legal-navy rounded-full mb-6 animate-fade-in">
+      <div className="inline-flex items-center justify-center p-2 bg-legal-navy rounded-full mb-3 animate-fade-in">
         <Sparkles className="h-5 w-5 md:h-6 md:w-6 text-legal-gold" />
       </div>
-      <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-serif font-bold text-legal-navy mb-4 md:mb-6">
+      <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-serif font-bold text-legal-navy mb-2 md:mb-3">
         AI-Assisted Legal Document Templates
       </h1>
       <p className="text-lg md:text-xl text-legal-gray mb-6 md:mb-8 max-w-3xl mx-auto">
         Create professional document templates and agreements in minutes with our AI-assisted document generator using standard formats and commonly used clauses.
       </p>
       
-      <PlayStoreCompliantDisclaimer variant="prominent" className="mb-8" />
+      <PlayStoreCompliantDisclaimer variant="prominent" className="mb-4" />
       
       <div className="flex flex-col sm:flex-row justify-center gap-4 mb-8 md:mb-12">
         <Button 
