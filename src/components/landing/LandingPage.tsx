@@ -45,13 +45,13 @@ const LandingPage = ({ onGetStarted }: LandingPageProps) => {
   };
 
   return (
-    <div className="min-h-[80vh] flex">
+    <div className="min-h-screen flex">
       {/* Sidebar Ad for Desktop - only show on web */}
       {isWeb && <AdSidebar adSlot="2312152116" className="w-72 p-4" />}
       
-      <div className="flex-1 flex flex-col items-center justify-center px-4 py-8 md:py-12 bg-gradient-to-b from-white to-legal-light">
+      <div className="flex-1 flex flex-col items-center justify-start px-4 py-4 md:py-6 bg-gradient-to-b from-white to-legal-light">
         {/* Header Banner Ad - unified for web and mobile */}
-        <div className="w-full mb-8">
+        <div className="w-full mb-4">
           <UnifiedAdBanner
             adSlot="2312152116"
             className="flex justify-center"
@@ -78,7 +78,7 @@ const LandingPage = ({ onGetStarted }: LandingPageProps) => {
         <GoldLoanTool />
         
         {/* Footer Banner Ad - unified for web and mobile */}
-        <div className="w-full mt-8">
+        <div className="w-full mt-6">
           <UnifiedAdBanner
             adSlot="2312152116"
             className="flex justify-center"
