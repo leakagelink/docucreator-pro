@@ -1,5 +1,5 @@
 
-import { AdMob, BannerAdOptions, BannerAdSize, BannerAdPosition, InterstitialAdOptions, RewardAdOptions } from '@capacitor-community/admob';
+import { AdMob, BannerAdOptions, BannerAdSize, BannerAdPosition, RewardAdOptions } from '@capacitor-community/admob';
 import { Capacitor } from '@capacitor/core';
 
 export class AdMobService {
@@ -20,7 +20,6 @@ export class AdMobService {
 
     try {
       await AdMob.initialize({
-        requestTrackingAuthorization: true,
         testingDevices: [],
         initializeForTesting: false
       });
@@ -65,7 +64,7 @@ export class AdMobService {
     if (!Capacitor.isNativePlatform()) return;
 
     try {
-      const options: InterstitialAdOptions = {
+      const options: RewardAdOptions = {
         adId: this.AD_UNITS.INTERSTITIAL,
         isTesting: false
       };
