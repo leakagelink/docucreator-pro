@@ -2,7 +2,6 @@
 import React, { useEffect } from 'react';
 import { usePlatform } from '@/hooks/use-platform';
 import { AdMobService } from '@/services/admob';
-import AdBanner from './AdBanner';
 import { BannerAdPosition } from '@capacitor-community/admob';
 
 interface UnifiedAdBannerProps {
@@ -20,7 +19,7 @@ const UnifiedAdBanner = ({
   style = {},
   position = BannerAdPosition.BOTTOM_CENTER
 }: UnifiedAdBannerProps) => {
-  const { isNative, isWeb } = usePlatform();
+  const { isNative } = usePlatform();
 
   useEffect(() => {
     if (isNative && AdMobService.AD_UNITS.BANNER) {
@@ -36,25 +35,17 @@ const UnifiedAdBanner = ({
     }
   }, [isNative, position]);
 
-  // For web platforms, use AdSense
-  if (isWeb) {
+  // Only show ads on native platforms (Android/iOS)
+  if (isNative) {
     return (
-      <AdBanner
-        adSlot={adSlot}
-        adFormat={adFormat}
-        className={className}
-        style={style}
-      />
+      <div className={`admob-banner-placeholder ${className}`} style={style}>
+        {/* AdMob banner is displayed natively */}
+      </div>
     );
   }
 
-  // For native platforms, AdMob banner is handled natively or skipped if not configured
-  return (
-    <div className={`admob-banner-placeholder ${className}`} style={style}>
-      {/* AdMob banner is displayed natively (skipped if no unit set) */}
-    </div>
-  );
+  // No ads on web - return null
+  return null;
 };
 
 export default UnifiedAdBanner;
-

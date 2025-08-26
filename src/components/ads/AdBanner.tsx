@@ -1,5 +1,5 @@
 
-import React, { useEffect, useRef } from 'react';
+import React from 'react';
 
 interface AdBannerProps {
   adSlot: string;
@@ -8,38 +8,10 @@ interface AdBannerProps {
   style?: React.CSSProperties;
 }
 
-declare global {
-  interface Window {
-    adsbygoogle: any[];
-  }
-}
-
+// This component is now disabled - only AdMob will be used
 const AdBanner = ({ adSlot, adFormat = 'auto', className = '', style = {} }: AdBannerProps) => {
-  const adRef = useRef<HTMLModElement>(null);
-
-  useEffect(() => {
-    try {
-      if (typeof window !== 'undefined' && window.adsbygoogle) {
-        window.adsbygoogle.push({});
-      }
-    } catch (error) {
-      console.error('AdSense error:', error);
-    }
-  }, []);
-
-  return (
-    <div className={`ad-container ${className}`} style={style}>
-      <ins
-        ref={adRef}
-        className="adsbygoogle"
-        style={{ display: 'block', ...style }}
-        data-ad-client="ca-pub-2211398170597117"
-        data-ad-slot={adSlot}
-        data-ad-format={adFormat}
-        data-full-width-responsive="true"
-      />
-    </div>
-  );
+  // AdSense removed - returning null for web
+  return null;
 };
 
 export default AdBanner;

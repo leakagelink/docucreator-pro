@@ -2,7 +2,6 @@
 import React, { useEffect } from 'react';
 import { usePlatform } from '@/hooks/use-platform';
 import { AdMobService } from '@/services/admob';
-import AdInterstitial from './AdInterstitial';
 
 interface UnifiedAdInterstitialProps {
   isOpen: boolean;
@@ -11,31 +10,23 @@ interface UnifiedAdInterstitialProps {
 }
 
 const UnifiedAdInterstitial = ({ isOpen, onClose, adSlot }: UnifiedAdInterstitialProps) => {
-  const { isNative, isWeb } = usePlatform();
+  const { isNative } = usePlatform();
 
   useEffect(() => {
     if (isNative && isOpen) {
-      // Show AdMob interstitial for native platforms
+      // Show AdMob interstitial for native platforms only
       AdMobService.initialize().then(() => {
         AdMobService.showInterstitial().then(() => {
           onClose();
         });
       });
+    } else if (!isNative && isOpen) {
+      // No ads on web - just close immediately
+      onClose();
     }
   }, [isNative, isOpen, onClose]);
 
-  // For web platforms, use AdSense interstitial
-  if (isWeb) {
-    return (
-      <AdInterstitial
-        isOpen={isOpen}
-        onClose={onClose}
-        adSlot={adSlot}
-      />
-    );
-  }
-
-  // For native platforms, interstitial is handled natively
+  // No UI needed - ads are handled natively or skipped
   return null;
 };
 
