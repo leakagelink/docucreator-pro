@@ -23,8 +23,8 @@ const UnifiedAdBanner = ({
   const { isNative, isWeb } = usePlatform();
 
   useEffect(() => {
-    if (isNative) {
-      // Initialize AdMob and show banner for native platforms
+    if (isNative && AdMobService.AD_UNITS.BANNER) {
+      // Initialize AdMob and show banner for native platforms only if banner unit is set
       AdMobService.initialize().then(() => {
         AdMobService.showBanner(position);
       });
@@ -48,13 +48,13 @@ const UnifiedAdBanner = ({
     );
   }
 
-  // For native platforms, AdMob banner is handled natively
-  // Return a placeholder or empty div
+  // For native platforms, AdMob banner is handled natively or skipped if not configured
   return (
     <div className={`admob-banner-placeholder ${className}`} style={style}>
-      {/* AdMob banner is displayed natively */}
+      {/* AdMob banner is displayed natively (skipped if no unit set) */}
     </div>
   );
 };
 
 export default UnifiedAdBanner;
+

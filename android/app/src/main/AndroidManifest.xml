@@ -14,10 +14,10 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <!-- AdMob App ID -->
+        <!-- AdMob App ID (Updated) -->
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
-            android:value="ca-app-pub-2211398170597117~6610457953"/>
+            android:value="ca-app-pub-8658337038682012~3040147524"/>
 
         <activity
             android:exported="true"
@@ -41,3 +41,4 @@
         </provider>
     </application>
 </manifest>
+

@@ -11,10 +11,12 @@ const config: CapacitorConfig = {
   },
   plugins: {
     AdMob: {
-      appId: 'ca-app-pub-2211398170597117~6610457953',
+      // Updated to your new Android App ID
+      appId: 'ca-app-pub-8658337038682012~3040147524',
       initializeForTesting: false
     }
   }
 };
 
 export default config;
+

@@ -1,6 +1,6 @@
 
-import React, { useEffect } from 'react';
-import { Dialog, DialogContent } from '@/components/ui/dialog';
+import React, { useEffect, useState } from 'react';
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from '@/components/ui/dialog';
 
 interface AdInterstitialProps {
   isOpen: boolean;
@@ -15,33 +15,49 @@ declare global {
 }
 
 const AdInterstitial = ({ isOpen, onClose, adSlot }: AdInterstitialProps) => {
+  const [renderKey, setRenderKey] = useState(0);
+
   useEffect(() => {
     if (isOpen) {
-      try {
-        if (typeof window !== 'undefined' && window.adsbygoogle) {
-          window.adsbygoogle.push({});
+      // Recreate the <ins> node each time to avoid "already have ads" error
+      setRenderKey((k) => k + 1);
+
+      // Push after layout for better size calculation
+      setTimeout(() => {
+        try {
+          if (typeof window !== 'undefined' && window.adsbygoogle) {
+            window.adsbygoogle.push({});
+          }
+        } catch (error) {
+          console.error('AdSense Interstitial error:', error);
         }
-      } catch (error) {
-        console.error('AdSense Interstitial error:', error);
-      }
+      }, 250);
     }
   }, [isOpen]);
 
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
       <DialogContent className="max-w-4xl w-full p-0 bg-white">
+        <DialogHeader>
+          <DialogTitle className="sr-only">Advertisement</DialogTitle>
+          <DialogDescription className="sr-only">
+            Interstitial ad content
+          </DialogDescription>
+        </DialogHeader>
         <div className="relative">
           <button
             onClick={onClose}
             className="absolute top-4 right-4 z-10 bg-gray-800 text-white rounded-full w-8 h-8 flex items-center justify-center hover:bg-gray-700"
+            aria-label="Close ad"
           >
             ×
           </button>
           <div className="p-4">
             <ins
+              key={renderKey}
               className="adsbygoogle"
-              style={{ display: 'block', minHeight: '400px' }}
-              data-ad-client="ca-pub-2211398170597117"
+              style={{ display: 'block', width: '100%', minHeight: '400px' }}
+              data-ad-client="ca-pub-8658337038682012"
               data-ad-slot={adSlot}
               data-ad-format="auto"
               data-full-width-responsive="true"
@@ -54,3 +70,4 @@ const AdInterstitial = ({ isOpen, onClose, adSlot }: AdInterstitialProps) => {
 };
 
 export default AdInterstitial;
+
