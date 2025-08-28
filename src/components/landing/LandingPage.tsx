@@ -11,7 +11,7 @@ import AdSidebar from '@/components/ads/AdSidebar';
 import UnifiedAdBanner from '@/components/ads/UnifiedAdBanner';
 import UnifiedAdInterstitial from '@/components/ads/UnifiedAdInterstitial';
 import { usePlatform } from '@/hooks/use-platform';
-import { AdMobService } from '@/services/admob';
+import { FacebookAdsService } from '@/services/facebook-ads';
 
 interface LandingPageProps {
   onGetStarted: () => void;
@@ -21,10 +21,10 @@ const LandingPage = ({ onGetStarted }: LandingPageProps) => {
   const [showInterstitial, setShowInterstitial] = useState(false);
   const { isNative, isWeb } = usePlatform();
 
-  // Initialize AdMob for native platforms
+  // Initialize Facebook Audience Network for native platforms
   useEffect(() => {
     if (isNative) {
-      AdMobService.initialize();
+      FacebookAdsService.initialize();
     }
   }, [isNative]);
 

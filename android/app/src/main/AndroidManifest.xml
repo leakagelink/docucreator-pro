@@ -14,10 +14,10 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <!-- AdMob App ID (Updated) -->
+        <!-- Facebook Audience Network App ID -->
         <meta-data
-            android:name="com.google.android.gms.ads.APPLICATION_ID"
-            android:value="ca-app-pub-8658337038682012~3040147524"/>
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="1447731806550936"/>
 
         <activity
             android:exported="true"
@@ -41,4 +41,3 @@
         </provider>
     </application>
 </manifest>
-

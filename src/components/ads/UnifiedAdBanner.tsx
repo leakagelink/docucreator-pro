@@ -1,45 +1,42 @@
 
 import React, { useEffect } from 'react';
 import { usePlatform } from '@/hooks/use-platform';
-import { AdMobService } from '@/services/admob';
-import { BannerAdPosition } from '@capacitor-community/admob';
+import { FacebookAdsService } from '@/services/facebook-ads';
 
 interface UnifiedAdBannerProps {
   adSlot: string;
   adFormat?: 'auto' | 'rectangle' | 'vertical' | 'horizontal';
   className?: string;
   style?: React.CSSProperties;
-  position?: BannerAdPosition;
 }
 
 const UnifiedAdBanner = ({ 
   adSlot, 
   adFormat = 'auto', 
   className = '', 
-  style = {},
-  position = BannerAdPosition.BOTTOM_CENTER
+  style = {}
 }: UnifiedAdBannerProps) => {
   const { isNative } = usePlatform();
 
   useEffect(() => {
-    if (isNative && AdMobService.AD_UNITS.BANNER) {
-      // Initialize AdMob and show banner for native platforms only if banner unit is set
-      AdMobService.initialize().then(() => {
-        AdMobService.showBanner(position);
+    if (isNative) {
+      // Initialize Facebook Audience Network and show banner for native platforms
+      FacebookAdsService.initialize().then(() => {
+        FacebookAdsService.showBanner();
       });
 
       // Cleanup function to hide banner when component unmounts
       return () => {
-        AdMobService.hideBanner();
+        FacebookAdsService.hideBanner();
       };
     }
-  }, [isNative, position]);
+  }, [isNative]);
 
   // Only show ads on native platforms (Android/iOS)
   if (isNative) {
     return (
-      <div className={`admob-banner-placeholder ${className}`} style={style}>
-        {/* AdMob banner is displayed natively */}
+      <div className={`facebook-banner-placeholder ${className}`} style={style}>
+        {/* Facebook Audience Network banner is displayed natively */}
       </div>
     );
   }

@@ -1,7 +1,7 @@
 
 import React, { useEffect } from 'react';
 import { usePlatform } from '@/hooks/use-platform';
-import { AdMobService } from '@/services/admob';
+import { FacebookAdsService } from '@/services/facebook-ads';
 
 interface UnifiedAdInterstitialProps {
   isOpen: boolean;
@@ -14,9 +14,9 @@ const UnifiedAdInterstitial = ({ isOpen, onClose, adSlot }: UnifiedAdInterstitia
 
   useEffect(() => {
     if (isNative && isOpen) {
-      // Show AdMob interstitial for native platforms only
-      AdMobService.initialize().then(() => {
-        AdMobService.showInterstitial().then(() => {
+      // Show Facebook Audience Network interstitial for native platforms only
+      FacebookAdsService.initialize().then(() => {
+        FacebookAdsService.showInterstitial().then(() => {
           onClose();
         });
       });

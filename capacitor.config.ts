@@ -10,13 +10,11 @@ const config: CapacitorConfig = {
     cleartext: true
   },
   plugins: {
-    AdMob: {
-      // Updated to your new Android App ID
-      appId: 'ca-app-pub-8658337038682012~3040147524',
-      initializeForTesting: false
+    FacebookAudienceNetwork: {
+      appId: '1447731806550936',
+      testMode: false
     }
   }
 };
 
 export default config;
-
