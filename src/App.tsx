@@ -14,6 +14,7 @@ import AboutUs from "./pages/AboutUs";
 import Contact from "./pages/Contact";
 import Templates from "./pages/Templates";
 import HowAIWorks from "./pages/HowAIWorks";
+import AppAds from "./pages/AppAds";
 import BottomNavigation from "./components/BottomNavigation";
 import ScrollToTop from "./components/ScrollToTop";
 
@@ -37,6 +38,7 @@ const App: React.FC = () => {
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/templates" element={<Templates />} />
                 <Route path="/how-ai-works" element={<HowAIWorks />} />
+                <Route path="/app-ads.txt" element={<AppAds />} />
                 <Route path="*" element={<NotFound />} />
               </Routes>
               <BottomNavigation />
