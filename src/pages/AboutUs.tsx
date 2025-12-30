@@ -2,11 +2,23 @@
 import React from 'react';
 import HeaderAdSenseCompliant from '@/components/HeaderAdSenseCompliant';
 import FooterAdSenseCompliant from '@/components/FooterAdSenseCompliant';
+import SEOMetadata from '@/components/SEOMetadata';
 import { FileText, Sparkles, Shield, Clock } from 'lucide-react';
 
 const AboutUs = () => {
   return (
     <div className="flex flex-col min-h-screen">
+      <SEOMetadata 
+        title="About Us - DocuCreator Pro | AI Legal Document Generator"
+        description="Learn about DocuCreator Pro, India's leading AI-powered legal document generator. Our mission is to make legal documentation accessible and affordable for everyone."
+        keywords="about DocuCreator Pro, legal document generator India, AI document maker, legal tech company India"
+        canonicalUrl="/about"
+        breadcrumbs={[
+          { name: "Home", url: "/" },
+          { name: "About Us", url: "/about" }
+        ]}
+      />
+      
       <HeaderAdSenseCompliant />
       
       <main className="flex-grow bg-white">

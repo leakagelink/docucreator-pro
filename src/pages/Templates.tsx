@@ -65,9 +65,14 @@ const Templates = () => {
   return (
     <div className="flex flex-col min-h-screen">
       <SEOMetadata 
-        title="Document Templates | DocuCreator Pro" 
-        description="Browse our collection of AI-assisted document templates for various needs. Create customized document templates in minutes using standard formats."
+        title="Free Legal Document Templates India | Rent Agreement, NDA, POA Templates - DocuCreator Pro" 
+        description="Download free legal document templates. Rent agreement, NDA, employment contract, power of attorney, will templates. Customize and generate instantly."
+        keywords="free legal templates, rent agreement template, NDA template free, power of attorney format, employment contract template, legal document templates India"
         canonicalUrl="/templates"
+        breadcrumbs={[
+          { name: "Home", url: "/" },
+          { name: "Templates", url: "/templates" }
+        ]}
       />
       <HeaderAdSenseCompliant />
       
