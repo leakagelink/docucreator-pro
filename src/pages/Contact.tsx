@@ -40,9 +40,14 @@ const Contact = () => {
   return (
     <div className="flex flex-col min-h-screen">
       <SEOMetadata 
-        title="Contact Us | DocuCreator Pro" 
-        description="Get in touch with our team for inquiries, support, or feedback on our AI-powered document generation services."
+        title="Contact Us - DocuCreator Pro | Get Help & Support"
+        description="Contact DocuCreator Pro for support, inquiries, or feedback. We're here to help with your legal document needs. Email, phone, and office address available."
+        keywords="contact DocuCreator Pro, legal document support, document generator help, customer support India"
         canonicalUrl="/contact"
+        breadcrumbs={[
+          { name: "Home", url: "/" },
+          { name: "Contact", url: "/contact" }
+        ]}
       />
       <Header />
       

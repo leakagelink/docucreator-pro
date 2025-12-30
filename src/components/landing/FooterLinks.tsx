@@ -7,6 +7,21 @@ const FooterLinks = () => {
   return (
     <div className="mt-12 text-center">
       <div className="flex flex-wrap justify-center gap-4">
+        <Link to="/templates">
+          <Button variant="outline" className="border-legal-navy text-legal-navy">
+            Templates
+          </Button>
+        </Link>
+        <Link to="/blog">
+          <Button variant="outline" className="border-legal-navy text-legal-navy">
+            Blog & Guides
+          </Button>
+        </Link>
+        <Link to="/faq">
+          <Button variant="outline" className="border-legal-navy text-legal-navy">
+            FAQ
+          </Button>
+        </Link>
         <Link to="/how-ai-works">
           <Button variant="outline" className="border-legal-navy text-legal-navy">
             How AI Works
