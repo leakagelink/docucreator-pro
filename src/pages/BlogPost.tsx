@@ -117,7 +117,29 @@ const blogPostsData: Record<string, {
           </Link>
         </div>
       </div>
-    )
+    ),
+    faqItems: [
+      {
+        question: "What is the ideal duration for a rent agreement in India?",
+        answer: "The most common duration is 11 months because agreements under 12 months don't require mandatory registration at the Sub-Registrar office, saving time and registration costs. However, they should be notarized for authenticity."
+      },
+      {
+        question: "How much security deposit should be mentioned in a rent agreement?",
+        answer: "Security deposit typically ranges from 2-3 months' rent in most Indian cities. In cities like Bangalore, it can go up to 10 months' rent. The exact amount should be clearly mentioned in the agreement along with refund terms."
+      },
+      {
+        question: "Is stamp duty mandatory for rent agreements?",
+        answer: "Yes, stamp duty is mandatory for all rent agreements in India. The rate varies by state - Maharashtra charges 0.25% of total rent, Delhi charges 2% of annual rent, and Karnataka charges 1% of total rent for the agreement period."
+      },
+      {
+        question: "Can a rent agreement be used as address proof?",
+        answer: "Yes, a registered or notarized rent agreement is accepted as valid address proof for Aadhaar updates, passport applications, bank account opening, and various government services. The agreement should be current and not expired."
+      },
+      {
+        question: "What happens if rent agreement is not renewed after 11 months?",
+        answer: "If both parties continue the arrangement without renewal, it typically converts to a month-to-month tenancy under the same terms. However, it's advisable to execute a fresh agreement to avoid legal complications and maintain clear documentation."
+      }
+    ]
   },
   'nda-agreement-template-guide': {
     title: 'NDA Agreement: What You Need to Know Before Signing',
@@ -171,7 +193,29 @@ const blogPostsData: Record<string, {
           </Link>
         </div>
       </div>
-    )
+    ),
+    faqItems: [
+      {
+        question: "How long should an NDA last?",
+        answer: "NDA duration typically ranges from 2-5 years for most business relationships. However, for trade secrets, NDAs can last indefinitely. The duration should be reasonable and proportionate to the sensitivity of the information being protected."
+      },
+      {
+        question: "What happens if someone violates an NDA?",
+        answer: "Violating an NDA can result in legal action including monetary damages, injunctions to stop further disclosure, and in some cases, criminal penalties. The disclosing party can sue for breach of contract and claim compensation for losses suffered."
+      },
+      {
+        question: "Can an NDA be signed electronically in India?",
+        answer: "Yes, NDAs can be signed electronically in India under the Information Technology Act, 2000. Electronic signatures using Aadhaar e-Sign or DSC (Digital Signature Certificate) are legally valid and enforceable."
+      },
+      {
+        question: "What information cannot be covered under an NDA?",
+        answer: "NDAs cannot cover information that is already public, independently developed by the receiving party, received from third parties legally, or required to be disclosed by law or court order. These are standard exclusions in most NDAs."
+      },
+      {
+        question: "Do I need a lawyer to create an NDA?",
+        answer: "While not mandatory, consulting a lawyer is advisable for complex business situations. For standard NDAs, you can use professionally drafted templates from DocuCreator Pro that include all essential clauses and are legally formatted."
+      }
+    ]
   },
   'gift-deed-vs-sale-deed-india': {
     title: 'Gift Deed vs Sale Deed: Which is Better for Property Transfer in India 2024',
