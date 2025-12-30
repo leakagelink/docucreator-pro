@@ -18,6 +18,7 @@ import AppAds from "./pages/AppAds";
 import FAQ from "./pages/FAQ";
 import Blog from "./pages/Blog";
 import BlogPost from "./pages/BlogPost";
+import SEOArticleGenerator from "./pages/SEOArticleGenerator";
 import BottomNavigation from "./components/BottomNavigation";
 import ScrollToTop from "./components/ScrollToTop";
 
@@ -45,6 +46,7 @@ const App: React.FC = () => {
                 <Route path="/faq" element={<FAQ />} />
                 <Route path="/blog" element={<Blog />} />
                 <Route path="/blog/:slug" element={<BlogPost />} />
+                <Route path="/seo-generator" element={<SEOArticleGenerator />} />
                 <Route path="*" element={<NotFound />} />
               </Routes>
               <BottomNavigation />
