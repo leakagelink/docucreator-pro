@@ -708,7 +708,29 @@ const blogPostsData: Record<string, {
           </Link>
         </div>
       </div>
-    )
+    ),
+    faqItems: [
+      {
+        question: "Can I register a rent agreement without the owner being present?",
+        answer: "No, both landlord and tenant must be present during registration. However, in case of inability, a Power of Attorney holder can appear on behalf."
+      },
+      {
+        question: "How long does online registration take?",
+        answer: "The entire process takes 2-5 working days depending on the state and document verification."
+      },
+      {
+        question: "Can I register an old rent agreement?",
+        answer: "Yes, but you may need to pay additional stamp duty and penalty for late registration (after 4 months from execution)."
+      },
+      {
+        question: "Is registration mandatory for 11-month rent agreements?",
+        answer: "No, registration is not mandatory for agreements less than 12 months. However, in Maharashtra, Leave and License agreements must be registered regardless of duration."
+      },
+      {
+        question: "What is the stamp duty for rent agreement registration?",
+        answer: "Stamp duty varies by state. Maharashtra charges 0.25% of total rent + deposit, Delhi charges 2% of annual rent, Karnataka charges 1% of total rent for the lease period."
+      }
+    ]
   }
 };
 
