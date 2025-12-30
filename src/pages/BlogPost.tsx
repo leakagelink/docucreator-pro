@@ -166,6 +166,314 @@ const blogPostsData: Record<string, {
       </div>
     )
   },
+  'sale-deed-registration-process-india': {
+    title: 'Sale Deed Registration Process in India: Complete Guide 2024',
+    description: 'Complete guide to sale deed registration in India. Learn about documents required, stamp duty rates, registration fees, online process, and step-by-step procedure for property transfer.',
+    keywords: 'sale deed registration, property registration India, stamp duty sale deed, property transfer documents, sub registrar office, conveyance deed, property registration process, sale deed format',
+    date: '2024-12-30',
+    readTime: '15 min read',
+    category: 'Property Documents',
+    content: (
+      <div className="prose prose-lg max-w-none">
+        <h2>What is a Sale Deed?</h2>
+        <p>
+          A <strong>Sale Deed</strong> (also known as Conveyance Deed or Transfer Deed) is the most important legal document in property transactions. It serves as the primary evidence of sale and transfer of property ownership from the seller to the buyer. Without a registered sale deed, the property transfer is not legally valid in India.
+        </p>
+        <p>
+          Under the <strong>Registration Act, 1908</strong> and <strong>Transfer of Property Act, 1882</strong>, registration of sale deed is mandatory for all immovable property transactions exceeding ₹100 in value.
+        </p>
+
+        <h2>Why is Sale Deed Registration Important?</h2>
+        <ul>
+          <li><strong>Legal Ownership:</strong> Only a registered sale deed establishes legal ownership of property</li>
+          <li><strong>Court Evidence:</strong> Registered documents are admissible as primary evidence in courts</li>
+          <li><strong>Prevents Fraud:</strong> Registration process verifies identity and prevents property fraud</li>
+          <li><strong>Loan Eligibility:</strong> Banks require registered sale deed for home loans</li>
+          <li><strong>Property Mutation:</strong> Required for transferring property records in municipal records</li>
+          <li><strong>Future Sale:</strong> Essential for selling the property in future</li>
+        </ul>
+
+        <h2>Documents Required for Sale Deed Registration</h2>
+        
+        <h3>From Seller (Vendor):</h3>
+        <ul>
+          <li>Original previous sale deed / title documents</li>
+          <li>Property tax receipts (last 3 years)</li>
+          <li>Encumbrance Certificate (EC) - last 13/30 years</li>
+          <li>Aadhaar Card and PAN Card</li>
+          <li>Passport-size photographs (4 copies)</li>
+          <li>Building approval plan (for constructed property)</li>
+          <li>Occupancy Certificate / Completion Certificate</li>
+          <li>Society NOC (for flats/apartments)</li>
+          <li>Power of Attorney (if applicable)</li>
+        </ul>
+
+        <h3>From Buyer (Vendee):</h3>
+        <ul>
+          <li>Aadhaar Card and PAN Card</li>
+          <li>Passport-size photographs (4 copies)</li>
+          <li>Address proof</li>
+          <li>Bank account details (for payment trail)</li>
+          <li>Home loan sanction letter (if financed)</li>
+        </ul>
+
+        <h3>Property Documents:</h3>
+        <ul>
+          <li>Property survey documents and layout plan</li>
+          <li>Khata Certificate / Patta</li>
+          <li>Land conversion certificate (for agricultural land)</li>
+          <li>RERA registration (for new projects)</li>
+          <li>Builder-Buyer Agreement (for under-construction)</li>
+        </ul>
+
+        <h2>Step-by-Step Sale Deed Registration Process</h2>
+        
+        <h3>Step 1: Verify Property Title</h3>
+        <p>
+          Before proceeding, conduct thorough due diligence:
+        </p>
+        <ul>
+          <li>Verify seller's ownership through title documents</li>
+          <li>Obtain Encumbrance Certificate (EC) to check for loans/mortgages</li>
+          <li>Verify property tax payment status</li>
+          <li>Check for any litigation on the property</li>
+          <li>Verify RERA registration for new projects</li>
+        </ul>
+
+        <h3>Step 2: Draft the Sale Deed</h3>
+        <p>
+          The sale deed should include:
+        </p>
+        <ul>
+          <li>Complete details of buyer and seller</li>
+          <li>Property description with boundaries and measurements</li>
+          <li>Sale consideration (price) and payment details</li>
+          <li>Mode of payment (cash, cheque, bank transfer)</li>
+          <li>Handover possession date</li>
+          <li>Indemnity clause</li>
+          <li>Declaration of clear title</li>
+        </ul>
+
+        <h3>Step 3: Pay Stamp Duty</h3>
+        <p>
+          Stamp duty must be paid before registration. You can pay through:
+        </p>
+        <ul>
+          <li><strong>E-Stamping:</strong> Online through SHCIL portal</li>
+          <li><strong>Franking:</strong> Through authorized banks</li>
+          <li><strong>Stamp Paper:</strong> Purchase from authorized vendors</li>
+        </ul>
+
+        <h3>Step 4: Book Appointment at Sub-Registrar Office</h3>
+        <p>
+          Schedule an appointment through state's online portal:
+        </p>
+        <ul>
+          <li><strong>Maharashtra:</strong> igrmaharashtra.gov.in</li>
+          <li><strong>Delhi:</strong> doris.delhigovt.nic.in</li>
+          <li><strong>Karnataka:</strong> kaverionline.karnataka.gov.in</li>
+          <li><strong>Tamil Nadu:</strong> tnreginet.gov.in</li>
+          <li><strong>Uttar Pradesh:</strong> igrsup.gov.in</li>
+          <li><strong>Gujarat:</strong> garvi.gujarat.gov.in</li>
+          <li><strong>Rajasthan:</strong> epanjiyan.raj.nic.in</li>
+        </ul>
+
+        <h3>Step 5: Visit Sub-Registrar Office</h3>
+        <p>
+          On the appointment date:
+        </p>
+        <ul>
+          <li>Both buyer and seller must be present</li>
+          <li>Bring two witnesses with Aadhaar</li>
+          <li>Carry all original documents</li>
+          <li>Biometric verification will be done</li>
+          <li>Pay registration fee</li>
+        </ul>
+
+        <h3>Step 6: Collect Registered Document</h3>
+        <p>
+          After verification, the Sub-Registrar will:
+        </p>
+        <ul>
+          <li>Enter details in registration records</li>
+          <li>Provide unique document registration number</li>
+          <li>Return registered sale deed within 2-7 days</li>
+        </ul>
+
+        <h2>Stamp Duty Rates by State (2024)</h2>
+        <table className="w-full border-collapse border border-gray-300 my-4">
+          <thead>
+            <tr className="bg-legal-light">
+              <th className="border border-gray-300 p-3 text-left">State</th>
+              <th className="border border-gray-300 p-3 text-left">Male Buyer</th>
+              <th className="border border-gray-300 p-3 text-left">Female Buyer</th>
+              <th className="border border-gray-300 p-3 text-left">Joint (M+F)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td className="border border-gray-300 p-3">Maharashtra</td>
+              <td className="border border-gray-300 p-3">6%</td>
+              <td className="border border-gray-300 p-3">5%</td>
+              <td className="border border-gray-300 p-3">5%</td>
+            </tr>
+            <tr>
+              <td className="border border-gray-300 p-3">Delhi</td>
+              <td className="border border-gray-300 p-3">6%</td>
+              <td className="border border-gray-300 p-3">4%</td>
+              <td className="border border-gray-300 p-3">5%</td>
+            </tr>
+            <tr>
+              <td className="border border-gray-300 p-3">Karnataka</td>
+              <td className="border border-gray-300 p-3">5%</td>
+              <td className="border border-gray-300 p-3">5%</td>
+              <td className="border border-gray-300 p-3">5%</td>
+            </tr>
+            <tr>
+              <td className="border border-gray-300 p-3">Tamil Nadu</td>
+              <td className="border border-gray-300 p-3">7%</td>
+              <td className="border border-gray-300 p-3">7%</td>
+              <td className="border border-gray-300 p-3">7%</td>
+            </tr>
+            <tr>
+              <td className="border border-gray-300 p-3">Uttar Pradesh</td>
+              <td className="border border-gray-300 p-3">7%</td>
+              <td className="border border-gray-300 p-3">6%</td>
+              <td className="border border-gray-300 p-3">6.5%</td>
+            </tr>
+            <tr>
+              <td className="border border-gray-300 p-3">Gujarat</td>
+              <td className="border border-gray-300 p-3">4.9%</td>
+              <td className="border border-gray-300 p-3">4.9%</td>
+              <td className="border border-gray-300 p-3">4.9%</td>
+            </tr>
+            <tr>
+              <td className="border border-gray-300 p-3">Rajasthan</td>
+              <td className="border border-gray-300 p-3">6%</td>
+              <td className="border border-gray-300 p-3">5%</td>
+              <td className="border border-gray-300 p-3">5.5%</td>
+            </tr>
+            <tr>
+              <td className="border border-gray-300 p-3">West Bengal</td>
+              <td className="border border-gray-300 p-3">6-7%</td>
+              <td className="border border-gray-300 p-3">6-7%</td>
+              <td className="border border-gray-300 p-3">6-7%</td>
+            </tr>
+          </tbody>
+        </table>
+        <p className="text-sm text-legal-gray">
+          *Note: Additional 1% registration fee applies in most states. Municipal areas may have higher rates.
+        </p>
+
+        <h2>Registration Fees</h2>
+        <p>
+          Registration fee is typically <strong>1% of property value</strong> or a fixed amount, whichever is higher:
+        </p>
+        <ul>
+          <li><strong>Maharashtra:</strong> 1% (max ₹30,000)</li>
+          <li><strong>Delhi:</strong> 1%</li>
+          <li><strong>Karnataka:</strong> 1%</li>
+          <li><strong>Tamil Nadu:</strong> 1%</li>
+          <li><strong>UP:</strong> 1%</li>
+        </ul>
+
+        <h2>Online Sale Deed Registration</h2>
+        <p>
+          Many states now offer partial or full online registration:
+        </p>
+        
+        <h3>Maharashtra (igrmaharashtra.gov.in)</h3>
+        <ul>
+          <li>Upload documents online</li>
+          <li>Pay stamp duty and registration fee online</li>
+          <li>Book appointment slot</li>
+          <li>Physical visit required for biometrics</li>
+        </ul>
+
+        <h3>Karnataka (Kaveri Online 2.0)</h3>
+        <ul>
+          <li>Doorstep registration service available</li>
+          <li>Document scanning at home</li>
+          <li>Biometric capture at doorstep</li>
+          <li>Premium fee for doorstep service</li>
+        </ul>
+
+        <h2>Common Mistakes to Avoid</h2>
+        <ul>
+          <li><strong>Incorrect valuation:</strong> Undervaluing property can lead to penalties</li>
+          <li><strong>Missing EC:</strong> Not obtaining Encumbrance Certificate</li>
+          <li><strong>Ignoring pending dues:</strong> Check for unpaid property tax, maintenance</li>
+          <li><strong>Wrong stamp duty:</strong> Calculating on agreement value instead of circle rate</li>
+          <li><strong>Missing witnesses:</strong> Witnesses must be present with valid ID</li>
+          <li><strong>Delayed registration:</strong> Register within 4 months of execution</li>
+          <li><strong>Power of Attorney misuse:</strong> Ensure POA is valid and registered</li>
+        </ul>
+
+        <h2>After Registration: Next Steps</h2>
+        <ol>
+          <li><strong>Collect Registered Deed:</strong> Usually within 2-7 days</li>
+          <li><strong>Property Mutation:</strong> Apply at municipal corporation</li>
+          <li><strong>Update Khata:</strong> Transfer Khata to buyer's name</li>
+          <li><strong>Utility Transfer:</strong> Change electricity, water connections</li>
+          <li><strong>Society Transfer:</strong> Update society records (for flats)</li>
+          <li><strong>Update Bank:</strong> Inform bank if property was mortgaged</li>
+        </ol>
+
+        <h2>FAQs</h2>
+        
+        <h3>Q: What is the time limit for sale deed registration?</h3>
+        <p>
+          <strong>A:</strong> A sale deed must be registered within 4 months from the date of execution. After this period, you can still register with late fees (penalty) typically 2% per month up to a maximum of 4 times the original registration fee.
+        </p>
+
+        <h3>Q: Can I register a sale deed without paying full stamp duty?</h3>
+        <p>
+          <strong>A:</strong> No, stamp duty must be paid in full before registration. The Sub-Registrar will verify stamp duty payment. Underpayment can result in penalties up to 10 times the deficit amount.
+        </p>
+
+        <h3>Q: What is the difference between Agreement to Sell and Sale Deed?</h3>
+        <p>
+          <strong>A:</strong> An Agreement to Sell is a promise to transfer property in the future upon certain conditions being met. A Sale Deed is the final document that actually transfers ownership. Only a Sale Deed creates legal ownership rights.
+        </p>
+
+        <h3>Q: Is physical presence mandatory for registration?</h3>
+        <p>
+          <strong>A:</strong> Yes, both buyer and seller must be physically present for biometric verification. If unable to attend, a registered Power of Attorney holder can represent them.
+        </p>
+
+        <h3>Q: How is stamp duty calculated - on agreement value or circle rate?</h3>
+        <p>
+          <strong>A:</strong> Stamp duty is calculated on whichever is higher - the actual sale consideration (agreement value) or the government-specified circle rate/guideline value for that area.
+        </p>
+
+        <h3>Q: Can NRIs register property in India?</h3>
+        <p>
+          <strong>A:</strong> Yes, NRIs can buy and register property in India. They can either be present in person or authorize someone through a registered Power of Attorney. Payment must be through NRE/NRO accounts.
+        </p>
+
+        <h3>Q: What happens if the seller dies before registration?</h3>
+        <p>
+          <strong>A:</strong> If the seller dies after executing the sale deed but before registration, the legal heirs can complete the registration. They need to produce death certificate, legal heir certificate, and may need succession certificate.
+        </p>
+
+        <div className="bg-legal-light p-6 rounded-lg my-8">
+          <h3 className="text-legal-navy">Create Your Sale Deed Now</h3>
+          <p>Generate a professional sale deed document using DocuCreator Pro. Our templates are legally formatted and include all essential clauses.</p>
+          <Link to="/?template=property-sale" className="text-legal-accent font-medium hover:underline">
+            Create Sale Deed →
+          </Link>
+        </div>
+
+        <h2>Conclusion</h2>
+        <p>
+          Sale deed registration is a crucial step in any property transaction in India. While the process may seem complex, proper preparation and understanding of requirements can make it smooth. Always verify property documents thoroughly, pay correct stamp duty, and complete registration within the stipulated time to avoid legal complications.
+        </p>
+        <p>
+          For hassle-free document creation, use DocuCreator Pro to generate professionally formatted sale deeds and other property documents instantly.
+        </p>
+      </div>
+    )
+  },
   'how-to-register-rent-agreement-online-india': {
     title: 'How to Register Rent Agreement Online in India: Complete Step-by-Step Guide 2024',
     description: 'Learn how to register your rent agreement online in India. Complete guide covering e-registration process, documents required, stamp duty, fees, and state-wise procedures for Maharashtra, Delhi, Karnataka, and more.',
