@@ -5,10 +5,20 @@ import HeaderAdSenseCompliant from '@/components/HeaderAdSenseCompliant';
 import FooterAdSenseCompliant from '@/components/FooterAdSenseCompliant';
 import SEOMetadata from '@/components/SEOMetadata';
 import PlayStoreCompliantDisclaimer from '@/components/PlayStoreCompliantDisclaimer';
-import { Calendar, Clock, ArrowRight, FileText, Scale, Home, Briefcase, Users, Shield } from 'lucide-react';
+import { Calendar, Clock, ArrowRight, FileText, Scale, Home, Briefcase, Users, Shield, ClipboardCheck } from 'lucide-react';
 
 const Blog = () => {
   const blogPosts = [
+    {
+      id: 'how-to-register-rent-agreement-online-india',
+      title: 'How to Register Rent Agreement Online in India: Complete Guide 2024',
+      excerpt: 'Learn how to register your rent agreement online in India. Complete guide covering e-registration process, documents required, stamp duty, fees, and state-wise procedures.',
+      category: 'Legal Guides',
+      icon: ClipboardCheck,
+      date: '2024-12-30',
+      readTime: '12 min read',
+      keywords: ['register rent agreement', 'e-registration', 'stamp duty', 'online registration']
+    },
     {
       id: 'how-to-create-rent-agreement-india',
       title: 'How to Create a Rent Agreement in India: Complete Guide 2024',
