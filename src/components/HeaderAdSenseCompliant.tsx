@@ -49,6 +49,7 @@ const HeaderAdSenseCompliant = () => {
               <div className="hidden md:flex items-center space-x-8">
                 <Link to="/" className="hover:text-legal-gold transition-colors">Home</Link>
                 <Link to="/templates" className="hover:text-legal-gold transition-colors">Templates</Link>
+                <Link to="/seo-generator" className="hover:text-legal-gold transition-colors">SEO Generator</Link>
                 <Link to="/about" className="hover:text-legal-gold transition-colors">About Us</Link>
                 <Link to="/contact" className="hover:text-legal-gold transition-colors">Contact</Link>
               </div>
@@ -70,6 +71,9 @@ const HeaderAdSenseCompliant = () => {
             </Link>
             <Link to="/templates" className="py-2 hover:text-legal-gold transition-colors text-legal-navy" onClick={() => setMobileMenuOpen(false)}>
               Templates
+            </Link>
+            <Link to="/seo-generator" className="py-2 hover:text-legal-gold transition-colors text-legal-navy" onClick={() => setMobileMenuOpen(false)}>
+              SEO Generator
             </Link>
             <Link to="/about" className="py-2 hover:text-legal-gold transition-colors text-legal-navy" onClick={() => setMobileMenuOpen(false)}>
               About Us
