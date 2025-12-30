@@ -10,6 +10,16 @@ import { Calendar, Clock, ArrowRight, FileText, Scale, Home, Briefcase, Users, S
 const Blog = () => {
   const blogPosts = [
     {
+      id: 'sale-deed-registration-process-india',
+      title: 'Sale Deed Registration Process in India: Complete Guide 2024',
+      excerpt: 'Complete guide to sale deed registration in India. Learn about documents required, stamp duty rates, registration fees, online process, and step-by-step procedure for property transfer.',
+      category: 'Property Documents',
+      icon: Scale,
+      date: '2024-12-30',
+      readTime: '15 min read',
+      keywords: ['sale deed', 'property registration', 'stamp duty', 'conveyance deed']
+    },
+    {
       id: 'how-to-register-rent-agreement-online-india',
       title: 'How to Register Rent Agreement Online in India: Complete Guide 2024',
       excerpt: 'Learn how to register your rent agreement online in India. Complete guide covering e-registration process, documents required, stamp duty, fees, and state-wise procedures.',
