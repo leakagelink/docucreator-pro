@@ -1,74 +1,17 @@
-# DocuCreator Pro - AI Legal Document Generator
+# DocuCreator Pro
 # https://docucreatorpro.online
 
-# Main crawl rules
 User-agent: *
 Allow: /
-Allow: /templates
-Allow: /about
-Allow: /contact
-Allow: /faq
-Allow: /blog
-Allow: /blog/*
-Allow: /how-ai-works
-Allow: /privacy
-Allow: /terms
 
-# Disallow admin and internal areas
-Disallow: /admin/
-Disallow: /account/
-Disallow: /api/
-Disallow: /_next/
-Disallow: /static/
-
-# Allow CSS and JavaScript for better rendering
-Allow: /*.js$
-Allow: /*.css$
-Allow: /*.png$
-Allow: /*.jpg$
-Allow: /*.gif$
-Allow: /*.svg$
-Allow: /*.ico$
-Allow: /*.webp$
-
-# Sitemap location
 Sitemap: https://docucreatorpro.online/sitemap.xml
 
-# Google specific
 User-agent: Googlebot
 Allow: /
-Crawl-delay: 1
 
-User-agent: Googlebot-Image
-Allow: /icons/
-Allow: /images/
-Allow: /*.png$
-Allow: /*.jpg$
-Allow: /*.webp$
-
-User-agent: Googlebot-Mobile
-Allow: /
-
-# Bing
 User-agent: Bingbot
 Allow: /
-Crawl-delay: 2
 
-# Yahoo
-User-agent: Slurp
-Allow: /
-Crawl-delay: 2
-
-# DuckDuckGo
-User-agent: DuckDuckBot
-Allow: /
-
-# Yandex
-User-agent: Yandex
-Allow: /
-Crawl-delay: 3
-
-# Facebook and Twitter for social sharing
 User-agent: facebookexternalhit
 Allow: /
 
@@ -78,47 +21,11 @@ Allow: /
 User-agent: LinkedInBot
 Allow: /
 
-User-agent: Pinterest
-Allow: /
-
-# AdSense crawlers
 User-agent: Mediapartners-Google
 Allow: /
 
 User-agent: AdsBot-Google
 Allow: /
 
-User-agent: AdsBot-Google-Mobile
-Allow: /
-
-# Block bad bots
-User-agent: AhrefsBot
-Disallow: /
-
-User-agent: SemrushBot
-Disallow: /
-
-User-agent: MJ12bot
-Disallow: /
-
-User-agent: DotBot
-Disallow: /
-
-User-agent: BLEXBot
-Disallow: /
-
-# AI training bots (optional - block or allow based on preference)
-User-agent: GPTBot
-Disallow: /
-
-User-agent: ChatGPT-User
-Disallow: /
-
-User-agent: CCBot
-Disallow: /
-
-User-agent: anthropic-ai
-Disallow: /
-
-User-agent: Claude-Web
-Disallow: /
+Disallow: /api/
+Disallow: /admin/
