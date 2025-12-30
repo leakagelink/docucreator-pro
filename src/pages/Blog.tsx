@@ -5,10 +5,20 @@ import HeaderAdSenseCompliant from '@/components/HeaderAdSenseCompliant';
 import FooterAdSenseCompliant from '@/components/FooterAdSenseCompliant';
 import SEOMetadata from '@/components/SEOMetadata';
 import PlayStoreCompliantDisclaimer from '@/components/PlayStoreCompliantDisclaimer';
-import { Calendar, Clock, ArrowRight, FileText, Scale, Home, Briefcase, Users, Shield, ClipboardCheck } from 'lucide-react';
+import { Calendar, Clock, ArrowRight, FileText, Scale, Home, Briefcase, Users, Shield, ClipboardCheck, Gift } from 'lucide-react';
 
 const Blog = () => {
   const blogPosts = [
+    {
+      id: 'gift-deed-vs-sale-deed-india',
+      title: 'Gift Deed vs Sale Deed: Which is Better for Property Transfer in India 2024',
+      excerpt: 'Comprehensive comparison of Gift Deed and Sale Deed for property transfer in India. Learn about tax implications, stamp duty, legal requirements, and which option is best.',
+      category: 'Property Documents',
+      icon: Gift,
+      date: '2024-12-30',
+      readTime: '14 min read',
+      keywords: ['gift deed', 'sale deed', 'property transfer', 'stamp duty', 'tax implications']
+    },
     {
       id: 'sale-deed-registration-process-india',
       title: 'Sale Deed Registration Process in India: Complete Guide 2024',
