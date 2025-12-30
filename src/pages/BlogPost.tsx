@@ -8,6 +8,12 @@ import PlayStoreCompliantDisclaimer from '@/components/PlayStoreCompliantDisclai
 import { Calendar, Clock, ArrowLeft, Share2, FileText } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
+// FAQ items for structured data
+interface FAQItem {
+  question: string;
+  answer: string;
+}
+
 // Blog post content data
 const blogPostsData: Record<string, {
   title: string;
@@ -17,6 +23,7 @@ const blogPostsData: Record<string, {
   readTime: string;
   category: string;
   content: React.ReactNode;
+  faqItems?: FAQItem[];
 }> = {
   'how-to-create-rent-agreement-india': {
     title: 'How to Create a Rent Agreement in India: Complete Guide 2024',
@@ -472,7 +479,37 @@ const blogPostsData: Record<string, {
           For hassle-free document creation, use DocuCreator Pro to generate professionally formatted sale deeds and other property documents instantly.
         </p>
       </div>
-    )
+    ),
+    faqItems: [
+      {
+        question: "What is the time limit for sale deed registration?",
+        answer: "A sale deed must be registered within 4 months from the date of execution. After this period, you can still register with late fees (penalty) typically 2% per month up to a maximum of 4 times the original registration fee."
+      },
+      {
+        question: "Can I register a sale deed without paying full stamp duty?",
+        answer: "No, stamp duty must be paid in full before registration. The Sub-Registrar will verify stamp duty payment. Underpayment can result in penalties up to 10 times the deficit amount."
+      },
+      {
+        question: "What is the difference between Agreement to Sell and Sale Deed?",
+        answer: "An Agreement to Sell is a promise to transfer property in the future upon certain conditions being met. A Sale Deed is the final document that actually transfers ownership. Only a Sale Deed creates legal ownership rights."
+      },
+      {
+        question: "Is physical presence mandatory for registration?",
+        answer: "Yes, both buyer and seller must be physically present for biometric verification. If unable to attend, a registered Power of Attorney holder can represent them."
+      },
+      {
+        question: "How is stamp duty calculated - on agreement value or circle rate?",
+        answer: "Stamp duty is calculated on whichever is higher - the actual sale consideration (agreement value) or the government-specified circle rate/guideline value for that area."
+      },
+      {
+        question: "Can NRIs register property in India?",
+        answer: "Yes, NRIs can buy and register property in India. They can either be present in person or authorize someone through a registered Power of Attorney. Payment must be through NRE/NRO accounts."
+      },
+      {
+        question: "What happens if the seller dies before registration?",
+        answer: "If the seller dies after executing the sale deed but before registration, the legal heirs can complete the registration. They need to produce death certificate, legal heir certificate, and may need succession certificate."
+      }
+    ]
   },
   'how-to-register-rent-agreement-online-india': {
     title: 'How to Register Rent Agreement Online in India: Complete Step-by-Step Guide 2024',
@@ -730,6 +767,7 @@ const BlogPost = () => {
           { name: "Blog", url: "/blog" },
           { name: post.title, url: `/blog/${slug}` }
         ]}
+        faqItems={post.faqItems}
       />
       
       <HeaderAdSenseCompliant />
