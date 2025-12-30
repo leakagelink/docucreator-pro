@@ -165,6 +165,205 @@ const blogPostsData: Record<string, {
         </div>
       </div>
     )
+  },
+  'how-to-register-rent-agreement-online-india': {
+    title: 'How to Register Rent Agreement Online in India: Complete Step-by-Step Guide 2024',
+    description: 'Learn how to register your rent agreement online in India. Complete guide covering e-registration process, documents required, stamp duty, fees, and state-wise procedures for Maharashtra, Delhi, Karnataka, and more.',
+    keywords: 'register rent agreement online, e-registration rent agreement, online rent agreement registration India, stamp duty rent agreement, leave and license registration, rental agreement registration process',
+    date: '2024-12-30',
+    readTime: '12 min read',
+    category: 'Legal Guides',
+    content: (
+      <div className="prose prose-lg max-w-none">
+        <h2>Why Register Your Rent Agreement?</h2>
+        <p>
+          Registering a rent agreement provides legal validity and protection to both landlords and tenants. While agreements under 11 months don't require mandatory registration, registering them offers several benefits:
+        </p>
+        <ul>
+          <li><strong>Legal Evidence:</strong> Registered documents are admissible as primary evidence in court</li>
+          <li><strong>Dispute Resolution:</strong> Easier to resolve conflicts with registered agreements</li>
+          <li><strong>Prevents Fraud:</strong> Registration verifies authenticity of signatures and identities</li>
+          <li><strong>Address Proof:</strong> Serves as valid government-recognized address proof</li>
+          <li><strong>Loan Applications:</strong> Banks prefer registered agreements for home loans</li>
+        </ul>
+
+        <h2>When is Registration Mandatory?</h2>
+        <p>
+          According to the Registration Act, 1908:
+        </p>
+        <ul>
+          <li><strong>Mandatory:</strong> Rent agreements for 12 months or more MUST be registered</li>
+          <li><strong>Optional:</strong> Agreements less than 12 months (typically 11 months) are not mandatory but recommended</li>
+          <li><strong>Leave and License:</strong> In Maharashtra, Leave and License agreements must be registered regardless of duration</li>
+        </ul>
+
+        <h2>Documents Required for Registration</h2>
+        
+        <h3>From Landlord:</h3>
+        <ul>
+          <li>Original property ownership documents (sale deed, title deed)</li>
+          <li>Property tax receipts (latest)</li>
+          <li>Aadhaar Card and PAN Card</li>
+          <li>Passport-size photographs (2 copies)</li>
+          <li>Society NOC (if applicable)</li>
+        </ul>
+
+        <h3>From Tenant:</h3>
+        <ul>
+          <li>Aadhaar Card and PAN Card</li>
+          <li>Passport-size photographs (2 copies)</li>
+          <li>Employment proof or business documents</li>
+          <li>Previous address proof</li>
+        </ul>
+
+        <h3>Witnesses:</h3>
+        <ul>
+          <li>Two witnesses with Aadhaar and photographs</li>
+          <li>Witnesses should not be family members of parties</li>
+        </ul>
+
+        <h2>Online Registration Process</h2>
+        
+        <h3>Step 1: Create the Rent Agreement</h3>
+        <p>
+          First, create your rent agreement with all necessary details. You can use DocuCreator Pro to generate a professional rent agreement instantly.
+        </p>
+
+        <h3>Step 2: Pay Stamp Duty Online</h3>
+        <p>
+          Calculate and pay stamp duty through the state's e-stamping portal. Stamp duty rates vary by state:
+        </p>
+        <ul>
+          <li><strong>Maharashtra:</strong> 0.25% of total rent + deposit (min ₹100)</li>
+          <li><strong>Delhi:</strong> 2% of average annual rent</li>
+          <li><strong>Karnataka:</strong> 1% of total rent for lease period</li>
+          <li><strong>Tamil Nadu:</strong> 1% of annual rent</li>
+          <li><strong>Uttar Pradesh:</strong> 2% of annual rent</li>
+          <li><strong>Gujarat:</strong> 1% of total rent</li>
+        </ul>
+
+        <h3>Step 3: Schedule Appointment</h3>
+        <p>
+          Book an appointment at the Sub-Registrar office through the state's online portal:
+        </p>
+        <ul>
+          <li><strong>Maharashtra:</strong> igrmaharashtra.gov.in</li>
+          <li><strong>Delhi:</strong> doris.delhigovt.nic.in</li>
+          <li><strong>Karnataka:</strong> kaverionline.karnataka.gov.in</li>
+          <li><strong>Tamil Nadu:</strong> tnreginet.gov.in</li>
+        </ul>
+
+        <h3>Step 4: Visit Sub-Registrar Office</h3>
+        <p>
+          On the appointment date, both parties and witnesses must visit the Sub-Registrar office with:
+        </p>
+        <ul>
+          <li>Original and photocopies of all documents</li>
+          <li>E-stamp paper with paid stamp duty</li>
+          <li>Signed rent agreement (2 copies)</li>
+          <li>Appointment confirmation</li>
+        </ul>
+
+        <h3>Step 5: Verification and Registration</h3>
+        <p>
+          The Sub-Registrar will verify documents, take biometrics, and complete registration. You'll receive the registered document within 2-3 days.
+        </p>
+
+        <h2>Registration Fees by State</h2>
+        <table className="w-full border-collapse border border-gray-300 my-4">
+          <thead>
+            <tr className="bg-legal-light">
+              <th className="border border-gray-300 p-3 text-left">State</th>
+              <th className="border border-gray-300 p-3 text-left">Registration Fee</th>
+              <th className="border border-gray-300 p-3 text-left">Processing Time</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td className="border border-gray-300 p-3">Maharashtra</td>
+              <td className="border border-gray-300 p-3">₹1,000</td>
+              <td className="border border-gray-300 p-3">1-2 days</td>
+            </tr>
+            <tr>
+              <td className="border border-gray-300 p-3">Delhi</td>
+              <td className="border border-gray-300 p-3">₹1,100</td>
+              <td className="border border-gray-300 p-3">2-3 days</td>
+            </tr>
+            <tr>
+              <td className="border border-gray-300 p-3">Karnataka</td>
+              <td className="border border-gray-300 p-3">1% of rent (min ₹500)</td>
+              <td className="border border-gray-300 p-3">1-2 days</td>
+            </tr>
+            <tr>
+              <td className="border border-gray-300 p-3">Tamil Nadu</td>
+              <td className="border border-gray-300 p-3">1% of rent</td>
+              <td className="border border-gray-300 p-3">2-4 days</td>
+            </tr>
+            <tr>
+              <td className="border border-gray-300 p-3">Uttar Pradesh</td>
+              <td className="border border-gray-300 p-3">₹1,000 + 2% pasting</td>
+              <td className="border border-gray-300 p-3">3-5 days</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h2>E-Registration (Fully Online) States</h2>
+        <p>
+          Some states now offer complete online registration without physical visits:
+        </p>
+        <ul>
+          <li><strong>Maharashtra:</strong> Leave and License agreements can be registered 100% online via IGR Maharashtra portal</li>
+          <li><strong>Karnataka:</strong> Kaveri Online 2.0 offers doorstep registration service</li>
+          <li><strong>Delhi:</strong> Pilot program for online registration in select areas</li>
+        </ul>
+
+        <h2>Common Mistakes to Avoid</h2>
+        <ul>
+          <li>Not mentioning all terms in the agreement</li>
+          <li>Incorrect stamp duty calculation</li>
+          <li>Missing witness signatures</li>
+          <li>Not carrying original documents to registration</li>
+          <li>Delaying registration beyond 4 months of execution</li>
+          <li>Not getting acknowledgment copy</li>
+        </ul>
+
+        <h2>Penalties for Non-Registration</h2>
+        <p>
+          If you fail to register a mandatory rent agreement:
+        </p>
+        <ul>
+          <li>Document cannot be used as evidence in court</li>
+          <li>Penalty of 2-10 times the registration fee</li>
+          <li>Additional stamp duty with interest</li>
+          <li>Agreement may be considered void</li>
+        </ul>
+
+        <h2>FAQs</h2>
+        
+        <h3>Can I register a rent agreement without the owner being present?</h3>
+        <p>
+          No, both landlord and tenant must be present during registration. However, in case of inability, a Power of Attorney holder can appear on behalf.
+        </p>
+
+        <h3>How long does online registration take?</h3>
+        <p>
+          The entire process takes 2-5 working days depending on the state and document verification.
+        </p>
+
+        <h3>Can I register an old rent agreement?</h3>
+        <p>
+          Yes, but you may need to pay additional stamp duty and penalty for late registration (after 4 months from execution).
+        </p>
+
+        <div className="bg-legal-light p-6 rounded-lg my-8">
+          <h3 className="text-legal-navy">Create Your Rent Agreement Now</h3>
+          <p>First, create a professional rent agreement using DocuCreator Pro. Then follow the steps above to get it registered.</p>
+          <Link to="/?template=property-rent" className="text-legal-accent font-medium hover:underline">
+            Create Rent Agreement →
+          </Link>
+        </div>
+      </div>
+    )
   }
 };
 
