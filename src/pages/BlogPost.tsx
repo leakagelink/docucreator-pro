@@ -5,6 +5,7 @@ import FooterAdSenseCompliant from '@/components/FooterAdSenseCompliant';
 import SEOMetadata from '@/components/SEOMetadata';
 import PlayStoreCompliantDisclaimer from '@/components/PlayStoreCompliantDisclaimer';
 import PageBreadcrumb from '@/components/PageBreadcrumb';
+import RelatedArticles from '@/components/RelatedArticles';
 import { Calendar, Clock, ArrowLeft, Share2, FileText, User, CheckCircle2 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
@@ -1576,16 +1577,20 @@ const BlogPost = () => {
             </div>
           </div>
 
-          {/* Related Articles CTA */}
-          <div className="mt-8 text-center">
-            <Link 
-              to="/blog" 
-              className="inline-flex items-center gap-2 text-legal-accent hover:text-legal-navy font-medium"
-            >
-              View More Articles
-              <ArrowLeft className="w-4 h-4 rotate-180" />
-            </Link>
-          </div>
+          {/* Related Articles Section */}
+          <RelatedArticles 
+            currentSlug={slug || ''}
+            currentCategory={post.category}
+            articles={Object.entries(blogPostsData).map(([id, data]) => ({
+              id,
+              title: data.title,
+              excerpt: data.description,
+              category: data.category,
+              date: data.date,
+              readTime: data.readTime
+            }))}
+            maxArticles={3}
+          />
         </article>
         
         <PlayStoreCompliantDisclaimer />
