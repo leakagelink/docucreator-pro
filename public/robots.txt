@@ -4,7 +4,11 @@
 User-agent: *
 Allow: /
 
+# Static sitemap
 Sitemap: https://docucreatorpro.online/sitemap.xml
+
+# Dynamic sitemap (auto-updated)
+Sitemap: https://fqjrehhemtpbztjpfpfu.supabase.co/functions/v1/generate-sitemap
 
 User-agent: Googlebot
 Allow: /
