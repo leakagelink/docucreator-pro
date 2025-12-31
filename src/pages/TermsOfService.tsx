@@ -3,6 +3,7 @@ import HeaderAdSenseCompliant from '@/components/HeaderAdSenseCompliant';
 import FooterAdSenseCompliant from '@/components/FooterAdSenseCompliant';
 import SEOMetadata from '@/components/SEOMetadata';
 import PlayStoreCompliantDisclaimer from '@/components/PlayStoreCompliantDisclaimer';
+import PageBreadcrumb from '@/components/PageBreadcrumb';
 
 const TermsOfService = () => {
   return (
@@ -11,8 +12,13 @@ const TermsOfService = () => {
         title="Terms of Service | DocuCreator Pro" 
         description="Our terms of service outline the rules and guidelines for using DocuCreator Pro's AI-assisted document template services, including important disclaimers about legal advice."
         canonicalUrl="/terms"
+        breadcrumbs={[
+          { name: "Home", url: "/" },
+          { name: "Terms of Service", url: "/terms" }
+        ]}
       />
       <HeaderAdSenseCompliant />
+      <PageBreadcrumb items={[{ label: "Terms of Service" }]} />
       
       <main className="flex-grow bg-white">
         <div className="container mx-auto py-12 px-6">

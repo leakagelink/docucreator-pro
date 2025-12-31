@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -8,6 +7,7 @@ import { Textarea } from '@/components/ui/textarea';
 import { Mail, Phone, MapPin } from 'lucide-react';
 import { useToast } from '@/components/ui/use-toast';
 import SEOMetadata from '@/components/SEOMetadata';
+import PageBreadcrumb from '@/components/PageBreadcrumb';
 
 const Contact = () => {
   const [name, setName] = useState('');
@@ -50,6 +50,7 @@ const Contact = () => {
         ]}
       />
       <Header />
+      <PageBreadcrumb items={[{ label: "Contact" }]} />
       
       <main className="flex-grow bg-white">
         <div className="container mx-auto py-12 px-6">

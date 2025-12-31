@@ -3,6 +3,7 @@ import HeaderAdSenseCompliant from '@/components/HeaderAdSenseCompliant';
 import FooterAdSenseCompliant from '@/components/FooterAdSenseCompliant';
 import SEOMetadata from '@/components/SEOMetadata';
 import PlayStoreCompliantDisclaimer from '@/components/PlayStoreCompliantDisclaimer';
+import PageBreadcrumb from '@/components/PageBreadcrumb';
 
 const PrivacyPolicy = () => {
   return (
@@ -11,8 +12,13 @@ const PrivacyPolicy = () => {
         title="Privacy Policy | DocuCreator Pro" 
         description="Our privacy policy outlines how we collect, use, and protect your information when using DocuCreator Pro's AI-assisted document template services."
         canonicalUrl="/privacy"
+        breadcrumbs={[
+          { name: "Home", url: "/" },
+          { name: "Privacy Policy", url: "/privacy" }
+        ]}
       />
       <HeaderAdSenseCompliant />
+      <PageBreadcrumb items={[{ label: "Privacy Policy" }]} />
       
       <main className="flex-grow bg-white">
         <div className="container mx-auto py-12 px-6">

@@ -1,10 +1,10 @@
-
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import HeaderAdSenseCompliant from '@/components/HeaderAdSenseCompliant';
 import FooterAdSenseCompliant from '@/components/FooterAdSenseCompliant';
 import SEOMetadata from '@/components/SEOMetadata';
 import PlayStoreCompliantDisclaimer from '@/components/PlayStoreCompliantDisclaimer';
+import PageBreadcrumb from '@/components/PageBreadcrumb';
 import { Button } from '@/components/ui/button';
 import { FileText } from 'lucide-react';
 
@@ -75,6 +75,7 @@ const Templates = () => {
         ]}
       />
       <HeaderAdSenseCompliant />
+      <PageBreadcrumb items={[{ label: "Templates" }]} />
       
       <main className="flex-grow bg-white">
         <div className="container mx-auto py-12 px-6">

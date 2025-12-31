@@ -1,8 +1,8 @@
-
 import React from 'react';
 import HeaderAdSenseCompliant from '@/components/HeaderAdSenseCompliant';
 import FooterAdSenseCompliant from '@/components/FooterAdSenseCompliant';
 import SEOMetadata from '@/components/SEOMetadata';
+import PageBreadcrumb from '@/components/PageBreadcrumb';
 import { Brain, FileText, Shield, AlertTriangle } from 'lucide-react';
 import LegalDisclaimer from '@/components/LegalDisclaimer';
 
@@ -13,8 +13,13 @@ const HowAIWorks = () => {
         title="How Our AI Works | DocuCreator Pro" 
         description="Learn how DocuCreator Pro's AI-powered document generation works, its capabilities, limitations, and how we ensure data security and privacy."
         canonicalUrl="/how-ai-works"
+        breadcrumbs={[
+          { name: "Home", url: "/" },
+          { name: "How AI Works", url: "/how-ai-works" }
+        ]}
       />
       <HeaderAdSenseCompliant />
+      <PageBreadcrumb items={[{ label: "How AI Works" }]} />
       
       <main className="flex-grow bg-white">
         <div className="container mx-auto py-12 px-6">
