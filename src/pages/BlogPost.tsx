@@ -7,6 +7,7 @@ import PlayStoreCompliantDisclaimer from '@/components/PlayStoreCompliantDisclai
 import PageBreadcrumb from '@/components/PageBreadcrumb';
 import RelatedArticles from '@/components/RelatedArticles';
 import ReadingProgress from '@/components/ReadingProgress';
+import SocialShareButtons from '@/components/SocialShareButtons';
 import { Calendar, Clock, ArrowLeft, Share2, FileText, User, CheckCircle2 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
@@ -1565,8 +1566,17 @@ const BlogPost = () => {
             </div>
           )}
 
+          {/* Social Share Buttons */}
+          <div className="mt-12 p-6 bg-white border border-gray-100 rounded-lg shadow-sm">
+            <SocialShareButtons 
+              url={`/blog/${slug}`}
+              title={post.title}
+              description={post.description}
+            />
+          </div>
+
           {/* Author Section - E-E-A-T */}
-          <div className="mt-12 p-6 bg-legal-light rounded-lg">
+          <div className="mt-8 p-6 bg-legal-light rounded-lg">
             <div className="flex items-start gap-4">
               <div className="w-16 h-16 bg-legal-navy rounded-full flex items-center justify-center flex-shrink-0">
                 <User className="w-8 h-8 text-white" />
