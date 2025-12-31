@@ -3,6 +3,7 @@ import { supabase } from '@/integrations/supabase/client';
 import HeaderAdSenseCompliant from '@/components/HeaderAdSenseCompliant';
 import FooterAdSenseCompliant from '@/components/FooterAdSenseCompliant';
 import SEOMetadata from '@/components/SEOMetadata';
+import PageBreadcrumb from '@/components/PageBreadcrumb';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
@@ -169,6 +170,7 @@ const SEOArticleGenerator = () => {
       />
       
       <HeaderAdSenseCompliant />
+      <PageBreadcrumb items={[{ label: "SEO Article Generator" }]} />
       
       <main className="flex-grow bg-gradient-to-b from-white to-legal-light">
         <div className="container mx-auto px-4 py-8 md:py-12">

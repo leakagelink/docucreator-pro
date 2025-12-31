@@ -1,8 +1,8 @@
-
 import React from 'react';
 import HeaderAdSenseCompliant from '@/components/HeaderAdSenseCompliant';
 import FooterAdSenseCompliant from '@/components/FooterAdSenseCompliant';
 import SEOMetadata from '@/components/SEOMetadata';
+import PageBreadcrumb from '@/components/PageBreadcrumb';
 import { FileText, Sparkles, Shield, Clock } from 'lucide-react';
 
 const AboutUs = () => {
@@ -20,6 +20,7 @@ const AboutUs = () => {
       />
       
       <HeaderAdSenseCompliant />
+      <PageBreadcrumb items={[{ label: "About Us" }]} />
       
       <main className="flex-grow bg-white">
         <div className="container mx-auto py-12 px-6">

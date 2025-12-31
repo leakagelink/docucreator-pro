@@ -1,10 +1,10 @@
-
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import HeaderAdSenseCompliant from '@/components/HeaderAdSenseCompliant';
 import FooterAdSenseCompliant from '@/components/FooterAdSenseCompliant';
 import SEOMetadata from '@/components/SEOMetadata';
 import PlayStoreCompliantDisclaimer from '@/components/PlayStoreCompliantDisclaimer';
+import PageBreadcrumb from '@/components/PageBreadcrumb';
 import { Calendar, Clock, ArrowLeft, Share2, FileText, User, CheckCircle2 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
@@ -1475,6 +1475,10 @@ const BlogPost = () => {
       />
       
       <HeaderAdSenseCompliant />
+      <PageBreadcrumb items={[
+        { label: "Blog", href: "/blog" },
+        { label: post.title }
+      ]} />
       
       <main className="flex-grow bg-white">
         <article className="container mx-auto px-4 py-8 md:py-12 max-w-4xl">

@@ -1,9 +1,9 @@
-
 import React from 'react';
 import HeaderAdSenseCompliant from '@/components/HeaderAdSenseCompliant';
 import FooterAdSenseCompliant from '@/components/FooterAdSenseCompliant';
 import SEOMetadata from '@/components/SEOMetadata';
 import PlayStoreCompliantDisclaimer from '@/components/PlayStoreCompliantDisclaimer';
+import PageBreadcrumb from '@/components/PageBreadcrumb';
 import {
   Accordion,
   AccordionContent,
@@ -155,6 +155,7 @@ const FAQ = () => {
       />
       
       <HeaderAdSenseCompliant />
+      <PageBreadcrumb items={[{ label: "FAQ" }]} />
       
       <main className="flex-grow bg-gradient-to-b from-white to-legal-light">
         <div className="container mx-auto px-4 py-8 md:py-12">

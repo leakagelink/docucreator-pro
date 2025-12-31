@@ -1,10 +1,10 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import HeaderAdSenseCompliant from '@/components/HeaderAdSenseCompliant';
 import FooterAdSenseCompliant from '@/components/FooterAdSenseCompliant';
 import SEOMetadata from '@/components/SEOMetadata';
 import PlayStoreCompliantDisclaimer from '@/components/PlayStoreCompliantDisclaimer';
+import PageBreadcrumb from '@/components/PageBreadcrumb';
 import { Calendar, Clock, ArrowRight, FileText, Scale, Home, Briefcase, Users, Shield, ClipboardCheck, Gift } from 'lucide-react';
 
 const Blog = () => {
@@ -115,6 +115,7 @@ const Blog = () => {
       />
       
       <HeaderAdSenseCompliant />
+      <PageBreadcrumb items={[{ label: "Blog" }]} />
       
       <main className="flex-grow bg-gradient-to-b from-white to-legal-light">
         <div className="container mx-auto px-4 py-8 md:py-12">
