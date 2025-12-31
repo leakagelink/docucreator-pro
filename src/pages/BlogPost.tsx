@@ -6,6 +6,7 @@ import SEOMetadata from '@/components/SEOMetadata';
 import PlayStoreCompliantDisclaimer from '@/components/PlayStoreCompliantDisclaimer';
 import PageBreadcrumb from '@/components/PageBreadcrumb';
 import RelatedArticles from '@/components/RelatedArticles';
+import ReadingProgress from '@/components/ReadingProgress';
 import { Calendar, Clock, ArrowLeft, Share2, FileText, User, CheckCircle2 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
@@ -1540,6 +1541,9 @@ const BlogPost = () => {
               </Button>
             </div>
           </header>
+
+          {/* Reading Progress Indicator */}
+          <ReadingProgress readTime={post.readTime} />
 
           {/* Article Content */}
           <div className="prose-headings:text-legal-navy prose-a:text-legal-accent prose-strong:text-legal-navy">
