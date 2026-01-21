@@ -1,21 +1,24 @@
-# DocuCreator Pro
+# DocuCreator Pro - Legal Document Generator India
 # https://docucreatorpro.online
 
 User-agent: *
 Allow: /
 
-# Static sitemap
+# Sitemaps
 Sitemap: https://docucreatorpro.online/sitemap.xml
-
-# Dynamic sitemap (auto-updated)
 Sitemap: https://fqjrehhemtpbztjpfpfu.supabase.co/functions/v1/generate-sitemap
 
+# Googlebot specific rules
 User-agent: Googlebot
 Allow: /
+Crawl-delay: 1
 
+# Bingbot specific rules
 User-agent: Bingbot
 Allow: /
+Crawl-delay: 1
 
+# Social media crawlers
 User-agent: facebookexternalhit
 Allow: /
 
@@ -25,11 +28,21 @@ Allow: /
 User-agent: LinkedInBot
 Allow: /
 
+# Ad crawlers
 User-agent: Mediapartners-Google
 Allow: /
 
 User-agent: AdsBot-Google
 Allow: /
 
+User-agent: AdsBot-Google-Mobile
+Allow: /
+
+# Disallow paths
 Disallow: /api/
 Disallow: /admin/
+Disallow: /_next/
+Disallow: /static/chunks/
+
+# Host declaration
+Host: https://docucreatorpro.online

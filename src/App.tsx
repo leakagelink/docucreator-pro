@@ -19,6 +19,7 @@ import FAQ from "./pages/FAQ";
 import Blog from "./pages/Blog";
 import BlogPost from "./pages/BlogPost";
 import SEOArticleGenerator from "./pages/SEOArticleGenerator";
+import CityLanding from "./pages/CityLanding";
 import BottomNavigation from "./components/BottomNavigation";
 import ScrollToTop from "./components/ScrollToTop";
 
@@ -47,6 +48,8 @@ const App: React.FC = () => {
                 <Route path="/blog" element={<Blog />} />
                 <Route path="/blog/:slug" element={<BlogPost />} />
                 <Route path="/seo-generator" element={<SEOArticleGenerator />} />
+                {/* City-specific landing pages for Local SEO */}
+                <Route path="/rent-agreement/:city" element={<CityLanding />} />
                 <Route path="*" element={<NotFound />} />
               </Routes>
               <BottomNavigation />

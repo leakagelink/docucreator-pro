@@ -61,32 +61,44 @@ const Index = () => {
     setStep('select');
   };
 
-  // Homepage FAQ items for structured data
+  // Homepage FAQ items for structured data - Optimized for target keywords
   const homeFaqItems = [
     {
-      question: "What is DocuCreator Pro?",
-      answer: "DocuCreator Pro is a free AI-powered online tool that helps you create professional legal documents like rent agreements, NDAs, power of attorney, affidavits, and contracts instantly."
+      question: "Rent agreement online kaise banaye?",
+      answer: "DocuCreator Pro pe rent agreement online banana bahut easy hai. Simply 'Rental Agreement' select karo, landlord-tenant details, rent amount, security deposit fill karo aur instant PDF download karo. 11 month rent agreement format available hai with all essential clauses."
     },
     {
       question: "Is DocuCreator Pro free to use?",
-      answer: "Yes, DocuCreator Pro is completely free. You can create unlimited documents and download them as PDFs without any charges."
+      answer: "Haan, DocuCreator Pro completely free hai. Unlimited rent agreements, employment contracts, NDAs, partnership deeds aur legal documents banao bina kisi charge ke. Instant PDF download available."
     },
     {
-      question: "Are the documents legally valid in India?",
-      answer: "Our documents are formatted according to Indian legal standards. For legal enforcement, we recommend getting them notarized or registered with appropriate authorities."
+      question: "Kya documents legally valid hain India mein?",
+      answer: "Hamare documents Indian legal standards ke according formatted hain. Rent agreement ke liye proper stamp duty lagao aur notarize karwao. Employment agreements aur NDAs immediately valid hain signed hone ke baad."
     },
     {
-      question: "How do I create a document?",
-      answer: "Simply select your document type, fill in the required details in the form, and click generate. Your document will be ready for download in PDF format within seconds."
+      question: "Employment agreement template kaise use kare?",
+      answer: "Employment agreement banane ke liye 'Employment Agreement' select karo, employee details, salary, job role, notice period fill karo. Professional format mein instant download milega with all statutory clauses."
+    },
+    {
+      question: "Partnership deed format available hai?",
+      answer: "Haan, partnership deed format available hai. Partners ki details, profit sharing ratio, capital contribution, duties fill karo aur professionally formatted partnership deed download karo. Registration ke liye Sub-Registrar office mein submit karo."
+    },
+    {
+      question: "NDA agreement format India ke liye kaise banaye?",
+      answer: "NDA (Non-Disclosure Agreement) banane ke liye 'Confidentiality' section mein NDA select karo. Confidential information define karo, duration set karo aur download karo. Business meetings aur employee onboarding ke liye perfect hai."
+    },
+    {
+      question: "Rental agreement stamp paper value kitni honi chahiye?",
+      answer: "Stamp duty state-wise alag hai. Maharashtra mein 0.25%, Delhi mein 2%, Karnataka mein 1%, UP mein 4% lagti hai. Total rent + security deposit pe calculate hoti hai. E-stamp paper online bhi le sakte ho."
     }
   ];
 
   return (
     <div className="flex flex-col min-h-screen">
       <SEOMetadata 
-        title="DocuCreator Pro | Free AI Legal Document Generator India - Create Rent Agreement, NDA, POA Online"
-        description="Create professional legal documents free online. Generate rent agreements, NDAs, power of attorney, affidavits, contracts & more with AI. Instant PDF download. India's #1 document maker."
-        keywords="free legal document generator, rent agreement online, NDA template India, power of attorney format, affidavit maker, contract generator, legal document creator, free document maker India, online agreement maker, legal forms India"
+        title="Free Rent Agreement & Legal Document Generator India | DocuCreator Pro"
+        description="Create rent agreements, employment contracts, NDAs & legal documents online. AI-powered document generator with instant PDF download. Free templates for India. Rent agreement kaise banaye - step-by-step guide available."
+        keywords="rent agreement online, rental agreement format, employment agreement template India, partnership deed format, legal document generator India, free rent agreement format Hindi, 11 month rent agreement format, NDA agreement format India, rent agreement kaise banaye, kiraya agreement format Hindi, power of attorney format online, rental agreement stamp paper value, vendor agreement sample India"
         canonicalUrl="/"
         faqItems={homeFaqItems}
         breadcrumbs={[
