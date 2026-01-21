@@ -9,7 +9,7 @@ const Header = () => {
       <div className="container mx-auto flex items-center justify-between">
         <div className="flex items-center">
           <img 
-            src="/lovable-uploads/65e2842b-9ade-4578-8288-c617f5fbfc3f.png" 
+            src="/images/logo.png" 
             alt="DocuCreator Pro Logo" 
             className="h-8 w-8 object-contain"
           />

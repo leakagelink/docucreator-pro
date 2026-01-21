@@ -88,24 +88,18 @@
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2211398170597117" crossorigin="anonymous"></script>
 
     <style>
-      /* Hide all Lovable-related elements */
-      .lovable-badge, 
-      .lovable-popup, 
-      [data-lovable-badge],
-      [data-lovable-popup],
+      /* Hide editor elements */
+      .editor-badge, 
+      .editor-popup, 
+      [data-editor-badge],
+      [data-editor-popup],
       .pick-ui-button,
-      #lovable-root,
-      [class*="lovable-"],
-      [id*="lovable-"],
-      .lovable-editor-badge,
-      .lovable-editor-toolbar,
-      .lovable-floating-button,
-      .lovable-toolbar,
-      .lovable-bottom-bar,
-      .lovable-overlay,
-      .lovable-editor,
-      .gpt-editor-badge,
-      .gpt-badge {
+      #editor-root,
+      .editor-toolbar,
+      .floating-button,
+      .toolbar,
+      .bottom-bar,
+      .overlay {
         display: none !important;
         visibility: hidden !important;
         opacity: 0 !important;
@@ -154,37 +148,26 @@
       }
     </script>
     
-    <!-- Script to remove any dynamically added Lovable elements -->
+    <!-- Script to remove any dynamically added editor elements -->
     <script>
       (function() {
-        // Function to remove Lovable elements
-        function removeLovableElements() {
-          const lovableElements = document.querySelectorAll('[class*="lovable-"], [id*="lovable-"], .pick-ui-button, #lovable-root, [class*="gpt-"], [id*="gpt-"]');
-          lovableElements.forEach(el => {
+        // Function to remove editor elements
+        function removeEditorElements() {
+          const editorElements = document.querySelectorAll('.pick-ui-button, #editor-root, .editor-badge, .editor-toolbar');
+          editorElements.forEach(el => {
             el.remove();
-          });
-          
-          // Remove any remaining iframe that might contain Lovable content
-          const iframes = document.querySelectorAll('iframe');
-          iframes.forEach(iframe => {
-            if (iframe.src && (iframe.src.includes('lovable') || iframe.src.includes('gpt'))) {
-              iframe.remove();
-            }
           });
         }
         
         // Run immediately
-        removeLovableElements();
+        removeEditorElements();
         
         // Also run after DOM is loaded
-        document.addEventListener('DOMContentLoaded', removeLovableElements);
-        
-        // And check periodically and on any dynamic content changes
-        setInterval(removeLovableElements, 500);
+        document.addEventListener('DOMContentLoaded', removeEditorElements);
         
         // Monitor DOM changes to catch any dynamically added elements
         const observer = new MutationObserver(function(mutations) {
-          removeLovableElements();
+          removeEditorElements();
         });
         
         // Start observing the document with the configured parameters
