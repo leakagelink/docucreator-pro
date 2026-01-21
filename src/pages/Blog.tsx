@@ -31,6 +31,56 @@ const Blog = () => {
       keywords: ['stamp duty rent agreement', 'rental agreement stamp paper', 'e-stamp rent agreement']
     },
     {
+      id: 'affidavit-format-hindi-guide',
+      title: 'Affidavit Format in Hindi - शपथ पत्र कैसे लिखें (2026 Guide)',
+      excerpt: 'Affidavit (शपथ पत्र) format in Hindi with templates. Name change, address proof, income, date of birth affidavit formats. Notarization process.',
+      category: 'Legal Documents',
+      icon: FileText,
+      date: '2025-01-21',
+      readTime: '10 min read',
+      keywords: ['affidavit format Hindi', 'शपथ पत्र format', 'self declaration affidavit']
+    },
+    {
+      id: 'power-of-attorney-format-india-guide',
+      title: 'Power of Attorney (POA) Format India 2026 - Complete Guide',
+      excerpt: 'Power of Attorney kaise banaye? GPA, SPA formats with templates. Property POA, bank POA, medical POA explained. Registration aur stamp duty guide.',
+      category: 'Legal Guides',
+      icon: Scale,
+      date: '2025-01-21',
+      readTime: '14 min read',
+      keywords: ['power of attorney format India', 'POA format', 'general power of attorney']
+    },
+    {
+      id: 'leave-and-license-agreement-guide',
+      title: 'Leave and License Agreement 2026 - Complete Guide (Maharashtra)',
+      excerpt: 'Leave and License agreement kaise banaye? 11 month agreement format, stamp duty, online registration Maharashtra. Difference from rent agreement.',
+      category: 'Legal Guides',
+      icon: Home,
+      date: '2025-01-21',
+      readTime: '12 min read',
+      keywords: ['leave and license agreement', 'leave license Maharashtra', '11 month agreement']
+    },
+    {
+      id: 'service-agreement-format-india-freelancer',
+      title: 'Service Agreement Format India 2026 - Freelancer & Consultant',
+      excerpt: 'Service agreement format for freelancers, consultants, agencies. Payment terms, scope of work, IP rights clauses. Free template download.',
+      category: 'Business Documents',
+      icon: Briefcase,
+      date: '2025-01-21',
+      readTime: '11 min read',
+      keywords: ['service agreement format India', 'freelancer agreement', 'consultant contract']
+    },
+    {
+      id: 'will-format-india-guide',
+      title: 'Will Format India 2026 - वसीयतनामा कैसे लिखें (Legal Guide)',
+      excerpt: 'Will (वसीयत) kaise likhein? Legal will format India, registration process, essential clauses. Property distribution, executor appointment.',
+      category: 'Legal Documents',
+      icon: FileText,
+      date: '2025-01-21',
+      readTime: '15 min read',
+      keywords: ['will format India', 'वसीयतनामा format', 'how to write will']
+    },
+    {
       id: 'employment-agreement-vs-offer-letter-difference',
       title: 'Employment Agreement vs Offer Letter: Complete Difference Guide 2026',
       excerpt: 'Employment agreement aur offer letter mein kya difference hai? Legal validity, clauses, aur importance. Job joining ke time kya sign karna chahiye.',

@@ -10,6 +10,7 @@ import ReadingProgress from '@/components/ReadingProgress';
 import SocialShareButtons from '@/components/SocialShareButtons';
 import { Calendar, Clock, ArrowLeft, Share2, FileText, User, CheckCircle2 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { newBlogPostsData } from '@/data/newBlogPosts';
 
 // FAQ items for structured data
 interface FAQItem {
@@ -1469,7 +1470,9 @@ const defaultContent = (title: string) => (
 
 const BlogPost = () => {
   const { slug } = useParams();
-  const post = slug ? blogPostsData[slug] : null;
+  // Merge existing posts with new SEO-optimized posts
+  const allBlogPosts = { ...blogPostsData, ...newBlogPostsData };
+  const post = slug ? allBlogPosts[slug] : null;
 
   if (!post) {
     return (
