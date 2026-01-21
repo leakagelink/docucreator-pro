@@ -1,101 +1,243 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Generated: 2025-01-21 -->
+  
   <!-- Homepage -->
   <url>
-    <loc>https://docucreator.in/</loc>
-    <lastmod>2024-12-30</lastmod>
+    <loc>https://docucreatorpro.online/</loc>
+    <lastmod>2025-01-21</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   
-  <!-- Blog Section -->
+  <!-- Main Pages -->
   <url>
-    <loc>https://docucreator.in/blog</loc>
-    <lastmod>2024-12-30</lastmod>
+    <loc>https://docucreatorpro.online/templates</loc>
+    <lastmod>2025-01-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://docucreatorpro.online/blog</loc>
+    <lastmod>2025-01-21</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
-  
-  <!-- Blog Articles -->
   <url>
-    <loc>https://docucreator.in/blog/gift-deed-vs-sale-deed-india</loc>
-    <lastmod>2024-12-30</lastmod>
+    <loc>https://docucreatorpro.online/faq</loc>
+    <lastmod>2025-01-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docucreator.in/blog/sale-deed-registration-process-india</loc>
-    <lastmod>2024-12-30</lastmod>
+    <loc>https://docucreatorpro.online/how-ai-works</loc>
+    <lastmod>2025-01-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://docucreator.in/blog/how-to-register-rent-agreement-online-india</loc>
-    <lastmod>2024-12-30</lastmod>
+    <loc>https://docucreatorpro.online/about</loc>
+    <lastmod>2025-01-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://docucreator.in/blog/how-to-create-rent-agreement-india</loc>
-    <lastmod>2024-12-30</lastmod>
+    <loc>https://docucreatorpro.online/contact</loc>
+    <lastmod>2025-01-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://docucreator.in/blog/nda-agreement-template-guide</loc>
-    <lastmod>2024-12-30</lastmod>
+    <loc>https://docucreatorpro.online/seo-generator</loc>
+    <lastmod>2025-01-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://docucreator.in/blog/power-of-attorney-types-india</loc>
-    <lastmod>2024-12-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   
-  <!-- Main Pages -->
+  <!-- City-Specific Landing Pages (Local SEO) -->
   <url>
-    <loc>https://docucreator.in/templates</loc>
-    <lastmod>2024-12-30</lastmod>
+    <loc>https://docucreatorpro.online/rent-agreement/mumbai</loc>
+    <lastmod>2025-01-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://docucreator.in/faq</loc>
-    <lastmod>2024-12-30</lastmod>
+    <loc>https://docucreatorpro.online/rent-agreement/delhi</loc>
+    <lastmod>2025-01-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://docucreatorpro.online/rent-agreement/bangalore</loc>
+    <lastmod>2025-01-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://docucreatorpro.online/rent-agreement/hyderabad</loc>
+    <lastmod>2025-01-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docucreator.in/about</loc>
-    <lastmod>2024-12-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <loc>https://docucreatorpro.online/rent-agreement/chennai</loc>
+    <lastmod>2025-01-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docucreator.in/contact</loc>
-    <lastmod>2024-12-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <loc>https://docucreatorpro.online/rent-agreement/pune</loc>
+    <lastmod>2025-01-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docucreator.in/how-ai-works</loc>
-    <lastmod>2024-12-30</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://docucreatorpro.online/rent-agreement/noida</loc>
+    <lastmod>2025-01-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://docucreatorpro.online/rent-agreement/gurgaon</loc>
+    <lastmod>2025-01-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Original Blog Posts -->
+  <url>
+    <loc>https://docucreatorpro.online/blog/how-to-create-rent-agreement-india</loc>
+    <lastmod>2025-01-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://docucreatorpro.online/blog/how-to-register-rent-agreement-online-india</loc>
+    <lastmod>2025-01-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://docucreatorpro.online/blog/gift-deed-vs-sale-deed-india</loc>
+    <lastmod>2025-01-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://docucreatorpro.online/blog/sale-deed-registration-process-india</loc>
+    <lastmod>2025-01-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://docucreatorpro.online/blog/nda-agreement-template-guide</loc>
+    <lastmod>2025-01-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://docucreatorpro.online/blog/power-of-attorney-types-india</loc>
+    <lastmod>2025-01-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://docucreatorpro.online/blog/employment-contract-essentials</loc>
+    <lastmod>2025-01-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://docucreatorpro.online/blog/partnership-deed-creation-guide</loc>
+    <lastmod>2025-01-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://docucreatorpro.online/blog/affidavit-writing-format</loc>
+    <lastmod>2025-01-21</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+  </url>
+  
+  <!-- NEW SEO-Optimized Blog Posts (KD 0-25) -->
+  <url>
+    <loc>https://docucreatorpro.online/blog/rent-agreement-kaise-banaye-guide-2026</loc>
+    <lastmod>2025-01-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://docucreatorpro.online/blog/stamp-duty-on-rent-agreement-india</loc>
+    <lastmod>2025-01-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://docucreatorpro.online/blog/nda-agreement-hindi-guide</loc>
+    <lastmod>2025-01-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://docucreatorpro.online/blog/affidavit-format-hindi-guide</loc>
+    <lastmod>2025-01-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://docucreatorpro.online/blog/employment-agreement-vs-offer-letter-difference</loc>
+    <lastmod>2025-01-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://docucreatorpro.online/blog/partnership-deed-format-pdf-guide-2026</loc>
+    <lastmod>2025-01-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://docucreatorpro.online/blog/leave-and-license-agreement-guide</loc>
+    <lastmod>2025-01-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://docucreatorpro.online/blog/power-of-attorney-format-india-guide</loc>
+    <lastmod>2025-01-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://docucreatorpro.online/blog/service-agreement-format-india-freelancer</loc>
+    <lastmod>2025-01-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://docucreatorpro.online/blog/will-format-india-guide</loc>
+    <lastmod>2025-01-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://docucreatorpro.online/blog/e-signature-legal-validity-india-it-act-2000</loc>
+    <lastmod>2025-01-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
   
   <!-- Legal Pages -->
   <url>
-    <loc>https://docucreator.in/privacy-policy</loc>
-    <lastmod>2024-12-30</lastmod>
+    <loc>https://docucreatorpro.online/privacy-policy</loc>
+    <lastmod>2025-01-21</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
   </url>
   <url>
-    <loc>https://docucreator.in/terms-of-service</loc>
-    <lastmod>2024-12-30</lastmod>
+    <loc>https://docucreatorpro.online/terms-of-service</loc>
+    <lastmod>2025-01-21</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
   </url>
