@@ -1226,5 +1226,731 @@ export const newBlogPostsData: Record<string, {
         answer: "Minor full partner nahi ban sakta but minor ko partnership ke benefits mein admit kar sakte hain. Minor ko profits share milega but losses ke liye personally liable nahi hoga. Adult hone pe decision le sakta hai continue karna hai ya nahi."
       }
     ]
+  },
+  'affidavit-format-hindi-guide': {
+    title: 'Affidavit Format in Hindi - शपथ पत्र कैसे लिखें (2026 Guide)',
+    description: 'Affidavit (शपथ पत्र) format in Hindi with templates. Name change, address proof, income, date of birth affidavit formats. Notarization process explained.',
+    keywords: 'affidavit format Hindi, शपथ पत्र format, self declaration affidavit, name change affidavit, address proof affidavit, affidavit kaise banaye',
+    date: '2025-01-21',
+    modifiedDate: '2025-01-21',
+    readTime: '10 min read',
+    category: 'Legal Documents',
+    author: 'Legal Expert Amit Verma',
+    authorCredentials: 'LLB, 6+ years in Legal Documentation',
+    content: (
+      <div className="prose prose-lg max-w-none">
+        <p className="lead text-xl text-legal-gray">
+          Affidavit ya शपथ पत्र ek legal document hai jisme aap kisi baat ki shapath lete ho. Ye courts, government offices, banks mein bahut common hai. Is guide mein different types ke affidavit formats aur unhe kaise banaye - sab samjhaenge.
+        </p>
+
+        <h2>Affidavit (शपथ पत्र) Kya Hota Hai?</h2>
+        <p>
+          Affidavit ek written statement hai jo oath (shapath) ke saath likhi jati hai. Isme aap confirm karte ho ki jo bhi likha hai wo sach hai. Jhooth bolne pe legal action ho sakta hai (IPC Section 191-193).
+        </p>
+
+        <div className="bg-amber-50 border-l-4 border-amber-500 p-4 my-6">
+          <p className="font-medium text-amber-800">⚠️ Important:</p>
+          <p className="text-amber-700">Affidavit mein galat information dena criminal offence hai. Indian Penal Code ke under imprisonment tak ki saza ho sakti hai.</p>
+        </div>
+
+        <h2>Affidavit Ke Types</h2>
+        <ul>
+          <li><strong>Name Change Affidavit:</strong> Naam change karne ke liye</li>
+          <li><strong>Address Proof Affidavit:</strong> Address confirm karne ke liye</li>
+          <li><strong>Income Affidavit:</strong> Annual income declare karne ke liye</li>
+          <li><strong>Date of Birth Affidavit:</strong> DOB proof ke liye</li>
+          <li><strong>Lost Document Affidavit:</strong> Document kho jane pe</li>
+          <li><strong>Gap Certificate Affidavit:</strong> Education/employment gap ke liye</li>
+          <li><strong>Character Certificate Affidavit:</strong> Good character declare karne ke liye</li>
+        </ul>
+
+        <h2>Affidavit Format in Hindi (General Template)</h2>
+        <div className="bg-gray-100 p-6 rounded-lg my-6 font-mono text-sm">
+          <p className="font-bold text-center mb-4">शपथ पत्र (AFFIDAVIT)</p>
+          <p>मैं, [पूरा नाम], पुत्र/पुत्री श्री [पिता का नाम],</p>
+          <p>निवासी - [पूरा पता],</p>
+          <p>उम्र - [आयु] वर्ष,</p>
+          <p className="mt-4">सत्यनिष्ठा से निम्नलिखित कथन करता/करती हूं:</p>
+          <p className="mt-2">1. कि मैं उपरोक्त पते का स्थायी निवासी हूं।</p>
+          <p>2. कि [यहां अपना कथन लिखें]।</p>
+          <p>3. कि उपरोक्त सभी कथन मेरी जानकारी और विश्वास के अनुसार सत्य हैं।</p>
+          <p className="mt-4">सत्यापन:</p>
+          <p>मैं उपरोक्त सभी कथनों को सत्य और सही मानता/मानती हूं।</p>
+          <p className="mt-4 text-right">हस्ताक्षर: _______________</p>
+          <p className="text-right">दिनांक: _______________</p>
+          <p className="text-right">स्थान: _______________</p>
+        </div>
+
+        <h2>Name Change Affidavit Format</h2>
+        <p>Naam change karne ke liye is format use karo:</p>
+        <div className="bg-blue-50 p-6 rounded-lg my-6">
+          <p><strong>Key Points Include Karein:</strong></p>
+          <ul className="text-blue-800">
+            <li>Purana naam (as per documents)</li>
+            <li>Naya naam (desired new name)</li>
+            <li>Reason for change (optional)</li>
+            <li>Documents affected (Aadhaar, PAN, etc.)</li>
+          </ul>
+        </div>
+
+        <h2>Affidavit Notarize Kaise Karwayein?</h2>
+        <ol>
+          <li>Affidavit draft karo (DocuCreator Pro se)</li>
+          <li>Non-judicial stamp paper lo (₹10-100 based on state)</li>
+          <li>Stamp paper pe print karo</li>
+          <li>Notary Public ke paas jao</li>
+          <li>Apna ID proof (Aadhaar) lekar jao</li>
+          <li>Notary ke saamne sign karo</li>
+          <li>Notary stamp aur seal lagwao</li>
+          <li>Fees pay karo (₹50-200)</li>
+        </ol>
+
+        <div className="bg-legal-light p-6 rounded-lg my-8">
+          <h3 className="text-legal-navy font-bold mb-2">📜 Affidavit Template Download Karo - FREE!</h3>
+          <p className="mb-4">Different types ke affidavit formats available hain.</p>
+          <Link to="/?template=other-affidavit" className="inline-flex items-center gap-2 bg-legal-navy text-white px-6 py-3 rounded-lg hover:bg-legal-accent transition-colors">
+            Affidavit Banao →
+          </Link>
+        </div>
+
+        <h2>Affidavit Ka Use Kahan Hota Hai?</h2>
+        <ul>
+          <li>Passport application (annexures)</li>
+          <li>Court proceedings</li>
+          <li>Name/DOB change in documents</li>
+          <li>Property disputes</li>
+          <li>Bank formalities</li>
+          <li>School/college admission</li>
+          <li>Government scheme applications</li>
+        </ul>
+
+        <h2>Conclusion</h2>
+        <p>
+          Affidavit simple document hai but legally important hai. Sach likho, stamp paper use karo, aur notarize karwao. DocuCreator Pro se different affidavit formats free mein generate karo.
+        </p>
+      </div>
+    ),
+    faqItems: [
+      {
+        question: "Affidavit ke liye stamp paper kitne ka chahiye?",
+        answer: "Affidavit ke liye typically ₹10-100 ka non-judicial stamp paper chahiye. State-wise different rates hain. General affidavits ke liye ₹10-20 ka stamp paper sufficient hai. Property ya high-value matters ke liye higher value stamp paper use karo."
+      },
+      {
+        question: "Affidavit notarize karna zaroori hai?",
+        answer: "Depend karta hai purpose pe. Court submissions ke liye notarization mandatory hai. Bank, passport office bhi usually notarized affidavit maangte hain. Self-declaration ke liye sometimes un-notarized bhi chalti hai."
+      },
+      {
+        question: "Affidavit mein galat information dene pe kya hoga?",
+        answer: "Affidavit mein jhoothi information dena 'Perjury' hai jo IPC Section 191-193 ke under punishable hai. 3-7 saal tak ki imprisonment ho sakti hai. Always true information hi likho."
+      },
+      {
+        question: "Affidavit kahan notarize hoti hai?",
+        answer: "Notary Public ke office mein affidavit notarize hoti hai. Court premises ke paas usually Notary offices hote hain. Some banks aur advocate offices bhi notary services provide karte hain."
+      }
+    ]
+  },
+  'power-of-attorney-format-india-guide': {
+    title: 'Power of Attorney (POA) Format India 2026 - Complete Guide',
+    description: 'Power of Attorney kaise banaye? GPA, SPA formats with templates. Property POA, bank POA, medical POA explained. Registration aur stamp duty guide.',
+    keywords: 'power of attorney format India, POA format, general power of attorney, special power of attorney, property POA, mukhtarnama format',
+    date: '2025-01-21',
+    modifiedDate: '2025-01-21',
+    readTime: '14 min read',
+    category: 'Legal Guides',
+    author: 'Advocate Priya Sharma',
+    authorCredentials: 'LLB, Property Law Specialist with 8+ years experience',
+    content: (
+      <div className="prose prose-lg max-w-none">
+        <p className="lead text-xl text-legal-gray">
+          Power of Attorney (मुख्तारनामा) ek legal document hai jisme aap kisi aur person ko apni taraf se kaam karne ka authority dete ho. Property deal ho, bank work ho, ya koi legal matter - POA bahut useful hai.
+        </p>
+
+        <h2>Power of Attorney Kya Hai?</h2>
+        <p>
+          POA ek legal instrument hai jisme:
+        </p>
+        <ul>
+          <li><strong>Principal:</strong> Jo person authority de raha hai (aap)</li>
+          <li><strong>Agent/Attorney:</strong> Jo person authority receive kar raha hai</li>
+        </ul>
+        <p>
+          Agent ko principal ki taraf se specific ya general tasks karne ka right milta hai.
+        </p>
+
+        <h2>Types of Power of Attorney</h2>
+        
+        <h3>1. General Power of Attorney (GPA)</h3>
+        <div className="bg-blue-50 p-4 rounded-lg my-4">
+          <p><strong>Kya hai:</strong> Broad powers deta hai - almost sab kuch kar sakta hai agent</p>
+          <p><strong>Use:</strong> NRI property management, long-term absence mein</p>
+          <p><strong>Risk:</strong> High - carefully choose your agent</p>
+        </div>
+
+        <h3>2. Special Power of Attorney (SPA)</h3>
+        <div className="bg-green-50 p-4 rounded-lg my-4">
+          <p><strong>Kya hai:</strong> Specific tasks ke liye limited powers</p>
+          <p><strong>Use:</strong> One property sale, one court case, specific bank work</p>
+          <p><strong>Risk:</strong> Lower - powers limited hain</p>
+        </div>
+
+        <h3>3. Durable Power of Attorney</h3>
+        <div className="bg-purple-50 p-4 rounded-lg my-4">
+          <p><strong>Kya hai:</strong> Principal incapacitated ho jaaye tab bhi valid rehta hai</p>
+          <p><strong>Use:</strong> Elderly parents ke liye, medical emergencies</p>
+        </div>
+
+        <h3>4. Medical Power of Attorney</h3>
+        <div className="bg-amber-50 p-4 rounded-lg my-4">
+          <p><strong>Kya hai:</strong> Healthcare decisions ke liye</p>
+          <p><strong>Use:</strong> Medical treatment decisions agar principal decide nahi kar sakta</p>
+        </div>
+
+        <h2>POA Mein Kya Include Karna Chahiye?</h2>
+        <ol>
+          <li>Principal ka naam, address, Aadhaar</li>
+          <li>Agent ka naam, address, Aadhaar</li>
+          <li>Powers granted (detailed list)</li>
+          <li>Limitations & restrictions (if any)</li>
+          <li>Property details (for property POA)</li>
+          <li>Validity period</li>
+          <li>Revocation clause</li>
+          <li>Date, place, signatures</li>
+          <li>Witnesses (2 required)</li>
+        </ol>
+
+        <h2>POA Registration - Kab Mandatory Hai?</h2>
+        <table className="w-full border-collapse border border-gray-300 my-4">
+          <thead>
+            <tr className="bg-legal-light">
+              <th className="border border-gray-300 p-3 text-left">Type</th>
+              <th className="border border-gray-300 p-3 text-left">Registration</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td className="border border-gray-300 p-3">Property Sale POA</td>
+              <td className="border border-gray-300 p-3">Mandatory</td>
+            </tr>
+            <tr>
+              <td className="border border-gray-300 p-3">General POA with property powers</td>
+              <td className="border border-gray-300 p-3">Mandatory</td>
+            </tr>
+            <tr>
+              <td className="border border-gray-300 p-3">Bank work POA</td>
+              <td className="border border-gray-300 p-3">Optional (but banks prefer registered)</td>
+            </tr>
+            <tr>
+              <td className="border border-gray-300 p-3">Court matters POA</td>
+              <td className="border border-gray-300 p-3">Notarized is sufficient</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h2>POA Revoke Kaise Karein?</h2>
+        <p>POA cancel karna ho toh:</p>
+        <ol>
+          <li>Revocation deed draft karo</li>
+          <li>Agent ko notice bhejo (registered post)</li>
+          <li>Third parties ko inform karo (bank, registrar)</li>
+          <li>If registered, revocation bhi register karwao</li>
+          <li>Newspaper mein public notice dedo (recommended)</li>
+        </ol>
+
+        <div className="bg-legal-light p-6 rounded-lg my-8">
+          <h3 className="text-legal-navy font-bold mb-2">⚡ POA Template Download Karo - FREE!</h3>
+          <p className="mb-4">GPA, SPA, Property POA templates available.</p>
+          <Link to="/?template=other-power-of-attorney" className="inline-flex items-center gap-2 bg-legal-navy text-white px-6 py-3 rounded-lg hover:bg-legal-accent transition-colors">
+            Power of Attorney Banao →
+          </Link>
+        </div>
+
+        <h2>Conclusion</h2>
+        <p>
+          Power of Attorney powerful legal document hai. Carefully choose your agent, clearly define powers, aur property matters mein register karwao. DocuCreator Pro se POA templates free mein generate karo.
+        </p>
+      </div>
+    ),
+    faqItems: [
+      {
+        question: "GPA se property bech sakte hain kya?",
+        answer: "GPA se property sale ka execution kar sakte ho on behalf of owner, but GPA itself ownership transfer nahi karta. Supreme Court ne 2011 mein clarify kiya ki GPA-based property transfers without proper sale deed are not valid."
+      },
+      {
+        question: "POA ki validity kitni hoti hai?",
+        answer: "POA ki validity document mein mentioned period tak hoti hai. Agar period mention nahi hai toh principal ki death ya incapacity tak valid rehti hai (unless Durable POA). Revoke bhi kar sakte ho anytime."
+      },
+      {
+        question: "POA ke liye stamp duty kitni lagti hai?",
+        answer: "Stamp duty state-wise different hai. General POA ke liye typically ₹100-500. Property-related POA ke liye higher - property value pe based (usually 1-5% of property value). Registration fees separate lagti hai."
+      },
+      {
+        question: "Kya NRI POA de sakte hain?",
+        answer: "Haan, NRI POA de sakte hain. Indian Consulate/Embassy mein POA execute karke India bhej sakte ho. Ye POA Indian courts mein valid hoti hai. Apostille stamp required ho sakti hai."
+      }
+    ]
+  },
+  'leave-and-license-agreement-guide': {
+    title: 'Leave and License Agreement 2026 - Complete Guide (Maharashtra Focus)',
+    description: 'Leave and License agreement kaise banaye? 11 month agreement format, stamp duty, online registration Maharashtra. Difference from rent agreement explained.',
+    keywords: 'leave and license agreement, leave license Maharashtra, 11 month agreement, L&L agreement format, rental agreement Maharashtra',
+    date: '2025-01-21',
+    modifiedDate: '2025-01-21',
+    readTime: '12 min read',
+    category: 'Legal Guides',
+    author: 'Property Consultant Rahul Deshmukh',
+    authorCredentials: 'Real Estate Expert, Mumbai, 12+ years experience',
+    content: (
+      <div className="prose prose-lg max-w-none">
+        <p className="lead text-xl text-legal-gray">
+          Mumbai, Pune ya Maharashtra mein property rent pe de rahe ho? Toh Leave and License Agreement ke baare mein jaanna bahut zaroori hai. Ye rent agreement se different hai aur Maharashtra mein ye commonly use hota hai.
+        </p>
+
+        <h2>Leave and License Kya Hai?</h2>
+        <p>
+          Leave and License agreement Indian Easements Act, 1882 ke under aata hai. Isme:
+        </p>
+        <ul>
+          <li><strong>Licensor:</strong> Property owner jo permission de raha hai</li>
+          <li><strong>Licensee:</strong> Jo property use karega</li>
+          <li><strong>License Fee:</strong> Rent nahi kehte, "license fee" kehte hain</li>
+        </ul>
+
+        <div className="bg-blue-50 p-6 rounded-lg my-6">
+          <h4 className="font-semibold text-blue-900 mb-3">Key Difference from Rent Agreement:</h4>
+          <ul className="text-blue-800 space-y-2">
+            <li><CheckCircle2 className="inline w-4 h-4 mr-2" />Leave & License = Permission to use (no tenancy rights)</li>
+            <li><CheckCircle2 className="inline w-4 h-4 mr-2" />Rent Agreement = Tenancy rights milte hain</li>
+            <li><CheckCircle2 className="inline w-4 h-4 mr-2" />L&L mein eviction easier hai for licensor</li>
+          </ul>
+        </div>
+
+        <h2>Why 11 Months?</h2>
+        <p>
+          Same reason as rent agreement:
+        </p>
+        <ul>
+          <li>12 months ya zyada = Registration mandatory (costly + time-consuming)</li>
+          <li>11 months = Registration optional in some states</li>
+        </ul>
+        <p>
+          <strong>But Maharashtra mein:</strong> Leave and License 5 saal tak ke liye bhi stamp duty + registration ke saath ban sakti hai. 11 months se zyada ke liye registration mandatory hai.
+        </p>
+
+        <h2>Leave and License Agreement Clauses</h2>
+        <ol>
+          <li><strong>Parties Details:</strong> Licensor & licensee names, addresses</li>
+          <li><strong>Property Description:</strong> Complete address, area, amenities</li>
+          <li><strong>License Period:</strong> Start date, end date (usually 11 months)</li>
+          <li><strong>License Fee:</strong> Monthly amount, due date</li>
+          <li><strong>Deposit:</strong> Amount, refund terms</li>
+          <li><strong>Lock-in Period:</strong> Minimum stay requirement</li>
+          <li><strong>Notice Period:</strong> For termination</li>
+          <li><strong>Permitted Use:</strong> Residential/commercial</li>
+          <li><strong>Maintenance:</strong> Who pays for what</li>
+          <li><strong>Termination:</strong> Conditions for ending</li>
+        </ol>
+
+        <h2>Maharashtra Online Registration (IGR Portal)</h2>
+        <p>Maharashtra mein Leave and License online register kar sakte ho:</p>
+        <ol>
+          <li>IGR Maharashtra portal pe jao (igrmaharashtra.gov.in)</li>
+          <li>"Leave and License" option select karo</li>
+          <li>Parties ki details fill karo</li>
+          <li>Property details add karo</li>
+          <li>Stamp duty pay karo online</li>
+          <li>Upload signatures (digital)</li>
+          <li>Submit aur download registered document</li>
+        </ol>
+
+        <h2>Stamp Duty Calculation Maharashtra</h2>
+        <table className="w-full border-collapse border border-gray-300 my-4">
+          <thead>
+            <tr className="bg-legal-light">
+              <th className="border border-gray-300 p-3 text-left">Duration</th>
+              <th className="border border-gray-300 p-3 text-left">Stamp Duty Rate</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td className="border border-gray-300 p-3">Upto 60 months</td>
+              <td className="border border-gray-300 p-3">0.25% of (License fee × months + Deposit)</td>
+            </tr>
+            <tr>
+              <td className="border border-gray-300 p-3">Registration Fee</td>
+              <td className="border border-gray-300 p-3">₹1000 (fixed)</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div className="bg-green-50 p-4 rounded-lg my-4">
+          <p><strong>Example Calculation:</strong></p>
+          <p>Rent: ₹30,000/month | Duration: 11 months | Deposit: ₹90,000</p>
+          <p>Total value = (30,000 × 11) + 90,000 = ₹4,20,000</p>
+          <p>Stamp duty = 0.25% × 4,20,000 = ₹1,050</p>
+          <p>Registration = ₹1,000</p>
+          <p><strong>Total = ₹2,050</strong></p>
+        </div>
+
+        <div className="bg-legal-light p-6 rounded-lg my-8">
+          <h3 className="text-legal-navy font-bold mb-2">🏠 Leave and License Agreement Banao - FREE!</h3>
+          <p className="mb-4">Maharashtra format mein ready template.</p>
+          <Link to="/?template=agreements-rental" className="inline-flex items-center gap-2 bg-legal-navy text-white px-6 py-3 rounded-lg hover:bg-legal-accent transition-colors">
+            Agreement Banao →
+          </Link>
+        </div>
+
+        <h2>Conclusion</h2>
+        <p>
+          Maharashtra mein Leave and License agreement preferred hai kyunki eviction easier hai for property owners. Online registration se process simple ho gaya hai. DocuCreator Pro se free template generate karo aur IGR portal pe register karwao.
+        </p>
+      </div>
+    ),
+    faqItems: [
+      {
+        question: "Leave and License aur Rent Agreement mein kya difference hai?",
+        answer: "Leave and License mein licensee ko sirf property use karne ki permission milti hai, tenancy rights nahi. Rent agreement mein tenant ko tenancy rights milte hain jo eviction difficult banate hain. Maharashtra mein L&L zyada prefer hota hai."
+      },
+      {
+        question: "Maharashtra mein Leave and License registration mandatory hai?",
+        answer: "11 months tak ke agreements ka registration mandatory nahi hai but recommended hai. 11 months se zyada ke liye registration mandatory hai. Online registration IGR portal pe ₹1000 fees pe ho jata hai."
+      },
+      {
+        question: "Leave and License renew kaise karein?",
+        answer: "Existing agreement expire hone se pehle new agreement execute karo with same or updated terms. Stamp duty aur registration fees phir se lagegi. Automatic renewal clause bhi add kar sakte ho original agreement mein."
+      }
+    ]
+  },
+  'service-agreement-format-india-freelancer': {
+    title: 'Service Agreement Format India 2026 - Freelancer & Consultant Template',
+    description: 'Service agreement format for freelancers, consultants, agencies. Payment terms, scope of work, IP rights clauses. Free template download.',
+    keywords: 'service agreement format India, freelancer agreement, consultant contract, service contract template, freelancer contract India',
+    date: '2025-01-21',
+    modifiedDate: '2025-01-21',
+    readTime: '11 min read',
+    category: 'Business Documents',
+    author: 'Business Consultant Vikram Mehta',
+    authorCredentials: 'CA, Business Law Expert, 10+ years experience',
+    content: (
+      <div className="prose prose-lg max-w-none">
+        <p className="lead text-xl text-legal-gray">
+          Freelancer ho, consultant ho, ya agency run karte ho - clients ke saath proper service agreement bahut zaroori hai. Payment delays, scope creep, aur disputes se bachne ke liye written contract must hai.
+        </p>
+
+        <h2>Service Agreement Kya Hai?</h2>
+        <p>
+          Service agreement ek contract hai jo service provider aur client ke beech hota hai. Isme clearly define hota hai:
+        </p>
+        <ul>
+          <li>Kya services deni hain</li>
+          <li>Kitne paise milenge aur kab</li>
+          <li>Deadline kya hai</li>
+          <li>Ownership kis ki hogi (IP rights)</li>
+          <li>Kab terminate ho sakta hai</li>
+        </ul>
+
+        <h2>Service Agreement vs Employment Agreement</h2>
+        <div className="bg-blue-50 p-6 rounded-lg my-6">
+          <table className="w-full">
+            <thead>
+              <tr>
+                <th className="text-left p-2">Aspect</th>
+                <th className="text-left p-2">Service Agreement</th>
+                <th className="text-left p-2">Employment Agreement</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td className="p-2">Relationship</td>
+                <td className="p-2">Client-Vendor</td>
+                <td className="p-2">Employer-Employee</td>
+              </tr>
+              <tr>
+                <td className="p-2">PF/ESI</td>
+                <td className="p-2">Not applicable</td>
+                <td className="p-2">Mandatory</td>
+              </tr>
+              <tr>
+                <td className="p-2">TDS</td>
+                <td className="p-2">Section 194C/194J (10%)</td>
+                <td className="p-2">Section 192 (slab-based)</td>
+              </tr>
+              <tr>
+                <td className="p-2">Control</td>
+                <td className="p-2">Output-based</td>
+                <td className="p-2">Full supervision</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2>Key Clauses in Service Agreement</h2>
+        
+        <h3>1. Scope of Services (SOW)</h3>
+        <p>Most important clause. Clearly define:</p>
+        <ul>
+          <li>Kya-kya services included hain</li>
+          <li>Kya-kya included NAHI hai (exclusions)</li>
+          <li>Deliverables list</li>
+          <li>Quality standards</li>
+        </ul>
+
+        <h3>2. Payment Terms</h3>
+        <ul>
+          <li><strong>Fixed Price:</strong> Project complete hone pe full payment</li>
+          <li><strong>Milestone-based:</strong> Stage-wise payments</li>
+          <li><strong>Hourly/Daily Rate:</strong> Time-based billing</li>
+          <li><strong>Retainer:</strong> Monthly fixed amount</li>
+        </ul>
+
+        <h3>3. Timeline & Deadlines</h3>
+        <p>Clearly mention:</p>
+        <ul>
+          <li>Project start date</li>
+          <li>Key milestones with dates</li>
+          <li>Final delivery date</li>
+          <li>Delay penalty (if any)</li>
+        </ul>
+
+        <h3>4. Intellectual Property Rights</h3>
+        <p>Very important for creative work:</p>
+        <ul>
+          <li>Work product ownership after payment</li>
+          <li>Pre-existing IP remains with service provider</li>
+          <li>License terms if not full transfer</li>
+        </ul>
+
+        <h3>5. Confidentiality</h3>
+        <p>Protect client's confidential information:</p>
+        <ul>
+          <li>What's confidential</li>
+          <li>How long to keep confidential</li>
+          <li>Exceptions (public info, legally required)</li>
+        </ul>
+
+        <h2>Payment Models Explained</h2>
+        <table className="w-full border-collapse border border-gray-300 my-4">
+          <thead>
+            <tr className="bg-legal-light">
+              <th className="border border-gray-300 p-3 text-left">Model</th>
+              <th className="border border-gray-300 p-3 text-left">Best For</th>
+              <th className="border border-gray-300 p-3 text-left">Risk</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td className="border border-gray-300 p-3">Fixed Price</td>
+              <td className="border border-gray-300 p-3">Clear scope projects</td>
+              <td className="border border-gray-300 p-3">High if scope changes</td>
+            </tr>
+            <tr>
+              <td className="border border-gray-300 p-3">Hourly Rate</td>
+              <td className="border border-gray-300 p-3">Consulting, unclear scope</td>
+              <td className="border border-gray-300 p-3">Low - paid for time</td>
+            </tr>
+            <tr>
+              <td className="border border-gray-300 p-3">Milestone</td>
+              <td className="border border-gray-300 p-3">Long projects</td>
+              <td className="border border-gray-300 p-3">Medium - stage protection</td>
+            </tr>
+            <tr>
+              <td className="border border-gray-300 p-3">Retainer</td>
+              <td className="border border-gray-300 p-3">Ongoing relationships</td>
+              <td className="border border-gray-300 p-3">Low - guaranteed income</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div className="bg-legal-light p-6 rounded-lg my-8">
+          <h3 className="text-legal-navy font-bold mb-2">📋 Service Agreement Template - FREE!</h3>
+          <p className="mb-4">Freelancer-friendly format with all essential clauses.</p>
+          <Link to="/?template=other-service-agreement" className="inline-flex items-center gap-2 bg-legal-navy text-white px-6 py-3 rounded-lg hover:bg-legal-accent transition-colors">
+            Service Agreement Banao →
+          </Link>
+        </div>
+
+        <h2>Conclusion</h2>
+        <p>
+          Service agreement se aap professionally protected rehte ho. Payment disputes, scope creep, aur IP issues se bachte ho. DocuCreator Pro se professional service agreement free mein generate karo.
+        </p>
+      </div>
+    ),
+    faqItems: [
+      {
+        question: "Freelancer ke liye service agreement zaroori hai?",
+        answer: "Haan, bahut zaroori hai. Written agreement se payment protection milti hai, scope clear rehta hai, aur disputes mein legal evidence hoti hai. Verbal agreements court mein prove karna mushkil hota hai."
+      },
+      {
+        question: "Service agreement pe stamp duty lagti hai?",
+        answer: "Typically minimal stamp duty lagti hai (₹100-500 depending on state). High-value contracts ke liye percentage-based stamp duty lag sakti hai. Notarization optional hai but recommended for higher value contracts."
+      },
+      {
+        question: "Advance payment kitna lena chahiye?",
+        answer: "Standard practice 25-50% advance lena hai before starting work. Some freelancers 100% upfront lete hain small projects ke liye. Never start work without some advance - protects you from non-payment."
+      }
+    ]
+  },
+  'will-format-india-guide': {
+    title: 'Will Format India 2026 - वसीयतनामा कैसे लिखें (Legal Guide)',
+    description: 'Will (वसीयत) kaise likhein? Legal will format India, registration process, essential clauses. Property distribution, executor appointment guide.',
+    keywords: 'will format India, वसीयतनामा format, how to write will, will registration India, legal will template, property will format',
+    date: '2025-01-21',
+    modifiedDate: '2025-01-21',
+    readTime: '15 min read',
+    category: 'Legal Documents',
+    author: 'Advocate Sunil Kapoor',
+    authorCredentials: 'LLB, Estate Planning Specialist with 15+ years experience',
+    content: (
+      <div className="prose prose-lg max-w-none">
+        <p className="lead text-xl text-legal-gray">
+          Will (वसीयत/वसीयतनामा) ek crucial legal document hai jo decide karta hai ki aapke baad aapki property kisko milegi. India mein bahut log will nahi banate jisse family mein disputes hote hain. Is guide mein legally valid will kaise banaye - sab samjhaenge.
+        </p>
+
+        <h2>Will (वसीयत) Kya Hai?</h2>
+        <p>
+          Will ek legal document hai jisme aap apni marzi se decide karte ho ki death ke baad aapki property/assets kisko milenge. Key terms:
+        </p>
+        <ul>
+          <li><strong>Testator:</strong> Jo will bana raha hai (aap)</li>
+          <li><strong>Beneficiary:</strong> Jisko property milegi</li>
+          <li><strong>Executor:</strong> Jo will execute karega</li>
+          <li><strong>Witnesses:</strong> Jo will sign hote waqt present the</li>
+        </ul>
+
+        <h2>Will Banane Ki Eligibility</h2>
+        <ul>
+          <li>Age: 18 years ya above</li>
+          <li>Sound mind hona chahiye (mentally capable)</li>
+          <li>Free will se bana rahe ho (no coercion)</li>
+          <li>Apni property ke baare mein jaante ho</li>
+        </ul>
+
+        <div className="bg-amber-50 border-l-4 border-amber-500 p-4 my-6">
+          <p className="font-medium text-amber-800">⚠️ Important Note:</p>
+          <p className="text-amber-700">Hindu Law ke under, ancestral property ka sirf apna share will kar sakte ho. Self-acquired property fully will ki ja sakti hai. Muslim law mein only 1/3rd property will ki ja sakti hai.</p>
+        </div>
+
+        <h2>Types of Wills in India</h2>
+        
+        <h3>1. Privileged Will</h3>
+        <p>Soldiers, sailors, airmen active service mein oral will bhi bana sakte hain.</p>
+
+        <h3>2. Unprivileged Will (Common)</h3>
+        <p>Normal citizens ke liye - written, signed, witnessed.</p>
+
+        <h3>3. Joint Will</h3>
+        <p>Husband-wife milke ek will bana sakte hain (same document).</p>
+
+        <h3>4. Mutual Will</h3>
+        <p>Two people who agree to distribute each other's property.</p>
+
+        <h2>Essential Elements of a Valid Will</h2>
+        <ol>
+          <li><strong>Declaration:</strong> "This is my last will and testament"</li>
+          <li><strong>Testator Details:</strong> Full name, address, age, Aadhaar</li>
+          <li><strong>Beneficiary Details:</strong> Full names, relationships, addresses</li>
+          <li><strong>Property Description:</strong> Clear details of all properties/assets</li>
+          <li><strong>Distribution:</strong> Who gets what - specific percentages</li>
+          <li><strong>Executor Appointment:</strong> Kaun execute karega</li>
+          <li><strong>Revocation Clause:</strong> Previous wills cancelled</li>
+          <li><strong>Residuary Clause:</strong> Jo mention nahi kiya wo kisko</li>
+          <li><strong>Date & Place:</strong> When and where signed</li>
+          <li><strong>Signature:</strong> Testator + 2 witnesses</li>
+        </ol>
+
+        <h2>Will Format Template</h2>
+        <div className="bg-gray-100 p-6 rounded-lg my-6 font-mono text-sm">
+          <p className="font-bold text-center mb-4">LAST WILL AND TESTAMENT</p>
+          <p>I, [Full Name], son/daughter of [Father's Name],</p>
+          <p>aged [Age] years, residing at [Complete Address],</p>
+          <p>being of sound mind and disposing memory,</p>
+          <p>do hereby declare this to be my Last Will and Testament.</p>
+          <p className="mt-4">1. I hereby revoke all previous Wills, if any, made by me.</p>
+          <p>2. I appoint [Executor Name] as the Executor of this Will.</p>
+          <p>3. I bequeath my properties as follows:</p>
+          <p className="ml-4">a) [Property 1 details] to [Beneficiary 1]</p>
+          <p className="ml-4">b) [Property 2 details] to [Beneficiary 2]</p>
+          <p>4. All remaining properties shall go to [Residuary beneficiary].</p>
+          <p className="mt-4">IN WITNESS WHEREOF, I have signed this Will on [Date]</p>
+          <p className="mt-4">Signature of Testator: _______________</p>
+          <p className="mt-4">WITNESSES:</p>
+          <p>1. Name: ___ Address: ___ Signature: ___</p>
+          <p>2. Name: ___ Address: ___ Signature: ___</p>
+        </div>
+
+        <h2>Will Registration - Zaroori Hai?</h2>
+        <div className="bg-blue-50 p-6 rounded-lg my-6">
+          <h4 className="font-semibold text-blue-900 mb-3">Registration Optional But Recommended:</h4>
+          <ul className="text-blue-800 space-y-2">
+            <li><CheckCircle2 className="inline w-4 h-4 mr-2" />Unregistered will bhi valid hai if properly executed</li>
+            <li><CheckCircle2 className="inline w-4 h-4 mr-2" />Registered will ko challenge karna mushkil hai</li>
+            <li><CheckCircle2 className="inline w-4 h-4 mr-2" />Registration fees minimal hai (₹500-1000)</li>
+            <li><CheckCircle2 className="inline w-4 h-4 mr-2" />Safe custody Sub-Registrar ke paas rehti hai</li>
+          </ul>
+        </div>
+
+        <h2>Will Modify/Revoke Kaise Karein?</h2>
+        <p>Will lifetime mein kitni baar bhi change kar sakte ho:</p>
+        <ul>
+          <li><strong>Codicil:</strong> Minor changes ke liye amendment document</li>
+          <li><strong>New Will:</strong> Major changes ke liye naya will banao</li>
+          <li><strong>Destruction:</strong> Original will destroy karke revoke</li>
+        </ul>
+
+        <h2>After Death - Probate Process</h2>
+        <ol>
+          <li>Executor court mein probate petition file karta hai</li>
+          <li>Court will verify karti hai</li>
+          <li>Probate grant hota hai (official court order)</li>
+          <li>Executor property distribute karta hai</li>
+        </ol>
+
+        <div className="bg-legal-light p-6 rounded-lg my-8">
+          <h3 className="text-legal-navy font-bold mb-2">📜 Will Template Download Karo - FREE!</h3>
+          <p className="mb-4">Legally formatted will template generate karo.</p>
+          <Link to="/?template=other-will" className="inline-flex items-center gap-2 bg-legal-navy text-white px-6 py-3 rounded-lg hover:bg-legal-accent transition-colors">
+            Will Banao →
+          </Link>
+        </div>
+
+        <h2>Common Mistakes Jo Avoid Karo</h2>
+        <div className="bg-red-50 border-l-4 border-red-500 p-4 my-6">
+          <ul className="text-red-800 space-y-2">
+            <li>❌ Beneficiary ko witness banana (invalid ho jayega)</li>
+            <li>❌ Vague property description</li>
+            <li>❌ Witnesses ke proper details nahi likhna</li>
+            <li>❌ Date nahi dalna</li>
+            <li>❌ Multiple conflicting wills without revocation</li>
+            <li>❌ Not updating after major life events (marriage, new child)</li>
+          </ul>
+        </div>
+
+        <h2>Conclusion</h2>
+        <p>
+          Will banana simple hai but important hai. Family ko disputes se bachao, clearly specify karo ki kya kisko milega, aur registration karwa lo for extra safety. DocuCreator Pro se professional will template free mein generate karo.
+        </p>
+      </div>
+    ),
+    faqItems: [
+      {
+        question: "Kya will banana mandatory hai?",
+        answer: "Will banana mandatory nahi hai, but bahut important hai. Will ke bina death hone pe intestate succession laws apply hote hain - property automatically heirs mein divide hoti hai law ke according, aapki wish ke according nahi."
+      },
+      {
+        question: "Will ke liye stamp paper chahiye?",
+        answer: "Technically plain paper pe bhi valid will ban sakti hai. But stamp paper use karna recommended hai for additional validity. Typically ₹100 ka non-judicial stamp paper sufficient hai."
+      },
+      {
+        question: "Kya registered will challenge ho sakti hai?",
+        answer: "Haan, registered will bhi challenge ho sakti hai - but proof of execution strong rehta hai. Challenges usually mental capacity, undue influence, ya forgery ke grounds pe hote hain. Proper video recording will signing ka bhi rakho as evidence."
+      },
+      {
+        question: "Executor kaun hona chahiye?",
+        answer: "Executor trustworthy person hona chahiye - family member, friend, ya professional (lawyer/CA). Beneficiary bhi executor ban sakta hai. Executor ko property distribute karne ki responsibility hoti hai will ke according."
+      },
+      {
+        question: "Will kitni baar change kar sakte hain?",
+        answer: "Jitni baar chahein will change kar sakte ho lifetime mein. Har new will mein previous wills ko explicitly revoke karo. Major life events (marriage, divorce, new child, property sale) ke baad will update karna chahiye."
+      }
+    ]
   }
 };
