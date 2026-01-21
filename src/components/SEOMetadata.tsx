@@ -13,7 +13,9 @@ interface SEOMetadataProps {
     publishedTime?: string;
     modifiedTime?: string;
     author?: string;
+    authorCredentials?: string;
     section?: string;
+    wordCount?: number;
   };
   breadcrumbs?: Array<{ name: string; url: string }>;
   faqItems?: Array<{ question: string; answer: string }>;
@@ -168,14 +170,28 @@ const SEOMetadata = ({
     }))
   } : null;
 
-  // Article Schema
+  // Article Schema - Enhanced for Rich Snippets
   const articleSchema = articleData ? {
     "@context": "https://schema.org",
     "@type": "Article",
     "headline": title,
     "description": description,
-    "image": ogImage,
-    "author": {
+    "image": {
+      "@type": "ImageObject",
+      "url": ogImage,
+      "width": 1200,
+      "height": 630
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": fullCanonicalUrl
+    },
+    "author": articleData.author ? {
+      "@type": "Person",
+      "name": articleData.author,
+      "description": articleData.authorCredentials || "Legal Document Expert",
+      "url": siteUrl
+    } : {
       "@type": "Organization",
       "name": siteName
     },
@@ -184,11 +200,17 @@ const SEOMetadata = ({
       "name": siteName,
       "logo": {
         "@type": "ImageObject",
-        "url": `${siteUrl}/icons/icon-512x512.png`
+        "url": `${siteUrl}/icons/icon-512x512.png`,
+        "width": 512,
+        "height": 512
       }
     },
     "datePublished": articleData.publishedTime,
-    "dateModified": articleData.modifiedTime || articleData.publishedTime
+    "dateModified": articleData.modifiedTime || articleData.publishedTime,
+    "articleSection": articleData.section || "Legal Guides",
+    "wordCount": articleData.wordCount || 1500,
+    "inLanguage": "en-IN",
+    "isAccessibleForFree": true
   } : null;
 
   return (

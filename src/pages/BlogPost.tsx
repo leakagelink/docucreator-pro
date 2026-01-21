@@ -1505,7 +1505,9 @@ const BlogPost = () => {
           publishedTime: post.date,
           modifiedTime: post.modifiedDate,
           section: post.category,
-          author: post.author
+          author: post.author,
+          authorCredentials: post.authorCredentials,
+          wordCount: post.readTime.includes('15') ? 1800 : post.readTime.includes('12') ? 1500 : 1200
         }}
         breadcrumbs={[
           { name: "Home", url: "/" },
