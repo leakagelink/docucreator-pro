@@ -20,11 +20,11 @@ const blogPosts = [
   
   // 10 NEW SEO-optimized blog posts (KD 0-25 targeting)
   { slug: 'rent-agreement-kaise-banaye-guide-2026', lastmod: '2025-01-21', priority: '0.9' },
-  { slug: 'stamp-duty-rent-agreement-state-wise-guide', lastmod: '2025-01-21', priority: '0.9' },
+  { slug: 'stamp-duty-on-rent-agreement-india', lastmod: '2025-01-21', priority: '0.9' },
   { slug: 'nda-agreement-hindi-guide', lastmod: '2025-01-21', priority: '0.8' },
   { slug: 'affidavit-format-hindi-guide', lastmod: '2025-01-21', priority: '0.8' },
   { slug: 'employment-agreement-vs-offer-letter-difference', lastmod: '2025-01-21', priority: '0.8' },
-  { slug: 'partnership-deed-registration-process-india', lastmod: '2025-01-21', priority: '0.8' },
+  { slug: 'partnership-deed-format-pdf-guide-2026', lastmod: '2025-01-21', priority: '0.8' },
   { slug: 'leave-and-license-agreement-guide', lastmod: '2025-01-21', priority: '0.9' },
   { slug: 'power-of-attorney-format-india-guide', lastmod: '2025-01-21', priority: '0.8' },
   { slug: 'service-agreement-format-india-freelancer', lastmod: '2025-01-21', priority: '0.8' },

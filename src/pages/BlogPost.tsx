@@ -8,6 +8,7 @@ import PageBreadcrumb from '@/components/PageBreadcrumb';
 import RelatedArticles from '@/components/RelatedArticles';
 import ReadingProgress from '@/components/ReadingProgress';
 import SocialShareButtons from '@/components/SocialShareButtons';
+import InternalLinkingSidebar from '@/components/InternalLinkingSidebar';
 import { Calendar, Clock, ArrowLeft, Share2, FileText, User, CheckCircle2 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { newBlogPostsData } from '@/data/newBlogPosts';
@@ -1521,128 +1522,153 @@ const BlogPost = () => {
       ]} />
       
       <main className="flex-grow bg-white">
-        <article className="container mx-auto px-4 py-8 md:py-12 max-w-4xl">
-          {/* Back Link */}
-          <Link 
-            to="/blog" 
-            className="inline-flex items-center gap-2 text-legal-gray hover:text-legal-navy mb-6"
-          >
-            <ArrowLeft className="w-4 h-4" />
-            Back to Blog
-          </Link>
+        <div className="container mx-auto px-4 py-8 md:py-12">
+          <div className="flex flex-col lg:flex-row gap-8">
+            {/* Main Article Content */}
+            <article className="flex-1 max-w-4xl">
+              {/* Back Link */}
+              <Link 
+                to="/blog" 
+                className="inline-flex items-center gap-2 text-legal-gray hover:text-legal-navy mb-6"
+              >
+                <ArrowLeft className="w-4 h-4" />
+                Back to Blog
+              </Link>
 
-          {/* Article Header */}
-          <header className="mb-8">
-            <span className="inline-block px-3 py-1 bg-legal-accent/10 text-legal-accent rounded-full text-sm font-medium mb-4">
-              {post.category}
-            </span>
-            <h1 className="text-3xl md:text-4xl font-serif font-bold text-legal-navy mb-4">
-              {post.title}
-            </h1>
-            
-            {/* Author Info - E-E-A-T Signal */}
-            <div className="flex items-center gap-3 mb-4 p-3 bg-legal-light/50 rounded-lg">
-              <div className="w-10 h-10 bg-legal-navy rounded-full flex items-center justify-center">
-                <User className="w-5 h-5 text-white" />
-              </div>
-              <div>
-                <p className="font-medium text-legal-navy">{post.author}</p>
-                <p className="text-xs text-legal-gray">{post.authorCredentials}</p>
-              </div>
-            </div>
-
-            <div className="flex flex-wrap items-center gap-4 text-sm text-legal-gray">
-              <span className="flex items-center gap-1">
-                <Calendar className="w-4 h-4" />
-                Published: {new Date(post.date).toLocaleDateString('en-IN', { 
-                  year: 'numeric', 
-                  month: 'long', 
-                  day: 'numeric' 
-                })}
-              </span>
-              <span className="flex items-center gap-1">
-                <Clock className="w-4 h-4" />
-                {post.readTime}
-              </span>
-              {post.modifiedDate !== post.date && (
-                <span className="text-legal-accent text-xs">
-                  Updated: {new Date(post.modifiedDate).toLocaleDateString('en-IN', { 
-                    month: 'short', 
-                    day: 'numeric',
-                    year: 'numeric'
-                  })}
+              {/* Article Header */}
+              <header className="mb-8">
+                <span className="inline-block px-3 py-1 bg-legal-accent/10 text-legal-accent rounded-full text-sm font-medium mb-4">
+                  {post.category}
                 </span>
-              )}
-              <Button variant="ghost" size="sm" className="ml-auto">
-                <Share2 className="w-4 h-4 mr-2" />
-                Share
-              </Button>
-            </div>
-          </header>
-
-          {/* Reading Progress Indicator */}
-          <ReadingProgress readTime={post.readTime} />
-
-          {/* Article Content */}
-          <div className="prose-headings:text-legal-navy prose-a:text-legal-accent prose-strong:text-legal-navy">
-            {post.content || defaultContent(post.title)}
-          </div>
-
-          {/* FAQ Section Display */}
-          {post.faqItems && post.faqItems.length > 0 && (
-            <div className="mt-12 p-6 bg-gray-50 rounded-lg">
-              <h2 className="text-2xl font-serif font-bold text-legal-navy mb-6">Frequently Asked Questions</h2>
-              <div className="space-y-4">
-                {post.faqItems.map((faq, index) => (
-                  <div key={index} className="border-b border-gray-200 pb-4 last:border-0">
-                    <h3 className="font-semibold text-legal-navy mb-2">{faq.question}</h3>
-                    <p className="text-legal-gray text-sm">{faq.answer}</p>
+                <h1 className="text-3xl md:text-4xl font-serif font-bold text-legal-navy mb-4">
+                  {post.title}
+                </h1>
+                
+                {/* Author Info - E-E-A-T Signal */}
+                <div className="flex items-center gap-3 mb-4 p-3 bg-legal-light/50 rounded-lg">
+                  <div className="w-10 h-10 bg-legal-navy rounded-full flex items-center justify-center">
+                    <User className="w-5 h-5 text-white" />
                   </div>
-                ))}
+                  <div>
+                    <p className="font-medium text-legal-navy">{post.author}</p>
+                    <p className="text-xs text-legal-gray">{post.authorCredentials}</p>
+                  </div>
+                </div>
+
+                <div className="flex flex-wrap items-center gap-4 text-sm text-legal-gray">
+                  <span className="flex items-center gap-1">
+                    <Calendar className="w-4 h-4" />
+                    Published: {new Date(post.date).toLocaleDateString('en-IN', { 
+                      year: 'numeric', 
+                      month: 'long', 
+                      day: 'numeric' 
+                    })}
+                  </span>
+                  <span className="flex items-center gap-1">
+                    <Clock className="w-4 h-4" />
+                    {post.readTime}
+                  </span>
+                  {post.modifiedDate !== post.date && (
+                    <span className="text-legal-accent text-xs">
+                      Updated: {new Date(post.modifiedDate).toLocaleDateString('en-IN', { 
+                        month: 'short', 
+                        day: 'numeric',
+                        year: 'numeric'
+                      })}
+                    </span>
+                  )}
+                  <Button variant="ghost" size="sm" className="ml-auto">
+                    <Share2 className="w-4 h-4 mr-2" />
+                    Share
+                  </Button>
+                </div>
+              </header>
+
+              {/* Reading Progress Indicator */}
+              <ReadingProgress readTime={post.readTime} />
+
+              {/* Article Content */}
+              <div className="prose-headings:text-legal-navy prose-a:text-legal-accent prose-strong:text-legal-navy">
+                {post.content || defaultContent(post.title)}
+              </div>
+
+              {/* FAQ Section Display */}
+              {post.faqItems && post.faqItems.length > 0 && (
+                <div className="mt-12 p-6 bg-gray-50 rounded-lg">
+                  <h2 className="text-2xl font-serif font-bold text-legal-navy mb-6">Frequently Asked Questions</h2>
+                  <div className="space-y-4">
+                    {post.faqItems.map((faq, index) => (
+                      <div key={index} className="border-b border-gray-200 pb-4 last:border-0">
+                        <h3 className="font-semibold text-legal-navy mb-2">{faq.question}</h3>
+                        <p className="text-legal-gray text-sm">{faq.answer}</p>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              {/* Social Share Buttons */}
+              <div className="mt-12 p-6 bg-white border border-gray-100 rounded-lg shadow-sm">
+                <SocialShareButtons 
+                  url={`/blog/${slug}`}
+                  title={post.title}
+                  description={post.description}
+                />
+              </div>
+
+              {/* Author Section - E-E-A-T */}
+              <div className="mt-8 p-6 bg-legal-light rounded-lg">
+                <div className="flex items-start gap-4">
+                  <div className="w-16 h-16 bg-legal-navy rounded-full flex items-center justify-center flex-shrink-0">
+                    <User className="w-8 h-8 text-white" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-legal-navy">{post.author}</h3>
+                    <p className="text-sm text-legal-gray mb-2">{post.authorCredentials}</p>
+                    <p className="text-sm text-legal-gray">
+                      DocuCreator Pro team provides expert legal document guides reviewed by qualified professionals. Our content is for educational purposes - always consult a lawyer for specific legal advice.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Related Articles Section */}
+              <RelatedArticles 
+                currentSlug={slug || ''}
+                currentCategory={post.category}
+                articles={[
+                  ...Object.entries(blogPostsData).map(([id, data]) => ({
+                    id,
+                    title: data.title,
+                    excerpt: data.description,
+                    category: data.category,
+                    date: data.date,
+                    readTime: data.readTime
+                  })),
+                  ...Object.entries(newBlogPostsData).map(([id, data]) => ({
+                    id,
+                    title: data.title,
+                    excerpt: data.description,
+                    category: data.category,
+                    date: data.date,
+                    readTime: data.readTime
+                  }))
+                ]}
+                maxArticles={3}
+              />
+            </article>
+
+            {/* Internal Linking Sidebar - Desktop Only */}
+            <div className="hidden lg:block">
+              <div className="sticky top-24">
+                <InternalLinkingSidebar 
+                  currentSlug={slug || ''} 
+                  currentCategory={post.category} 
+                />
               </div>
             </div>
-          )}
-
-          {/* Social Share Buttons */}
-          <div className="mt-12 p-6 bg-white border border-gray-100 rounded-lg shadow-sm">
-            <SocialShareButtons 
-              url={`/blog/${slug}`}
-              title={post.title}
-              description={post.description}
-            />
           </div>
-
-          {/* Author Section - E-E-A-T */}
-          <div className="mt-8 p-6 bg-legal-light rounded-lg">
-            <div className="flex items-start gap-4">
-              <div className="w-16 h-16 bg-legal-navy rounded-full flex items-center justify-center flex-shrink-0">
-                <User className="w-8 h-8 text-white" />
-              </div>
-              <div>
-                <h3 className="font-semibold text-legal-navy">{post.author}</h3>
-                <p className="text-sm text-legal-gray mb-2">{post.authorCredentials}</p>
-                <p className="text-sm text-legal-gray">
-                  DocuCreator Pro team provides expert legal document guides reviewed by qualified professionals. Our content is for educational purposes - always consult a lawyer for specific legal advice.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          {/* Related Articles Section */}
-          <RelatedArticles 
-            currentSlug={slug || ''}
-            currentCategory={post.category}
-            articles={Object.entries(blogPostsData).map(([id, data]) => ({
-              id,
-              title: data.title,
-              excerpt: data.description,
-              category: data.category,
-              date: data.date,
-              readTime: data.readTime
-            }))}
-            maxArticles={3}
-          />
-        </article>
+        </div>
         
         <PlayStoreCompliantDisclaimer />
       </main>
