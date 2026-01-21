@@ -5,10 +5,62 @@ import FooterAdSenseCompliant from '@/components/FooterAdSenseCompliant';
 import SEOMetadata from '@/components/SEOMetadata';
 import PlayStoreCompliantDisclaimer from '@/components/PlayStoreCompliantDisclaimer';
 import PageBreadcrumb from '@/components/PageBreadcrumb';
-import { Calendar, Clock, ArrowRight, FileText, Scale, Home, Briefcase, Users, Shield, ClipboardCheck, Gift } from 'lucide-react';
+import { Calendar, Clock, ArrowRight, FileText, Scale, Home, Briefcase, Users, Shield, ClipboardCheck, Gift, IndianRupee, PenTool } from 'lucide-react';
 
 const Blog = () => {
   const blogPosts = [
+    // NEW SEO-optimized posts (KD 0-25)
+    {
+      id: 'rent-agreement-kaise-banaye-guide-2026',
+      title: 'Rent Agreement Kaise Banaye Online 2026 - Complete Guide Hindi',
+      excerpt: 'Rent agreement kaise banaye online India mein - complete step-by-step guide. 11 month rental agreement format, stamp duty, documents required. Free PDF download.',
+      category: 'Legal Guides',
+      icon: Home,
+      date: '2025-01-21',
+      readTime: '15 min read',
+      keywords: ['rent agreement kaise banaye', '11 month rent agreement', 'rental agreement format Hindi', 'kiraya agreement']
+    },
+    {
+      id: 'stamp-duty-rent-agreement-state-wise-guide',
+      title: 'Stamp Duty for Rent Agreement 2026: State-Wise Complete Guide',
+      excerpt: 'Complete stamp duty guide for rent agreements. State-wise rates - Maharashtra, Delhi, Karnataka, Tamil Nadu, UP. E-stamp paper process explained.',
+      category: 'Legal Guides',
+      icon: IndianRupee,
+      date: '2025-01-21',
+      readTime: '18 min read',
+      keywords: ['stamp duty rent agreement', 'rental agreement stamp paper', 'e-stamp rent agreement']
+    },
+    {
+      id: 'employment-agreement-vs-offer-letter-difference',
+      title: 'Employment Agreement vs Offer Letter: Complete Difference Guide 2026',
+      excerpt: 'Employment agreement aur offer letter mein kya difference hai? Legal validity, clauses, aur importance. Job joining ke time kya sign karna chahiye.',
+      category: 'Employment',
+      icon: Briefcase,
+      date: '2025-01-21',
+      readTime: '12 min read',
+      keywords: ['employment agreement vs offer letter', 'job offer letter', 'employment contract India']
+    },
+    {
+      id: 'e-signature-legal-validity-india-it-act-2000',
+      title: 'E-Signature Legal Validity in India 2026: IT Act 2000 Guide',
+      excerpt: 'Is e-signature legally valid in India? Complete guide on IT Act 2000, Aadhaar eSign, DSC. Which documents can be signed electronically.',
+      category: 'Legal Guides',
+      icon: PenTool,
+      date: '2025-01-21',
+      readTime: '14 min read',
+      keywords: ['e signature legal validity India', 'IT Act 2000', 'Aadhaar eSign', 'digital signature']
+    },
+    {
+      id: 'partnership-deed-registration-process-india',
+      title: 'Partnership Deed Registration Process India 2026: Step-by-Step',
+      excerpt: 'Complete guide to partnership deed registration. Documents required, fees, process at Registrar of Firms. Partnership Act 1932 explained.',
+      category: 'Business Documents',
+      icon: Users,
+      date: '2025-01-21',
+      readTime: '16 min read',
+      keywords: ['partnership deed registration', 'partnership firm registration', 'partnership Act 1932']
+    },
+    // Existing posts
     {
       id: 'gift-deed-vs-sale-deed-india',
       title: 'Gift Deed vs Sale Deed: Which is Better for Property Transfer in India 2024',
