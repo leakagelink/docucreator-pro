@@ -262,9 +262,11 @@ const Blog = () => {
                 <span className="inline-block px-3 py-1 bg-legal-accent/10 text-legal-accent rounded-full text-sm font-medium mb-4">
                   Featured Guide
                 </span>
-                <h2 className="text-2xl font-serif font-bold text-legal-navy mb-4">
-                  {blogPosts[0].title}
-                </h2>
+                <Link to={`/blog/${blogPosts[0].id}`}>
+                  <h2 className="text-2xl font-serif font-bold text-legal-navy mb-4 hover:text-legal-accent transition-colors cursor-pointer">
+                    {blogPosts[0].title}
+                  </h2>
+                </Link>
                 <p className="text-legal-gray mb-6">
                   {blogPosts[0].excerpt}
                 </p>
@@ -312,9 +314,11 @@ const Blog = () => {
                   <span className="inline-block px-2 py-1 bg-legal-light text-legal-navy rounded text-xs font-medium mb-3">
                     {post.category}
                   </span>
-                  <h3 className="text-lg font-semibold text-legal-navy mb-3 line-clamp-2">
-                    {post.title}
-                  </h3>
+                  <Link to={`/blog/${post.id}`}>
+                    <h3 className="text-lg font-semibold text-legal-navy mb-3 line-clamp-2 hover:text-legal-accent transition-colors cursor-pointer">
+                      {post.title}
+                    </h3>
+                  </Link>
                   <p className="text-legal-gray text-sm mb-4 line-clamp-3">
                     {post.excerpt}
                   </p>
