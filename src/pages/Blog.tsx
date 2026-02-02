@@ -198,14 +198,14 @@ const Blog = () => {
       keywords: ['employment contract', 'job contract', 'hiring agreement', 'employee agreement']
     },
     {
-      id: 'partnership-deed-creation-guide',
-      title: 'How to Draft a Partnership Deed: Complete Guide with Clauses',
-      excerpt: 'Learn how to create a comprehensive partnership deed covering profit sharing, capital contribution, duties, and dissolution terms.',
+      id: 'partnership-deed-registration-process-india',
+      title: 'Partnership Deed Registration Process India 2026: Step-by-Step Guide',
+      excerpt: 'Complete guide to partnership deed registration in India. Documents required, registration fees, process at Registrar of Firms. Partnership Act 1932 explained.',
       category: 'Business Documents',
       thumbnail: partnershipDeedThumb,
-      date: '2024-12-18',
-      readTime: '9 min read',
-      keywords: ['partnership deed', 'partnership agreement', 'business partnership', 'partner contract']
+      date: '2025-01-21',
+      readTime: '14 min read',
+      keywords: ['partnership deed', 'partnership registration', 'partnership agreement India', 'registrar of firms']
     },
     {
       id: 'affidavit-writing-format',
