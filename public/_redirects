@@ -1,3 +1,7 @@
+# Force HTTPS (HTTP to HTTPS redirect)
+http://docucreatorpro.online/* https://docucreatorpro.online/:splat 301!
+http://www.docucreatorpro.online/* https://docucreatorpro.online/:splat 301!
+
 # Redirect www to non-www (canonical version)
 https://www.docucreatorpro.online/* https://docucreatorpro.online/:splat 301!
 
