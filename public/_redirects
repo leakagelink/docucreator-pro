@@ -1,0 +1,4 @@
+# Redirect www to non-www (canonical version)
+https://www.docucreatorpro.online/* https://docucreatorpro.online/:splat 301!
+
+# Redirect trailing slash consistency
